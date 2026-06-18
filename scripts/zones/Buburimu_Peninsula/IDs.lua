@@ -71,6 +71,7 @@ zones[xi.zone.BUBURIMU_PENINSULA] =
         BUBURIMBOO            = GetFirstID('Buburimboo'),
         GOBLIN_BOUNTY_HUNTER  = GetFirstID('Goblin_Bounty_Hunter'),
         HELLDIVER             = GetFirstID('Helldiver'),
+        WANDA                 = GetFirstID('Wake_Warder_Wanda'),
         HOBGOBLIN_BEASTMASTER = GetFirstID('Hobgoblin_Beastmaster'),
         HOBGOBLIN_BLACK_MAGE  = GetFirstID('Hobgoblin_Black_Mage'),
         HOBGOBLIN_DARK_KNIGHT = GetFirstID('Hobgoblin_Dark_Knight'),

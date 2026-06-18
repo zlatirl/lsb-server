@@ -208,6 +208,7 @@ xi.mobSkill =
     SPOIL_1                       =  343,
 
     VELOCIOUS_BLADE               =  347, -- Mammet-800
+    COLD_BREATH                   =  349,
 
     DEATH_SCISSORS                =  353,
     WILD_RAGE                     =  354,
@@ -668,6 +669,8 @@ xi.mobSkill =
     WARP_OUT_AJIDO                =  977, -- Windurst 9-2 Ajido teleport
     WARP_IN_AJIDO                 =  978, -- Windurst 9-2 Ajido teleport
 
+    ELECTROCHARGE                 =  984,
+
     STELLAR_BURST_1               =  986,
     VORTEX_1                      =  987,
 
@@ -881,6 +884,7 @@ xi.mobSkill =
     AERIAL_COLLISION              = 1353,
 
     SPINE_LASH                    = 1355,
+    VOICELESS_STORM               = 1356,
 
     TIDAL_DIVE                    = 1357,
     PLASMA_CHARGE                 = 1358,
@@ -1164,6 +1168,7 @@ xi.mobSkill =
     HYPNIC_LAMP                   = 1695, -- Unique entry.
 
     PROBOSCIS_SHOWER              = 1708,
+    ABRASIVE_TANTRA               = 1709,
 
     BUGLE_CALL                    = 1712,
 
@@ -1294,6 +1299,8 @@ xi.mobSkill =
     ROAR_KHIMAIRA                 = 2030,
     REACTIVE_SHIELD_AUTOMATON     = 2031,
 
+    REINFORCEMENTS                = 2034,
+
     CANNIBAL_BLADE_AUTOMATON      = 2065,
     DAZE_AUTOMATON                = 2066,
     KNOCKOUT_AUTOMATON            = 2067,
@@ -1324,6 +1331,15 @@ xi.mobSkill =
     GRIM_GLOWER                   = 2156,
 
     NOX_BLAST                     = 2175,
+
+    ZEPHYR_ARROW                  = 2193,
+    LETHE_ARROWS                  = 2194,
+    SPRING_BREEZE                 = 2195,
+    SUMMER_BREEZE                 = 2196,
+    AUTUMN_BREEZE                 = 2197,
+    WINTER_BREEZE                 = 2198,
+    CYCLONIC_TURMOIL              = 2199,
+    CYCLONIC_TORRENT              = 2200,
 
     PEDAL_PIROUETTE               = 2210,
 

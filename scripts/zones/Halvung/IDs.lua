@@ -34,6 +34,7 @@ zones[xi.zone.HALVUNG] =
     {
         BIG_BOMB               = GetFirstID('Big_Bomb'),
         GURFURLUR_THE_MENACING = GetFirstID('Gurfurlur_the_Menacing'),
+        DORGERWOR_THE_ASTUTE   = GetFirstID('Dorgerwor_the_Astute'),
         DEXTROSE               = GetFirstID('Dextrose'),
         REACTON                = GetFirstID('Reacton'),
         ACHAMOTH               = GetFirstID('Achamoth'),

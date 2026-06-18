@@ -77,6 +77,7 @@ zones[xi.zone.MERIPHATAUD_MOUNTAINS] =
         THEOYAGUDO_SUMMONER    = GetFirstID('Theoyagudo_Summoner'),
         THEOYAGUDO_WHITE_MAGE  = GetFirstID('Theoyagudo_White_Mage'),
         WARAXE_BEAK            = GetFirstID('Waraxe_Beak'),
+        CHONCHON               = GetFirstID('Chonchon'),
 
         VOIDWALKER =
         {

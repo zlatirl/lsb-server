@@ -60,6 +60,7 @@ zones[xi.zone.EAST_RONFAURE] =
     {
         BIGMOUTH_BILLY = GetFirstID('Bigmouth_Billy'),
         SWAMFISK       = GetTableOfIDs('Swamfisk'), -- 2 NMs
+        RAMBUKK        = GetFirstID('Rambukk'),
 
         VOIDWALKER =
         {
