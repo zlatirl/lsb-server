@@ -34,7 +34,9 @@ zones[xi.zone.ZERUHN_MINES] =
     },
     npc =
     {
-        MINING = GetTableOfIDs('Mining_Point'),
+        MINING                   = GetTableOfIDs('Mining_Point'),
+        LASTHENES                = GetFirstID('Lasthenes'),
+        DOOR_TO_KORROLOKA_TUNNEL = GetFirstID('_4s0'),
     },
 }
 

@@ -411,6 +411,11 @@ function CBaseEntity:isPet()
 end
 
 ---@nodiscard
+---@return integer
+function CBaseEntity:getSpawnType()
+end
+
+---@nodiscard
 ---@return boolean
 function CBaseEntity:isTrust()
 end

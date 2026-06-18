@@ -24,6 +24,7 @@
 #include <cstring>
 
 #include "entities/char_entity.h"
+#include "items/item_equipment.h"
 #include "monstrosity.h"
 #include "spell.h"
 
@@ -31,7 +32,22 @@ GP_SERV_COMMAND_MAGIC_DATA::GP_SERV_COMMAND_MAGIC_DATA(const CCharEntity* PChar)
 {
     auto& packet = this->data();
 
-    std::memcpy(packet.MagicDataTbl, &PChar->m_SpellList, sizeof(packet.MagicDataTbl));
+    xi::bitset<1024> spellList = PChar->m_SpellList;
+
+    // Include spells granted by equipped items (ADDS_SPELL modifier)
+    for (int i = 0; i < 16; ++i)
+    {
+        if (auto* PItem = static_cast<CItemEquipment*>(PChar->getEquip(static_cast<SLOTTYPE>(i))))
+        {
+            auto spellId = static_cast<uint16>(PItem->getModifier(Mod::ADDS_SPELL));
+            if (spellId > 0 && spellId < 1024)
+            {
+                spellList.set(spellId);
+            }
+        }
+    }
+
+    std::memcpy(packet.MagicDataTbl, &spellList, sizeof(packet.MagicDataTbl));
 
     // A Monipulator lists its Trusts, and only the spells its species can cast.
     if (PChar->m_PMonstrosity)
