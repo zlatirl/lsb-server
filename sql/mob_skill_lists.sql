@@ -4438,6 +4438,13 @@ INSERT INTO `mob_skill_lists` VALUES ('DynamisUragnite',2113,1573); -- palsynyxi
 INSERT INTO `mob_skill_lists` VALUES ('DynamisUragnite',2113,1574); -- painful_whip
 INSERT INTO `mob_skill_lists` VALUES ('DynamisUragnite',2113,1575); -- suctorial_tentacle
 
+INSERT INTO `mob_skill_lists` VALUES ('Don_Poroggo',2200,1957); -- Frog Song
+INSERT INTO `mob_skill_lists` VALUES ('Don_Poroggo',2200,1958); -- Magic Hammer
+INSERT INTO `mob_skill_lists` VALUES ('Don_Poroggo',2200,1959); -- Water Bomb
+INSERT INTO `mob_skill_lists` VALUES ('Don_Poroggo',2200,1960); -- Frog Cheer
+INSERT INTO `mob_skill_lists` VALUES ('Don_Poroggo',2200,1961); -- Providence
+INSERT INTO `mob_skill_lists` VALUES ('Don_Poroggo',2200,1962); -- Frog Chorus
+
 -- Next ID : 2114
 -- ------------------------------------------------------------
 -- Start of Ambuscade section

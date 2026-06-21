@@ -62,6 +62,8 @@ instanceObject.onInstanceProgressUpdate = function(instance, progress)
 
     if stage == 1 and progress == 9 then
         SpawnMob(ID.mob[1][2].hammerblow, instance)
+    elseif stage == 2 and progress == 23 then
+        SpawnMob(ID.mob[2][3].powderkeg, instance)
     end
 end
 
@@ -89,7 +91,10 @@ instanceObject.onEventFinish = function(player, csid, option, npc)
         return
     end
 
-    if csid == csidSsr.FLOOR_1_TO_2_START then
+    if
+        csid >= csidSsr.FLOOR_1_TO_2_START and
+        csid <= csidSsr.FLOOR_4_TO_BOSS
+    then
         local pos = player:getPos()
 
         -- xi.salvage.resetTempBoxes(player, instance)
@@ -118,11 +123,82 @@ instanceObject.onEventFinish = function(player, csid, option, npc)
             end
         end
 
-        instance:setStage(2)
-        instance:setProgress(0)
+        if csid == csidSsr.FLOOR_1_TO_2_START then
+            instance:setStage(2)
+            instance:setProgress(0)
 
-        for id = ID.mob[1][1].mobs_start, ID.mob[1][3].mobs_end do
-            DespawnMob(id, instance)
+            for id = ID.mob[1][1].mobs_start, ID.mob[1][3].mobs_end do
+                DespawnMob(id, instance)
+            end
+
+            for i, pos in ipairs(ID.npc[0].secondFloorBoxPoints) do
+                local box = GetNPCByID(ID.npc[0].STATIC_ITEMS_BOX[i], instance)
+                if box then
+                    box:resetLocalVars()
+                    box:setAnimationSub(8)
+                    box:setPos(pos.x, pos.y, pos.z, pos.rot)
+                    box:setStatus(xi.status.NORMAL)
+                end
+            end
+
+        elseif
+            csid >= csidSsr.FLOOR_2_TO_3_NW and
+            csid <= csidSsr.FLOOR_2_TO_3_NE
+        then
+            instance:setStage(3)
+            -- Progress corresponds to the path taken: 1 (NW), 2 (SW), 3 (SE), or 4 (NE)
+            instance:setProgress(csid - csidSsr.FLOOR_1_TO_2_START)
+
+            for path = 1, 4 do
+                if ID.mob[2][path] then
+                    if
+                        ID.mob[2][path].mobs_start and
+                        ID.mob[2][path].mobs_end
+                    then
+                        for id = ID.mob[2][path].mobs_start, ID.mob[2][path].mobs_end do
+                            DespawnMob(id, instance)
+                        end
+                    end
+
+                    for k, v in pairs(ID.mob[2][path]) do
+                        if type(v) == "number" and k ~= "mobs_start" and k ~= "mobs_end" then
+                            DespawnMob(v, instance)
+                        end
+                    end
+                end
+            end
+
+        elseif
+            csid == csidSsr.FLOOR_3_TO_4_W or
+            csid == csidSsr.FLOOR_3_TO_4_E
+        then
+            instance:setStage(4)
+            -- Progress corresponds to the path taken: 1 (West), 2 (East)
+            instance:setProgress(csid - csidSsr.FLOOR_2_TO_3_NE)
+
+            if
+                ID.mob[3] and
+                ID.mob[3][1] and
+                ID.mob[3][3]
+            then
+                for id = ID.mob[3][1].rampart1, ID.mob[3][3].gyroE do
+                    DespawnMob(id, instance)
+                end
+            end
+
+        elseif csid == csidSsr.FLOOR_4_TO_BOSS then
+            instance:setStage(5)
+            instance:setProgress(csid - csidSsr.FLOOR_3_TO_4_E)
+
+            if
+                ID.mob[4] and
+                ID.mob[4][1] and
+                ID.mob[4][3]
+            then
+                for id = ID.mob[4][1].mobs_start, ID.mob[4][3].chelo do
+                    DespawnMob(id, instance)
+                end
+            end
         end
     end
 end
