@@ -6,6 +6,8 @@ xi.salvage = xi.salvage or {}
 
 xi.salvage.csid =
 {
+    DOOR_OPEN = 300,
+
     AR =
     {
         FLOOR_1_TO_2_START = 200,
@@ -22,6 +24,13 @@ xi.salvage.csid =
     SSR =
     {
         FLOOR_1_TO_2_START = 200,
+        FLOOR_2_TO_3_NW    = 201,
+        FLOOR_2_TO_3_SW    = 202,
+        FLOOR_2_TO_3_SE    = 203,
+        FLOOR_2_TO_3_NE    = 204,
+        FLOOR_3_TO_4_W     = 205,
+        FLOOR_3_TO_4_E     = 206,
+        FLOOR_4_TO_BOSS    = 207,
     },
 
     BR =
