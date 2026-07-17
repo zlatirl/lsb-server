@@ -14,7 +14,7 @@ entity.onTrigger = function(player, npc)
         destination      = { 111, 0, 21, 190, xi.zone.AHT_URHGAN_WHITEGATE },
         checkFailureText = 'You do not own the \'Boarding Permit\' Key Item.',
         check            = function()
-            return player:hasKeyItem(xi.ki.BOARDING_PERMIT)
+            return player:hasKeyItem(xi.keyItem.BOARDING_PERMIT)
         end,
     })
 end

@@ -298,7 +298,7 @@ entity.onTrade = function(player, npc, trade)
                             return
                         end
 
-                        if player:hasKeyItem(xi.ki.FAIL_BADGE) then
+                        if player:hasKeyItem(xi.keyItem.FAIL_BADGE) then
                             if player:getFreeSlotsCount() > 0 then
                                 player:confirmTrade()
                                 player:addItem(targetItem, 1)
@@ -320,11 +320,11 @@ entity.onTrade = function(player, npc, trade)
     -- Check for regular ring/earring exchanges
     for inputItem, outputItem in pairs(accessoryExchange) do
         if npcUtil.tradeHasExactly(trade, inputItem) then
-            if player:getFreeSlotsCount() > 0 and player:hasKeyItem(xi.ki.FAIL_BADGE) then
+            if player:getFreeSlotsCount() > 0 and player:hasKeyItem(xi.keyItem.FAIL_BADGE) then
                 player:confirmTrade()
                 player:addItem(outputItem, 1)
                 player:messageSpecial(ID.text.ITEM_OBTAINED, outputItem)
-            elseif not player:hasKeyItem(xi.ki.FAIL_BADGE) then
+            elseif not player:hasKeyItem(xi.keyItem.FAIL_BADGE) then
                 player:printToPlayer('Please complete the F.A.I.L. Badge Quest.', xi.msg.channel.SAY, 'Runga-Kopunga')
             else
                 player:messageSpecial(ID.text.ITEM_CANNOT_BE_OBTAINED, outputItem)

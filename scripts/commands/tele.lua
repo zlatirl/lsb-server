@@ -68,55 +68,55 @@ commandObj.onTrigger = function(player, tele)
 
     local teleports = {
         altep = {
-            crystal = xi.ki.ALTEPA_GATE_CRYSTAL,
+            crystal = xi.keyItem.ALTEPA_GATE_CRYSTAL,
             id = xi.teleport.id.ALTEP,
             name = 'Altep',
             crystalName = 'Altepa Gate Crystal'
         },
         dem = {
-            crystal = xi.ki.DEM_GATE_CRYSTAL,
+            crystal = xi.keyItem.DEM_GATE_CRYSTAL,
             id = xi.teleport.id.DEM,
             name = 'Dem',
             crystalName = 'Dem Gate Crystal'
         },
         holla = {
-            crystal = xi.ki.HOLLA_GATE_CRYSTAL,
+            crystal = xi.keyItem.HOLLA_GATE_CRYSTAL,
             id = xi.teleport.id.HOLLA,
             name = 'Holla',
             crystalName = 'Holla Gate Crystal'
         },
         mea = {
-            crystal = xi.ki.MEA_GATE_CRYSTAL,
+            crystal = xi.keyItem.MEA_GATE_CRYSTAL,
             id = xi.teleport.id.MEA,
             name = 'Mea',
             crystalName = 'Mea Gate Crystal'
         },
         vahzl = {
-            crystal = xi.ki.VAHZL_GATE_CRYSTAL,
+            crystal = xi.keyItem.VAHZL_GATE_CRYSTAL,
             id = xi.teleport.id.VAHZL,
             name = 'Vahzl',
             crystalName = 'Vahzl Gate Crystal'
         },
         yhoat = {
-            crystal = xi.ki.YHOATOR_GATE_CRYSTAL,
+            crystal = xi.keyItem.YHOATOR_GATE_CRYSTAL,
             id = xi.teleport.id.YHOAT,
             name = 'Yhoator',
             crystalName = 'Yhoator Gate Crystal'
         },
         jugner = {
-            crystal = xi.ki.JUGNER_GATE_CRYSTAL,
+            crystal = xi.keyItem.JUGNER_GATE_CRYSTAL,
             id = xi.teleport.id.JUGNER,
             name = 'Jugner',
             crystalName = 'Jugner Gate Crystal'
         },
         meriph = {
-            crystal = xi.ki.MERIPHATAUD_GATE_CRYSTAL,
+            crystal = xi.keyItem.MERIPHATAUD_GATE_CRYSTAL,
             id = xi.teleport.id.MERIPH,
             name = 'Meriph',
             crystalName = 'Meriphataud Gate Crystal'
         },
         pashow = {
-            crystal = xi.ki.PASHHOW_GATE_CRYSTAL,
+            crystal = xi.keyItem.PASHHOW_GATE_CRYSTAL,
             id = xi.teleport.id.PASHH,
             name = 'Pashow',
             crystalName = 'Pashhow Gate Crystal'

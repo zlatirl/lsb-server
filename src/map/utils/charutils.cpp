@@ -4029,7 +4029,7 @@ int32 hasSpell(CCharEntity* PChar, uint16 SpellID)
     {
         if (auto* PItem = static_cast<CItemEquipment*>(PChar->getEquip(static_cast<SLOTTYPE>(i))))
         {
-            if (battleutils::GetScaledItemModifier(PChar, PItem, Mod::ADDS_SPELL) == SpellID)
+            if (battleutils::GetScaledItemModifier(PChar, PItem, xi::Mod::ADDS_SPELL) == SpellID)
             {
                 return 1;
             }
@@ -4616,7 +4616,7 @@ void DistributeExperiencePoints(CCharEntity* PChar, CMobEntity* PMob)
             }
 
             // Custom Era Code
-            if (PMob->m_Type & MOBTYPE_NOTORIOUS)
+            if ((PMob->m_Type & xi::MobType::Notorious) != xi::MobType::Normal)
             {
                 uint32 nmHuntCheck = charutils::GetCharVar(PMember, "NMHuntTarget");
 
@@ -4654,8 +4654,6 @@ void DistributeExperiencePoints(CCharEntity* PChar, CMobEntity* PMob)
             {
                 charutils::AddPoints(PMember, "zeni_point", static_cast<uint32>(PMob->GetMLevel() - 40));
             }
-
-            bool chainactive = false;
 
             const int16 moblevel    = PMob->GetMLevel() + PMob->getMod(xi::Mod::EXP_LVL_MOD);
             const uint8 memberlevel = GetExpLevel(PMember);

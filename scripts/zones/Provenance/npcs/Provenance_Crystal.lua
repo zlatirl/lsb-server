@@ -57,9 +57,9 @@ entity.onTrigger = function(player, npc)
     elseif mentorFlag == 1 then
         if mainLevel >= 75 then
             -- Check for mentor achievement key item
-            if not player:hasKeyItem(xi.ki.GOOBBUE_COMPANION) then
+            if not player:hasKeyItem(xi.keyItem.GOOBBUE_COMPANION) then
                 player:printToPlayer('In recognition of attaining level 75 on a job as a Mentor, enjoy this exclusive gift!', xi.msg.channel.SAY, 'Era Staff')
-                npcUtil.giveKeyItem(player, xi.ki.GOOBBUE_COMPANION)
+                npcUtil.giveKeyItem(player, xi.keyItem.GOOBBUE_COMPANION)
             else
                 -- Show mentor shop
                 xi.shop.general(player, mentorShop)

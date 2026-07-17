@@ -117,7 +117,7 @@ entity.onTrade = function(player, npc, trade)
         player:printToPlayer('The info I got says... \'dark maze-like cavern... out of place door\' and they told me to use this to draw him out.', xi.msg.channel.SAY, 'Grumblix')
         player:printToPlayer('Be sure to bring friends and be ready for anything!', xi.msg.channel.SAY, 'Grumblix')
 
-        npcUtil.giveKeyItem(player, xi.ki.MARBLED_MUTTON_CHOP)
+        npcUtil.giveKeyItem(player, xi.keyItem.MARBLED_MUTTON_CHOP)
         player:setVar('mafianmdate', GetSystemTime() + 604800) -- 1 week cooldown
         player:delCurrency('legion_point', 3000)
     end

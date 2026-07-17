@@ -50,7 +50,7 @@ entity.onTrade = function(player, npc, trade)
     end
 
     -- QoL trades for dynamis 100s
-    if player:hasKeyItem(xi.ki.VIAL_OF_SHROUDED_SAND) then
+    if player:hasKeyItem(xi.keyItem.VIAL_OF_SHROUDED_SAND) then
         for inputCurrency, outputCurrency in pairs(currencyExchange) do
             if npcUtil.tradeHasExactly(trade, { { inputCurrency, xi.settings.main.CURRENCY_EXCHANGE_RATE } }) then
                 player:confirmTrade()

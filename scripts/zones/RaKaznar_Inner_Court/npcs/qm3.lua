@@ -18,7 +18,7 @@ entity.onTrigger = function(player, npc)
         return
     end
 
-    if player:hasKeyItem(xi.ki.DAWN_PHANTOM_GEM) then
+    if player:hasKeyItem(xi.keyItem.DAWN_PHANTOM_GEM) then
         if
             waywardBhoot:isSpawned() or
             dolorousCyhiraeth:isSpawned()
@@ -28,7 +28,7 @@ entity.onTrigger = function(player, npc)
             player:printToPlayer('Prepare yourself!', xi.msg.channel.NS_SAY)
             SpawnMob(waywardBhoot:getID()):updateClaim(player)
             SpawnMob(dolorousCyhiraeth:getID()):updateClaim(player)
-            player:delKeyItem(xi.ki.DAWN_PHANTOM_GEM)
+            player:delKeyItem(xi.keyItem.DAWN_PHANTOM_GEM)
         end
     else
         player:printToPlayer('You sense a powerful presence, but lack the means to call it forth.', xi.msg.channel.NS_SAY)

@@ -6,15 +6,15 @@ local ID = zones[xi.zone.LEBROS_CAVERN]
 local instanceObject = {}
 
 instanceObject.registryRequirements = function(player)
-    return player:hasKeyItem(xi.ki.LEBROS_ASSAULT_ORDERS) and
+    return player:hasKeyItem(xi.keyItem.LEBROS_ASSAULT_ORDERS) and
         player:getCurrentAssault() == xi.assault.mission.SIEGEMASTER_ASSASSINATION and
         player:getCharVar('assaultEntered') == 0 and
-        player:hasKeyItem(xi.ki.ASSAULT_ARMBAND) and
+        player:hasKeyItem(xi.keyItem.ASSAULT_ARMBAND) and
         player:getMainLvl() > 50
 end
 
 instanceObject.entryRequirements = function(player)
-    return player:hasKeyItem(xi.ki.LEBROS_ASSAULT_ORDERS) and
+    return player:hasKeyItem(xi.keyItem.LEBROS_ASSAULT_ORDERS) and
         player:getCurrentAssault() == xi.assault.mission.SIEGEMASTER_ASSASSINATION and
         player:getCharVar('assaultEntered') == 0 and
         player:getMainLvl() > 50

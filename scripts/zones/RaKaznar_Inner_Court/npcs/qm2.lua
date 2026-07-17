@@ -17,13 +17,13 @@ entity.onTrigger = function(player, npc)
         return
     end
 
-    if player:hasKeyItem(xi.ki.DAWN_PHANTOM_GEM) then
+    if player:hasKeyItem(xi.keyItem.DAWN_PHANTOM_GEM) then
         if whitenoiseBats:isSpawned() then
             player:printToPlayer('Mob is up already', xi.msg.channel.NS_SAY)
         else
             player:printToPlayer('Prepare yourself!', xi.msg.channel.NS_SAY)
             SpawnMob(whitenoiseBats:getID()):updateClaim(player)
-            player:delKeyItem(xi.ki.DAWN_PHANTOM_GEM)
+            player:delKeyItem(xi.keyItem.DAWN_PHANTOM_GEM)
         end
     else
         player:printToPlayer('You sense a powerful presence, but lack the means to call it forth.', xi.msg.channel.NS_SAY)
