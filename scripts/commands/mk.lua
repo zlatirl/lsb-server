@@ -90,41 +90,41 @@ local npcToDoorMap = {
     [zones[xi.zone.HALL_OF_THE_GODS].npc.CERMET_GATE] = {
         zones[xi.zone.HALL_OF_THE_GODS].npc.CERMET_GATE,
         closeSeconds = 1,
-        check = hasKeyItemsOrIsGM(xi.ki.CERULEAN_CRYSTAL),
+        check = hasKeyItemsOrIsGM(xi.keyItem.CERULEAN_CRYSTAL),
         failureMessage = 'You must complete Rise of the Zilart missions up to ZM13 to use this command here.',
     },
     -- Requiring Crest of Davoi for Wall of Dark Arts in Davoi
     [zones[xi.zone.DAVOI].npc.WALL_OF_DARK_ARTS] = {
         zones[xi.zone.DAVOI].npc.WALL_OF_DARK_ARTS,
         closeSeconds = 1,
-        check = hasKeyItemsOrIsGM(xi.ki.CREST_OF_DAVOI),
+        check = hasKeyItemsOrIsGM(xi.keyItem.CREST_OF_DAVOI),
         failureMessage = 'You must have the Crest of Davoi to use this command here.',
     },
     -- Requiring Crimson Orb for the Wall of Banishing in Davoi
     [zones[xi.zone.DAVOI].npc.WALL_OF_BANISHING] = {
         zones[xi.zone.DAVOI].npc.WALL_OF_BANISHING,
         closeSeconds = 1,
-        check = hasKeyItemsOrIsGM(xi.ki.CRIMSON_ORB),
+        check = hasKeyItemsOrIsGM(xi.keyItem.CRIMSON_ORB),
         failureMessage = 'You must have the Crimson Orb to use this command here.',
     },
     -- Requiring Silver Bell, Coruscant Rosary, and Black Matinee Necklace in Qulun Dome
     [zones[xi.zone.QULUN_DOME].npc.LOCKED_DOOR_OFFSET + 0] = {
         zones[xi.zone.QULUN_DOME].npc.LOCKED_DOOR_OFFSET + 0,
         closeSeconds = 1,
-        check = hasKeyItemsOrIsGM({ xi.ki.SILVER_BELL, xi.ki.CORUSCANT_ROSARY, xi.ki.BLACK_MATINEE_NECKLACE }),
+        check = hasKeyItemsOrIsGM({ xi.keyItem.SILVER_BELL, xi.keyItem.CORUSCANT_ROSARY, xi.keyItem.BLACK_MATINEE_NECKLACE }),
         failureMessage = 'You need the Silver Bell, Coruscant Rosary, and the Black Matinee Necklace to use this command here.',
     },
     [zones[xi.zone.QULUN_DOME].npc.LOCKED_DOOR_OFFSET + 1] = {
         zones[xi.zone.QULUN_DOME].npc.LOCKED_DOOR_OFFSET + 1,
         closeSeconds = 1,
-        check = hasKeyItemsOrIsGM({ xi.ki.SILVER_BELL, xi.ki.CORUSCANT_ROSARY, xi.ki.BLACK_MATINEE_NECKLACE }),
+        check = hasKeyItemsOrIsGM({ xi.keyItem.SILVER_BELL, xi.keyItem.CORUSCANT_ROSARY, xi.keyItem.BLACK_MATINEE_NECKLACE }),
         failureMessage = 'You need the Silver Bell, Coruscant Rosary, and the Black Matinee Necklace to use this command here.',
     },
     -- Requiring Yagudo Torch in Castle Oztroja
     [zones[xi.zone.CASTLE_OZTROJA].npc.LOCKED_DOOR] = {
         zones[xi.zone.CASTLE_OZTROJA].npc.LOCKED_DOOR,
         closeSeconds = 1,
-        check = hasKeyItemsOrIsGM(xi.ki.YAGUDO_TORCH),
+        check = hasKeyItemsOrIsGM(xi.keyItem.YAGUDO_TORCH),
         failureMessage = 'You need the Yagudo Torch to use this command here.'
     },
     -- Adjusting value for password door in Castle Oztroja
@@ -133,7 +133,7 @@ local npcToDoorMap = {
     [zones[xi.zone.LOWER_JEUNO].npc.TENSHODO_LOCKED_DOOR] = {
         zones[xi.zone.LOWER_JEUNO].npc.TENSHODO_LOCKED_DOOR,
         closeSeconds = 1,
-        check = hasKeyItemsOrIsGM(xi.ki.TENSHODO_MEMBERS_CARD),
+        check = hasKeyItemsOrIsGM(xi.keyItem.TENSHODO_MEMBERS_CARD),
         failureMessage = 'You must have the Tenshodo Member\'s Card to enter here.'
     },
     -- Disabling mk use for Tenzen's Path
@@ -154,9 +154,9 @@ local npcToDoorMap = {
     [zones[xi.zone.PSOXJA].npc.STONE_DOOR_OFFSET + 14] = { zones[xi.zone.PSOXJA].npc.STONE_DOOR_OFFSET + 14, check = isGM },
     [zones[xi.zone.PSOXJA].npc.STONE_DOOR_OFFSET + 15] = { zones[xi.zone.PSOXJA].npc.STONE_DOOR_OFFSET + 15, check = isGM },
     -- Disable mk use for Imperial Agent Rescue Pot Hatch
-    [zones[xi.zone.MAMOOL_JA_TRAINING_GROUNDS].npc.POT_HATCH + 0] = { zones[xi.zone.MAMOOL_JA_TRAINING_GROUNDS].npc.POT_HATCH + 0, check = isGM },
-    [zones[xi.zone.MAMOOL_JA_TRAINING_GROUNDS].npc.POT_HATCH + 1] = { zones[xi.zone.MAMOOL_JA_TRAINING_GROUNDS].npc.POT_HATCH + 1, check = isGM },
-    [zones[xi.zone.MAMOOL_JA_TRAINING_GROUNDS].npc.POT_HATCH + 2] = { zones[xi.zone.MAMOOL_JA_TRAINING_GROUNDS].npc.POT_HATCH + 2, check = isGM },
+    [zones[xi.zone.MAMOOL_JA_TRAINING_GROUNDS].npc._JUL] = { zones[xi.zone.MAMOOL_JA_TRAINING_GROUNDS].npc._JUL, check = isGM },
+    [zones[xi.zone.MAMOOL_JA_TRAINING_GROUNDS].npc._JUM] = { zones[xi.zone.MAMOOL_JA_TRAINING_GROUNDS].npc._JUM, check = isGM },
+    [zones[xi.zone.MAMOOL_JA_TRAINING_GROUNDS].npc._JUN] = { zones[xi.zone.MAMOOL_JA_TRAINING_GROUNDS].npc._JUN, check = isGM },
     -- Disabling mk for airship/ferry entrances
     [zones[xi.zone.AHT_URHGAN_WHITEGATE].npc.FERRY_GUARD_OFFSET + 0]   = { zones[xi.zone.AHT_URHGAN_WHITEGATE].npc.FERRY_BLOCKER_OFFSET + 2, check = isGM },
     [zones[xi.zone.AHT_URHGAN_WHITEGATE].npc.FERRY_GUARD_OFFSET + 1]   = { zones[xi.zone.AHT_URHGAN_WHITEGATE].npc.FERRY_BLOCKER_OFFSET + 0, check = isGM },

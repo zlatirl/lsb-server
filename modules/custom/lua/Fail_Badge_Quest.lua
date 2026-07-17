@@ -282,7 +282,7 @@ xi.failBadge.onTradeProvenance = function(player, npc, trade)
         npcUtil.tradeHasExactly(trade, xi.item.AURORA_CRYSTAL)
     then
         -- Quest completion
-        npcUtil.giveKeyItem(player, xi.ki.FAIL_BADGE)
+        npcUtil.giveKeyItem(player, xi.keyItem.FAIL_BADGE)
         player:printToPlayer('You have failed...', xi.msg.channel.SYSTEM_3)
         player:confirmTrade()
         player:setVar('FailBadge', p.QUEST_FAILED)
