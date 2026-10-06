@@ -6,7 +6,6 @@ xi.server = xi.server or {}
 
 xi.server.onServerStart = function()
     xi.events.handler.checkSeasonalEvents()
-    xi.events.handler.checkScheduledEvents()
 end
 
 xi.server.onJSTMidnight = function()
@@ -15,7 +14,6 @@ end
 
 xi.server.onTimeServerTick = function()
     xi.chocobo.onTimeServerTick()
-    xi.events.handler.checkScheduledEvents()
 end
 
 -- Message for use with SmallPacket0x04B

@@ -4,7 +4,6 @@
 -----------------------------------
 require('scripts/globals/npc_util')
 -----------------------------------
-
 xi = xi or {}
 xi.eraNpc = xi.eraNpc or {}
 
@@ -109,15 +108,13 @@ function xi.eraNpc.broMoogleTrigger(player, npc)
     if time > player:getLocalVar('[Era]BroBuffTime') then
         player:setLocalVar('[Era]BroBuffTime', time + 30)
         player:printToPlayer('Here are the buffs I\'m authorized to give you, bro.', xi.msg.channel.SAY, 'B.R.O. Moogle')
-        player:addStatusEffect(xi.effect.RERAISE, 1, 0, 7200)
+        player:addStatusEffect(xi.effect.RERAISE, { power = 1, duration = 7200, origin = player })
 
-        -- Check for MOOGLEEXP event from settings
         if
-            xi.settings.main.MOOGLEEXP == 1 or
-            (xi.settings.main.MOOGLEEXP > 1 and xi.settings.main.MOOGLEEXP < GetSystemTime()) or
+            xi.eraEvents.moogleExp.getIsActive() or
             (player:getMainLvl() < 75 and totalExp < expCap)
         then
-            player:addStatusEffect(xi.effect.DEDICATION, 100, 60, 10800, 0, 80000) -- Current EXP Buff
+            player:addStatusEffect(xi.effect.DEDICATION, { power = 100, tick = 60, duration = 10800, subPower = 80000, origin = player }) -- Current EXP Buff
         elseif totalExp >= expCap and player:getCharVar('BroLockV1') == 0 then
             player:printToPlayer('Oh, bro, you\'ve grown so strong you don\'t need my magic anymore!', xi.msg.channel.SAY, 'B.R.O. Moogle')
             player:setCharVar('BroLockV1', 1)

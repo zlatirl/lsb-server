@@ -24,6 +24,11 @@ xi.assault.pickUnappraisedItem = function(player, npc, qItemTable)
     return npc:getLocalVar('UnappraisedItem')
 end
 
+-- ERA Custom: hook for the assaultRewards scheduled event
+xi.assault.getUnappraisedOrigin = function(player, itemId, assaultID)
+    return assaultID
+end
+
 xi.assault.assaultChestTrigger = function(player, npc, qItemTable, regItemTable)
     -- Early return: Chest already opened.
     if npc:getLocalVar('open') ~= 0 then
@@ -53,7 +58,7 @@ xi.assault.assaultChestTrigger = function(player, npc, qItemTable, regItemTable)
                 return
             end
 
-            player:addItem({ id = unappraisedItem, appraisal = assaultID })
+            player:addItem({ id = unappraisedItem, appraisal = xi.assault.getUnappraisedOrigin(player, unappraisedItem, assaultID) }) -- ERA Custom
 
             for _, member in pairs(instance:getChars()) do
                 member:messageName(zoneText.PLAYER_OBTAINS_ITEM, player, unappraisedItem)

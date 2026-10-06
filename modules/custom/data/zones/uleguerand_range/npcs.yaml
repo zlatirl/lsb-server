@@ -1,0 +1,11 @@
+# ERA Custom: NPCs added, moved or reskinned for era (was modules/custom/sql/ffera_custom_npcs.sql)
+npcs:
+
+  16798101:
+    at:       [541.376, -43.997, 300.202, 95]
+    status:   normal
+    render:
+      look:
+        type:  standard
+        model: 2425
+    widescan: false

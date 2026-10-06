@@ -1,0 +1,108 @@
+# ERA Custom: NPCs added, moved or reskinned for era (was modules/custom/sql/ffera_custom_npcs.sql)
+npcs:
+
+  17772570:
+    at:     [-71.000, 6.000, 8.000, 24]
+    render:
+      look:
+        type:  standard
+        model: 416
+        race:  null
+        face:  null
+        head:  null
+        body:  null
+        hands: null
+        legs:  null
+        feet:  null
+        main:  null
+        sub:   null
+      moving: null
+
+  17772574:
+    at:     [-66.000, 6.000, 8.000, 65]
+    render:
+      look:
+        type:  standard
+        model: 643
+      moving: null
+
+  17772578:
+    at:     [-57.000, 6.000, 4.000, 91]
+    render:
+      look:
+        type:  standard
+        model: 2418
+        race:  null
+        face:  null
+        head:  null
+        body:  null
+        hands: null
+        legs:  null
+        feet:  null
+        main:  null
+        sub:   null
+
+  17772596:
+    at:     [-54.000, 6.000, -13.000, 125]
+    render:
+      look:
+        type:  standard
+        model: 1997
+        race:  null
+        face:  null
+        head:  null
+        body:  null
+        hands: null
+        legs:  null
+        feet:  null
+        main:  null
+        sub:   null
+
+  17772673:
+    script:   Bro_Moogle
+    at:       [-70.800, 5.591, -7.947, 0]
+    status:   normal
+    render:
+      look:
+        type:  standard
+        model: 2366
+    widescan: true
+
+  17772771:
+    at:     [-58.000, 6.000, 6.000, 92]
+    render:
+      look:
+        type:  standard
+        model: 358
+        race:  null
+        face:  null
+        head:  null
+        body:  null
+        hands: null
+        legs:  null
+        feet:  null
+        main:  null
+        sub:   null
+
+  17772772:
+    at:              [-61.000, 6.000, -6.000, 0]
+    status:          normal
+    render:
+      look:
+        type:  standard
+        model: 2106
+      moving: null
+    speed:           40
+    animation_speed: 40
+
+  17772776:
+    content: null
+
+  17772850:
+    at:       [-14.000, 1.000, 131.000, 235]
+    status:   normal
+    render:
+      look:
+        type:  standard
+        model: 2425
+    widescan: false

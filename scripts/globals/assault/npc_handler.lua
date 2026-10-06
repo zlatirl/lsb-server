@@ -139,6 +139,9 @@ local function getMaxTagStock(player)
     return 4
 end
 
+-- ERA Custom: used by the assault scheduled event
+xi.assault.getMaxTagStock = getMaxTagStock
+
 local function initializeTagStock(player, maxTagStock)
     local tagStock    = player:getCurrency('id_tags')
     local tagDrawTime = player:getCharVar('tagDrawTime') -- Time when the player last drew a tag from a full stock; 0 if no timer is running
@@ -202,9 +205,15 @@ local function replenishFromTimer(player, tagStock, maxTagStock, idTagPeriod)
     return tagStock, allTagsTimeCS
 end
 
+-- ERA Custom: hook for the assault scheduled event
+xi.assault.getTagRestockPeriod = function(player, idTagPeriod)
+    return idTagPeriod
+end
+
 local function calculateTags(player)
     local idTagPeriod = player:hasKeyItem(xi.keyItem.RHAPSODY_IN_AZURE) and 600 or 86400 -- Restock is 1 tag per day, or 1 tag per 10 minutes with Rhapsody in Azure equipped
-    local maxTagStock = getMaxTagStock(player)
+    idTagPeriod       = xi.assault.getTagRestockPeriod(player, idTagPeriod) -- ERA Custom
+    local maxTagStock = xi.assault.getMaxTagStock(player) -- ERA Custom
     local tagStock    = initializeTagStock(player, maxTagStock)
     tagStock          = applyMaxStockBonus(player, maxTagStock, tagStock)
 
@@ -269,7 +278,7 @@ xi.assault.onRytaalEventFinish = function(player, csid, option, npc)
         player:setCharVar('tagStockInitialized', 1)
 
         -- Start the replenishment timer only when taking from a full stock
-        if tagStock == getMaxTagStock(player) then
+        if tagStock == xi.assault.getMaxTagStock(player) then -- ERA Custom
             player:setCharVar('tagDrawTime', GetSystemTime())
         end
 

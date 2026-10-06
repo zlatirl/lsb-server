@@ -504,7 +504,7 @@ auto calculateSynthResult(CCharEntity* PChar) -> uint8
 {
     uint8  synthResult     = SYNTHESIS_SUCCESS;
     uint8  skillID         = 0;
-    uint8  finalHQTier     = 4;
+    uint8  finalHQTier     = 5; // ERA Custom: extra tier for 81+ levels over recipe
     uint8  currentHQTier   = 0;
     int16  synthDifficulty = 0;
     double successRate     = 0.0;
@@ -548,9 +548,13 @@ auto calculateSynthResult(CCharEntity* PChar) -> uint8
         {
             currentHQTier = 3;
         }
-        else // 51 or more levels over recipe.
+        else if (synthDifficulty >= -80) // 51-80 levels over recipe. ERA Custom: split from 51+
         {
             currentHQTier = 4;
+        }
+        else // 81 or more levels over recipe. ERA Custom
+        {
+            currentHQTier = 5;
         }
 
         // Set final HQ Tier available if needed.
@@ -595,20 +599,24 @@ auto calculateSynthResult(CCharEntity* PChar) -> uint8
         return SYNTHESIS_SUCCESS;
     }
 
+    // ERA Custom: era HQ rates (retail: T0 1/64, T1 1/16, T2 1/4, T3 1/2, capped at 80%)
     double chanceHQ = 0.0;
     switch (finalHQTier)
     {
-        case 4: // 1 in 2
+        case 5:
+            chanceHQ = 60.0;
+            break;
+        case 4:
             chanceHQ = 50.0;
             break;
-        case 3: // 1 in 4
+        case 3:
             chanceHQ = 25.0;
             break;
-        case 2: // 1 in 16
-            chanceHQ = 6.25;
+        case 2:
+            chanceHQ = 7.0;
             break;
-        case 1: // 1 in 64
-            chanceHQ = 1.5625;
+        case 1:
+            chanceHQ = 3.0;
             break;
         default: // No chance
             chanceHQ = 0.0;
@@ -619,7 +627,7 @@ auto calculateSynthResult(CCharEntity* PChar) -> uint8
     chanceHQ = (chanceHQ + 100.0 * static_cast<double>(PChar->getMod(xi::Mod::SYNTH_HQ_RATE)) / 512.0) * settings::get<double>("map.CRAFT_HQ_CHANCE_MULTIPLIER");
 
     // Limit max hq chance
-    chanceHQ = std::min(chanceHQ, 80.0);
+    chanceHQ = std::min(chanceHQ, 75.0); // ERA Custom: retail 80
 
     // Early return: We fail HQ check.
     if (xirand::GetRandomNumber(0.0, 100.0) > chanceHQ)

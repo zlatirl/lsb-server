@@ -1,0 +1,26 @@
+# ERA Custom: NPCs added, moved or reskinned for era (was modules/custom/sql/ffera_custom_npcs.sql)
+npcs:
+
+  17908258:
+    script:  qm1
+    at:      [-179.000, -440.000, -140.000, 0]
+    content: toau
+
+  17908259:
+    script:  qm2
+    at:      [811.000, 89.000, 60.000, 0]
+    content: toau
+
+  17908260:
+    script:  qm3
+    at:      [-199.000, -449.000, -200.000, 0]
+    content: toau
+
+  17908263:
+    content: toau
+
+  17908268:
+    content: toau
+
+  17908269:
+    content: toau

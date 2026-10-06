@@ -8,11 +8,7 @@
 local entity = {}
 
 entity.onTrigger = function(player, npc)
-    if xi.events.skillUp.onNpcTrigger(npc, player) then
-        return
-    else
-        player:startEvent(82, player:getFame(xi.fameArea.JEUNO))
-    end
+    player:startEvent(82, player:getFame(xi.fameArea.JEUNO))
 end
 
 return entity

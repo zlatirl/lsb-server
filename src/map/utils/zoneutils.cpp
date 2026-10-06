@@ -35,6 +35,7 @@
 #include "data/enums/mob_mod.h"
 #include "data/enums/weather.h"
 #include "data/loader.h"
+#include "dataset_loader.h"
 #include "entities/mob_entity.h"
 #include "entities/npc_entity.h"
 #include "items/item_weapon.h"
@@ -958,8 +959,8 @@ auto LoadZones(Scheduler& scheduler, MapConfig config, const std::vector<xi::Zon
                     {
                         TracyZoneScoped;
 
-                        records.Npcs = xi::data::loadZoneFile<NpcsDataset>(zoneId);
-                        records.Mobs = xi::data::loadZoneFile<MobsDataset>(zoneId);
+                        records.Npcs = xi::data::loadMergedZoneFile<NpcsDataset>(zoneId); // ERA Custom: module overlays
+                        records.Mobs = xi::data::loadMergedZoneFile<MobsDataset>(zoneId); // ERA Custom: module overlays
                     }));
             }
         });

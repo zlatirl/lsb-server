@@ -1,0 +1,20 @@
+# ERA Custom: NPCs added, moved or reskinned for era (was modules/custom/sql/ffera_custom_npcs.sql)
+npcs:
+
+  17404388:
+    script: Mentor_Moogle
+    at:     [-102.000, 7.000, -84.000, 125]
+    status: normal
+    render:
+      look:
+        type:  standard
+        model: 2364
+
+  17404389:
+    script: Mentor_Moogle
+    at:     [212.000, 5.000, -60.000, 12]
+    status: normal
+    render:
+      look:
+        type:  standard
+        model: 2364

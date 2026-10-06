@@ -136,6 +136,16 @@ xi.assault.missionsByArea =
     },
 }
 
+-- Logs stamped at the Rune of Release; flag N is the Nth mission in missionsByArea
+xi.assault.assaultLogs =
+{
+    [xi.assault.assaultArea.LEUJAOAM_SANCTUM]           = xi.item.LEUJAOAM_OBSERVATION_LOG,
+    [xi.assault.assaultArea.MAMOOL_JA_TRAINING_GROUNDS] = xi.item.MAMOOL_JA_BATTLE_JOURNAL,
+    [xi.assault.assaultArea.LEBROS_CAVERN]              = xi.item.LEBROS_EXPLORATION_CHRONICLE,
+    [xi.assault.assaultArea.PERIQIA]                    = xi.item.PERIQIA_ADVENTURE_DIARY,
+    [xi.assault.assaultArea.ILRUSI_ATOLL]               = xi.item.ILRUSI_TRAVEL_LEDGER,
+}
+
 xi.assault.missionToArea = {}
 for area, missions in pairs(xi.assault.missionsByArea) do
     for _, missionId in ipairs(missions) do

@@ -1,0 +1,44 @@
+# ERA Custom: NPCs added, moved or reskinned for era (was modules/custom/sql/ffera_custom_npcs.sql)
+npcs:
+
+  17686554:
+    script:          Pil
+    display_name:    Pil
+    at:              [-623.000, -20.000, -463.000, 235]
+    status:          normal
+    render:
+      look:
+        type:  standard
+        model: 2140
+      moving:       1
+      entity_flags: 3
+      name_prefix:  0
+      name_vis:     100
+    speed:           50
+    animation_speed: 50
+    widescan:        true
+    content:         null
+
+  17686578:
+    at:       [-631.087, -20.425, -462.653, 48]
+    status:   normal
+    render:
+      look:
+        type:  standard
+        model: 2425
+    widescan: false
+
+  17686586:
+    at: [-656.000, -20.000, -539.000, 192]
+
+  17686587:
+    at: [-635.000, -20.000, -485.000, 192]
+
+  17686620:
+    at:     [-648.807, -19.660, -487.959, 0]
+    status: normal
+    render:
+      look:
+        type:  standard
+        model: 85
+      entity_flags: 2

@@ -1,0 +1,59 @@
+# ERA Custom: NPCs added, moved or reskinned for era (was modules/custom/sql/ffera_custom_npcs.sql)
+npcs:
+
+  17784898:
+    at:     [42.711, 0.000, -5.889, 160]
+    render:
+      look:
+        type:  standard
+        model: 410
+        race:  null
+        face:  null
+        head:  null
+        body:  null
+        hands: null
+        legs:  null
+        feet:  null
+        main:  null
+        sub:   null
+
+  17784901:
+    at:     [37.371, 0.000, -14.146, 61]
+    render:
+      look:
+        type:  standard
+        model: 2225
+        race:  null
+        face:  null
+        head:  null
+        body:  null
+        hands: null
+        legs:  null
+        feet:  null
+        main:  null
+        sub:   null
+
+  17784912:
+    render:
+      look:
+        type:  standard
+        model: 1997
+        race:  null
+        face:  null
+        head:  null
+        body:  null
+        hands: null
+        legs:  null
+        feet:  null
+        main:  null
+        sub:   null
+
+  17784938:
+    script:   Bro_Moogle
+    at:       [28.000, 0.000, -9.000, 197]
+    status:   normal
+    render:
+      look:
+        type:  standard
+        model: 2366
+    widescan: true

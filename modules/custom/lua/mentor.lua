@@ -1,9 +1,42 @@
 -----------------------------------
 -- Moogle Buffs
 -----------------------------------
+require('modules/module_utils')
+-----------------------------------
+local m = Module:new('era_mentor_moogles')
 
 xi = xi or {}
 xi.mentor = xi.mentor or {}
+
+local moogleBuffs =
+{
+    xi.effect.PROTECT,
+    xi.effect.SHELL,
+    xi.effect.REGEN,
+    xi.effect.REFRESH,
+    xi.effect.RERAISE,
+    xi.effect.REGAIN,
+    xi.effect.MND_BOOST,
+    xi.effect.MAX_MP_BOOST,
+    xi.effect.MAX_HP_BOOST,
+    xi.effect.PHALANX,
+    xi.effect.BALLAD,
+    xi.effect.ACCURACY_BOOST,
+    xi.effect.STR_BOOST, -- Mentor Only
+    xi.effect.HASTE,     -- Mentor Only
+}
+
+m:addOverride('xi.player.onGameIn', function(player, firstLogin, zoning)
+    super(player, firstLogin, zoning)
+
+    if player:getCharVar('MoogleBuffs') == 1 then
+        for _, effect in ipairs(moogleBuffs) do
+            player:delStatusEffect(effect)
+        end
+
+        player:setCharVar('MoogleBuffs', 0)
+    end
+end)
 
 -----------------------------------
 -- Field Moogle Buffs
@@ -80,23 +113,23 @@ xi.mentor.clickMoogle = function(player, npc)
     }
 
     local area = zones[zoneid]
-    if plevel >= area.low and plevel <= area.high then
+    if area and plevel >= area.low and plevel <= area.high then
         if player:getCharVar('MentorFlag') == 0 then
-            player:addStatusEffect(xi.effect.PROTECT, protect, 0, lvlduration)
-            player:addStatusEffect(xi.effect.SHELL, shell, 0, lvlduration)
-            player:addStatusEffect(xi.effect.REGEN, regenfresh, 3, lvlduration)
-            player:addStatusEffect(xi.effect.REFRESH, regenfresh, 3, lvlduration)
-            player:addStatusEffect(xi.effect.RERAISE, 1, 0, lvlduration)
+            player:addStatusEffect(xi.effect.PROTECT, { power = protect, duration = lvlduration, origin = player })
+            player:addStatusEffect(xi.effect.SHELL, { power = shell, duration = lvlduration, origin = player })
+            player:addStatusEffect(xi.effect.REGEN, { power = regenfresh, tick = 3, duration = lvlduration, origin = player })
+            player:addStatusEffect(xi.effect.REFRESH, { power = regenfresh, tick = 3, duration = lvlduration, origin = player })
+            player:addStatusEffect(xi.effect.RERAISE, { power = 1, duration = lvlduration, origin = player })
             player:setCharVar('MoogleBuffs', 1)
             player:printToPlayer('Enjoy your 60min Non-Mentor buffs, they\'re removed when you zone.', xi.msg.channel.SAY, 'Moogle')
         else
-            player:addStatusEffect(xi.effect.PROTECT, protect, 0, mentorduration)
-            player:addStatusEffect(xi.effect.SHELL, shell, 0, mentorduration)
-            player:addStatusEffect(xi.effect.REGEN, regenfresh, 3, mentorduration)
-            player:addStatusEffect(xi.effect.REFRESH, regenfresh, 3, mentorduration)
-            player:addStatusEffect(xi.effect.RERAISE, 1, 0, mentorduration)
-            player:addStatusEffect(xi.effect.STR_BOOST, 10, 0, mentorduration) -- Mentor Only
-            player:addStatusEffect(xi.effect.HASTE, 1000, 0, mentorduration) -- Mentor Only
+            player:addStatusEffect(xi.effect.PROTECT, { power = protect, duration = mentorduration, origin = player })
+            player:addStatusEffect(xi.effect.SHELL, { power = shell, duration = mentorduration, origin = player })
+            player:addStatusEffect(xi.effect.REGEN, { power = regenfresh, tick = 3, duration = mentorduration, origin = player })
+            player:addStatusEffect(xi.effect.REFRESH, { power = regenfresh, tick = 3, duration = mentorduration, origin = player })
+            player:addStatusEffect(xi.effect.RERAISE, { power = 1, duration = mentorduration, origin = player })
+            player:addStatusEffect(xi.effect.STR_BOOST, { power = 10, duration = mentorduration, origin = player }) -- Mentor Only
+            player:addStatusEffect(xi.effect.HASTE, { power = 1000, duration = mentorduration, origin = player }) -- Mentor Only
             player:setCharVar('MoogleBuffs', 1)
             player:printToPlayer('Enjoy your 60min Mentor buffs, they\'re removed when you zone.', xi.msg.channel.SAY, 'Moogle')
         end
@@ -135,14 +168,14 @@ xi.mentor.meritMoogle = function(player, npc)
             v:delStatusEffectsByFlag(xi.effectFlag.DISPELABLE)
             v:printToPlayer('Welcome to the Era Merit Moogle', xi.msg.channel.SAY, 'Merit Moogle')
             v:setCharVar('MoogleBuffs', 1)
-            v:addStatusEffect(xi.effect.RERAISE, 1, 0, 3600)
-            v:addStatusEffect(xi.effect.PROTECT, 120, 0, 3600)
-            v:addStatusEffect(xi.effect.SHELL, 22, 0, 3600)
-            v:addStatusEffect(xi.effect.REGEN, gen, 0, 3600)
-            v:addStatusEffect(xi.effect.REFRESH, 3, 0, 3600)
+            v:addStatusEffect(xi.effect.RERAISE, { power = 1,   duration = 3600, origin = v })
+            v:addStatusEffect(xi.effect.PROTECT, { power = 120, duration = 3600, origin = v })
+            v:addStatusEffect(xi.effect.SHELL,   { power = 22,  duration = 3600, origin = v })
+            v:addStatusEffect(xi.effect.REGEN,   { power = gen, duration = 3600, origin = v })
+            v:addStatusEffect(xi.effect.REFRESH, { power = 3,   duration = 3600, origin = v })
 
             if balladJobs[v:getMainJob()] then
-                v:addStatusEffect(xi.effect.BALLAD, 2, 0, 3600)
+                v:addStatusEffect(xi.effect.BALLAD, { power = 2, duration = 3600, origin = v })
             end
         end
     end
@@ -174,23 +207,23 @@ xi.mentor.meritMoogleMentor = function(player, npc)
             v:delStatusEffectsByFlag(xi.effectFlag.DISPELABLE)
             v:printToPlayer('Welcome to the Era Merit Moogle, Bonus Mentor Buffs!', xi.msg.channel.SAY, 'Merit Moogle')
             v:setCharVar('MoogleBuffs', 1)
-            v:addStatusEffect(xi.effect.RERAISE, 2, 0, 3600)
-            v:addStatusEffect(xi.effect.PROTECT, 120, 0, 3600)
-            v:addStatusEffect(xi.effect.SHELL, 22, 0, 3600)
-            v:addStatusEffect(xi.effect.REGEN, gen, 0, 3600)
+            v:addStatusEffect(xi.effect.RERAISE, { power = 2, duration = 3600, origin = v })
+            v:addStatusEffect(xi.effect.PROTECT, { power = 120, duration = 3600, origin = v })
+            v:addStatusEffect(xi.effect.SHELL, { power = 22, duration = 3600, origin = v })
+            v:addStatusEffect(xi.effect.REGEN, { power = gen, duration = 3600, origin = v })
 
             if v:getMainJob() == xi.job.BLM or v:getMainJob() == xi.job.SMN then
-                v:addStatusEffect(xi.effect.BALLAD, 3, 0, 3600)
+                v:addStatusEffect(xi.effect.BALLAD, { power = 3, duration = 3600, origin = v })
             elseif v:getMainJob() == xi.job.SAM or v:getMainJob() == xi.job.DRG then
-                v:addStatusEffect(xi.effect.REGAIN, (gen * 2), 0, 3600)
+                v:addStatusEffect(xi.effect.REGAIN, { power = (gen * 2), duration = 3600, origin = v })
             elseif v:getMainJob() == xi.job.WHM or v:getMainJob() == xi.job.SCH then
-                v:addStatusEffect(xi.effect.MND_BOOST, 10, 0, 3600)
-                v:addStatusEffect(xi.effect.MAX_MP_BOOST, 100, 0, 0)
+                v:addStatusEffect(xi.effect.MND_BOOST, { power = 10, duration = 3600, origin = v })
+                v:addStatusEffect(xi.effect.MAX_MP_BOOST, { power = 100, duration = 0, origin = v })
             elseif v:getMainJob() == xi.job.PLD or v:getMainJob() == xi.job.NIN then
-                v:addStatusEffect(xi.effect.PHALANX, (gen) * 10, 0, 3600)
-                v:addStatusEffect(xi.effect.MAX_HP_BOOST, 100, 0, 0)
+                v:addStatusEffect(xi.effect.PHALANX, { power = (gen) * 10, duration = 3600, origin = v })
+                v:addStatusEffect(xi.effect.MAX_HP_BOOST, { power = 100, duration = 0, origin = v })
             elseif v:getMainJob() == xi.job.PUP or v:getMainJob() == xi.job.BST then
-                v:addStatusEffect(xi.effect.ACCURACY_BOOST, 15, 0, 3600)
+                v:addStatusEffect(xi.effect.ACCURACY_BOOST, { power = 15, duration = 3600, origin = v })
             end
         end
     end
@@ -211,27 +244,27 @@ xi.mentor.meritMoogleSigil = function(player, npc, trade)
         player:delStatusEffect(xi.effect.SIGIL)
         player:delStatusEffect(xi.effect.SANCTION)
         player:delStatusEffect(xi.effect.SIGNET)
-        player:addStatusEffect(xi.effect.SIGIL, 3, 0, 3600, 0, 35, 0) -- both
+        player:addStatusEffect(xi.effect.SIGIL, { power = 3, duration = 3600, subPower = 35, origin = player }) -- both
         player:delCurrency('allied_notes', 150)
     elseif alliedNotes >= 100 and gil3k then
         player:confirmTrade()
         player:delStatusEffect(xi.effect.SIGIL)
         player:delStatusEffect(xi.effect.SANCTION)
         player:delStatusEffect(xi.effect.SIGNET)
-        player:addStatusEffect(xi.effect.SIGIL, 2, 0, 3600, 0, 35, 0) -- refresh
+        player:addStatusEffect(xi.effect.SIGIL, { power = 2, duration = 3600, subPower = 35, origin = player }) -- refresh
         player:delCurrency('allied_notes', 100)
     elseif gil2k then
         player:confirmTrade()
         player:delStatusEffect(xi.effect.SIGIL)
         player:delStatusEffect(xi.effect.SANCTION)
         player:delStatusEffect(xi.effect.SIGNET)
-        player:addStatusEffect(xi.effect.SIGIL, 1, 0, 3600, 0, 35, 0) -- regen
+        player:addStatusEffect(xi.effect.SIGIL, { power = 1, duration = 3600, subPower = 35, origin = player }) -- regen
     elseif alliedNotes >= 50 and gil1k then
         player:confirmTrade()
         player:delStatusEffect(xi.effect.SIGIL)
         player:delStatusEffect(xi.effect.SANCTION)
         player:delStatusEffect(xi.effect.SIGNET)
-        player:addStatusEffect(xi.effect.SIGIL, 0, 0, 3600, 0, 35, 0)
+        player:addStatusEffect(xi.effect.SIGIL, { power = 0, duration = 3600, subPower = 35, origin = player })
         player:delCurrency('allied_notes', 50)
     end
 end
@@ -476,5 +509,66 @@ xi.mentor.openShop = function(player, npc)
         player:printToPlayer('Hmm... You might need to level up more for me to sell you items, kupo!', xi.msg.channel.SAY, 'Moogle')
     end
 end
+
+-----------------------------------
+-- Provenance Crystal: Mentor sign up and rewards
+-----------------------------------
+xi.module.ensureTable('xi.zones.Provenance.npcs.Provenance_Crystal')
+
+local mentorShop =
+{
+    { xi.item.FURIA_LEGGINGS,         1 },
+    { xi.item.EBUR_LEGGINGS,          1 },
+    { xi.item.FURIA_HOSE,             1 },
+    { xi.item.EBUR_HOSE,              1 },
+    { xi.item.FURIA_GAUNTLETS,        1 },
+    { xi.item.EBUR_GAUNTLETS,         1 },
+    { xi.item.FURIA_BREASTPLATE,      1 },
+    { xi.item.EBUR_BREASTPLATE,       1 },
+    { xi.item.FURIA_ARMET,            1 },
+    { xi.item.EBUR_ARMET,             1 },
+    { xi.item.FLASK_OF_POISON_POTION, 200 },
+}
+
+m:addOverride('xi.zones.Provenance.npcs.Provenance_Crystal.onTrigger', function(player, npc)
+    local mentorFlag  = player:getCharVar('MentorFlag')
+    local mentorIntro = player:getLocalVar('MentorIntro')
+    local playtime    = player:getPlaytime(false)
+    local mainLevel   = player:getMainLvl()
+
+    -- Non-mentor player, eligible for mentor status
+    if mentorFlag == 0 and playtime < 1800 and mainLevel == 1 then
+        if mentorIntro == 0 then
+            player:printToPlayer('Touching this crystal again will set this character to Mentor status.', xi.msg.channel.SAY, 'Era Staff')
+            player:printToPlayer('Mentor is a life-long commitment of a 1x EXP rate that is not reversible.', xi.msg.channel.SAY, 'Era Staff')
+            player:printToPlayer('It\'s recommended you read up on it at https://ffera.fandom.com/wiki/Mentor', xi.msg.channel.SAY, 'Era Staff')
+            player:setLocalVar('MentorIntro', 1)
+        elseif mentorIntro == 1 then
+            player:printToPlayer('We\'re very serious about this being a permanent change! We will not change it afterwards!', xi.msg.channel.SAY, 'Era Staff')
+            player:printToPlayer('Touch this crystal again only if you are very certain you want to become a Mentor!', xi.msg.channel.SAY, 'Era Staff')
+            player:setLocalVar('MentorIntro', 2)
+        elseif mentorIntro == 2 then
+            player:printToPlayer('This contract... is SEALED!', xi.msg.channel.SAY, 'Era Staff')
+            player:printToPlayer('You are now a Mentor forever. As a token of our sympathy, here\'s a Chocobo Whistle!', xi.msg.channel.SAY, 'Era Staff')
+
+            player:setMentor(true)
+            player:setCharVar('MentorFlag', 1)
+            -- player:setSpeed(150) need to find a better way to set speed for mentors
+            npcUtil.giveItem(player, xi.item.CHOCOBO_WHISTLE)
+            player:setLocalVar('MentorIntro', 0)
+        end
+
+    -- Already a mentor
+    elseif mentorFlag == 1 then
+        if mainLevel >= 75 and not player:hasKeyItem(xi.keyItem.GOOBBUE_COMPANION) then
+            player:printToPlayer('In recognition of attaining level 75 on a job as a Mentor, enjoy this exclusive gift!', xi.msg.channel.SAY, 'Era Staff')
+            npcUtil.giveKeyItem(player, xi.keyItem.GOOBBUE_COMPANION)
+        elseif mainLevel >= 71 then
+            xi.shop.general(player, mentorShop)
+        else
+            player:printToPlayer('Continue your journey as a Mentor. Special rewards await at level 71+!', xi.msg.channel.SAY, 'Era Staff')
+        end
+    end
+end)
 
 return xi.mentor

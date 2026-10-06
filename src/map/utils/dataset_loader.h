@@ -67,4 +67,39 @@ auto loadDataset() -> typename Dataset::Records
     }
 }
 
+// ERA Custom: loadZoneFile, plus any modules/<module>/data/zones/<zone>/<kDataPath>.yaml merged over it.
+template <class Dataset>
+auto loadMergedZoneFile(const xi::ZoneId zoneId) -> std::optional<typename Dataset::Records>
+{
+    const auto modules = moduleutils::GetDataModules(fmt::format("zones/{}/{}", EnumTraits<xi::ZoneId>::toName(zoneId), Dataset::kDataPath), ".yaml");
+    if (modules.empty())
+    {
+        return loadZoneFile<Dataset>(zoneId);
+    }
+
+    const auto path = zoneFilePath(zoneId, Dataset::kDataPath);
+    if (!std::filesystem::exists(path))
+    {
+        ShowWarningFmt("{} does not exist, ignoring {} module overlay(s)", path, modules.size());
+        return std::nullopt;
+    }
+
+    try
+    {
+        auto records = Dataset::decode(loadMergedYaml(path, modules));
+        if constexpr (requires { Dataset::verifyZone(records, zoneId); })
+        {
+            Dataset::verifyZone(records, zoneId);
+        }
+
+        ShowInfoFmt("[data] {}  +{} module{}", path, modules.size(), modules.size() == 1 ? "" : "s");
+        return records;
+    }
+    catch (const std::exception& error)
+    {
+        ShowCriticalFmt("{} (with module overlays) is not valid: {}", path, error.what());
+        std::exit(-1);
+    }
+}
+
 } // namespace xi::data

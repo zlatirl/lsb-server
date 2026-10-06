@@ -55,14 +55,30 @@ custom/lua/homepoint_crystal_exchange.lua
 custom/lua/elemental_grip_trade.lua
 custom/lua/chatoyant_staff_trade.lua
 custom/lua/era_custom_trades.lua
+custom/lua/sanraku_zeni_trades.lua
+custom/lua/gm_speed.lua
+custom/lua/assault_tags.lua
+custom/lua/martial_mastery.lua
+custom/lua/era_augments/
+custom/lua/era_commands/
 
 # SQL files
-custom/sql/ffera_custom_npcs.sql
 custom/sql/era_mob_adjustments.sql
 custom/sql/era_custom_synths.sql
 custom/sql/AH_adjustments.sql
 custom/sql/era_custom_drops.sql
 custom/sql/era_custom_equipment.sql
+custom/sql/era_s_zone_fishing.sql
+custom/sql/era_fishing_adjustments.sql
+
+# ------------------------------------
+# Era Events (scheduled with !event)
+# ------------------------------------
+
+custom/lua/events/
+
+# Lua bindings for the events
+custom/cpp/era_events.cpp
 
 # ------------------------------------
 # Dynamis
