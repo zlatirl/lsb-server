@@ -1,0 +1,419 @@
+# Era Dynamis: the wave engine spawns every mob itself, so none of the zone's own mobs may spawn.
+
+templates:
+  Adamantking_Effigy:
+    attributes:
+      spawn:
+        type: [scripted]
+  Andrass_Vouivre:
+    attributes:
+      spawn:
+        type: [scripted]
+  Animated_Claymore:
+    attributes:
+      spawn:
+        type: [scripted]
+  Animated_Dagger:
+    attributes:
+      spawn:
+        type: [scripted]
+  Animated_Great_Axe:
+    attributes:
+      spawn:
+        type: [scripted]
+  Animated_Gun:
+    attributes:
+      spawn:
+        type: [scripted]
+  Animated_Hammer:
+    attributes:
+      spawn:
+        type: [scripted]
+  Animated_Horn:
+    attributes:
+      spawn:
+        type: [scripted]
+  Animated_Knuckles:
+    attributes:
+      spawn:
+        type: [scripted]
+  Animated_Kunai:
+    attributes:
+      spawn:
+        type: [scripted]
+  Animated_Longbow:
+    attributes:
+      spawn:
+        type: [scripted]
+  Animated_Longsword:
+    attributes:
+      spawn:
+        type: [scripted]
+  Animated_Scythe:
+    attributes:
+      spawn:
+        type: [scripted]
+  Animated_Shield:
+    attributes:
+      spawn:
+        type: [scripted]
+  Animated_Spear:
+    attributes:
+      spawn:
+        type: [scripted]
+  Animated_Staff:
+    attributes:
+      spawn:
+        type: [scripted]
+  Animated_Tabar:
+    attributes:
+      spawn:
+        type: [scripted]
+  Animated_Tachi:
+    attributes:
+      spawn:
+        type: [scripted]
+  Arch_Dynamis_Lord:
+    attributes:
+      spawn:
+        type: [scripted]
+  Avatar_Icon:
+    attributes:
+      spawn:
+        type: [scripted]
+  Baron_Avnas:
+    attributes:
+      spawn:
+        type: [scripted]
+  Caims_Vouivre:
+    attributes:
+      spawn:
+        type: [scripted]
+  Count_Haagenti:
+    attributes:
+      spawn:
+        type: [scripted]
+  Count_Raum:
+    attributes:
+      spawn:
+        type: [scripted]
+  Count_Vine:
+    attributes:
+      spawn:
+        type: [scripted]
+  Count_Zaebos:
+    attributes:
+      spawn:
+        type: [scripted]
+  Duke_Berith:
+    attributes:
+      spawn:
+        type: [scripted]
+  Duke_Gomory:
+    attributes:
+      spawn:
+        type: [scripted]
+  Duke_Haures:
+    attributes:
+      spawn:
+        type: [scripted]
+  Duke_Scox:
+    attributes:
+      spawn:
+        type: [scripted]
+  Dynamis_Lord:
+    attributes:
+      spawn:
+        type: [scripted]
+  Effigy_Prototype:
+    attributes:
+      spawn:
+        type: [scripted]
+  Goblin_Replica:
+    attributes:
+      spawn:
+        type: [scripted]
+  Haagentis_Avatar:
+    attributes:
+      spawn:
+        type: [scripted]
+  Icon_Prototype:
+    attributes:
+      spawn:
+        type: [scripted]
+  Kindred_Bard:
+    attributes:
+      spawn:
+        type: [scripted]
+  Kindred_Bard_HI:
+    attributes:
+      spawn:
+        type: [scripted]
+  Kindred_Beastmaster:
+    attributes:
+      spawn:
+        type: [scripted]
+  Kindred_Beastmaster_HI:
+    attributes:
+      spawn:
+        type: [scripted]
+  Kindred_Black_Mage:
+    attributes:
+      spawn:
+        type: [scripted]
+  Kindred_Black_Mage_HI:
+    attributes:
+      spawn:
+        type: [scripted]
+  Kindred_Dark_Knight:
+    attributes:
+      spawn:
+        type: [scripted]
+  Kindred_Dark_Knight_HI:
+    attributes:
+      spawn:
+        type: [scripted]
+  Kindred_Dragoon:
+    attributes:
+      spawn:
+        type: [scripted]
+  Kindred_Dragoon_HI:
+    attributes:
+      spawn:
+        type: [scripted]
+  Kindred_Monk:
+    attributes:
+      spawn:
+        type: [scripted]
+  Kindred_Monk_HI:
+    attributes:
+      spawn:
+        type: [scripted]
+  Kindred_Ninja:
+    attributes:
+      spawn:
+        type: [scripted]
+  Kindred_Ninja_HI:
+    attributes:
+      spawn:
+        type: [scripted]
+  Kindred_Paladin:
+    attributes:
+      spawn:
+        type: [scripted]
+  Kindred_Paladin_HI:
+    attributes:
+      spawn:
+        type: [scripted]
+  Kindred_Ranger:
+    attributes:
+      spawn:
+        type: [scripted]
+  Kindred_Ranger_HI:
+    attributes:
+      spawn:
+        type: [scripted]
+  Kindred_Red_Mage:
+    attributes:
+      spawn:
+        type: [scripted]
+  Kindred_Red_Mage_HI:
+    attributes:
+      spawn:
+        type: [scripted]
+  Kindred_Samurai:
+    attributes:
+      spawn:
+        type: [scripted]
+  Kindred_Samurai_HI:
+    attributes:
+      spawn:
+        type: [scripted]
+  Kindred_Summoner:
+    attributes:
+      spawn:
+        type: [scripted]
+  Kindred_Summoner_HI:
+    attributes:
+      spawn:
+        type: [scripted]
+  Kindred_Thief:
+    attributes:
+      spawn:
+        type: [scripted]
+  Kindred_Thief_HI:
+    attributes:
+      spawn:
+        type: [scripted]
+  Kindred_Warrior:
+    attributes:
+      spawn:
+        type: [scripted]
+  Kindred_Warrior_HI:
+    attributes:
+      spawn:
+        type: [scripted]
+  Kindred_White_Mage:
+    attributes:
+      spawn:
+        type: [scripted]
+  Kindred_White_Mage_HI:
+    attributes:
+      spawn:
+        type: [scripted]
+  Kindreds_Avatar:
+    attributes:
+      spawn:
+        type: [scripted]
+  Kindreds_Vouivre:
+    attributes:
+      spawn:
+        type: [scripted]
+  Kindreds_Wyvern:
+    attributes:
+      spawn:
+        type: [scripted]
+  King_Zagan:
+    attributes:
+      spawn:
+        type: [scripted]
+  Marquis_Andras:
+    attributes:
+      spawn:
+        type: [scripted]
+  Marquis_Caim:
+    attributes:
+      spawn:
+        type: [scripted]
+  Marquis_Cimeries:
+    attributes:
+      spawn:
+        type: [scripted]
+  Marquis_Decarabia:
+    attributes:
+      spawn:
+        type: [scripted]
+  Marquis_Gamygyn:
+    attributes:
+      spawn:
+        type: [scripted]
+  Marquis_Nebiros:
+    attributes:
+      spawn:
+        type: [scripted]
+  Marquis_Orias:
+    attributes:
+      spawn:
+        type: [scripted]
+  Marquis_Sabnak:
+    attributes:
+      spawn:
+        type: [scripted]
+  Nebiross_Avatar:
+    attributes:
+      spawn:
+        type: [scripted]
+  Prince_Seere:
+    attributes:
+      spawn:
+        type: [scripted]
+  Prototype_Eye:
+    attributes:
+      spawn:
+        type: [scripted]
+  Satellite_Claymores:
+    attributes:
+      spawn:
+        type: [scripted]
+  Satellite_Daggers:
+    attributes:
+      spawn:
+        type: [scripted]
+  Satellite_Great_Axes:
+    attributes:
+      spawn:
+        type: [scripted]
+  Satellite_Guns:
+    attributes:
+      spawn:
+        type: [scripted]
+  Satellite_Hammers:
+    attributes:
+      spawn:
+        type: [scripted]
+  Satellite_Horns:
+    attributes:
+      spawn:
+        type: [scripted]
+  Satellite_Knuckles:
+    attributes:
+      spawn:
+        type: [scripted]
+  Satellite_Kunai:
+    attributes:
+      spawn:
+        type: [scripted]
+  Satellite_Longbows:
+    attributes:
+      spawn:
+        type: [scripted]
+  Satellite_Longswords:
+    attributes:
+      spawn:
+        type: [scripted]
+  Satellite_Scythes:
+    attributes:
+      spawn:
+        type: [scripted]
+  Satellite_Shield:
+    attributes:
+      spawn:
+        type: [scripted]
+  Satellite_Spears:
+    attributes:
+      spawn:
+        type: [scripted]
+  Satellite_Staves:
+    attributes:
+      spawn:
+        type: [scripted]
+  Satellite_Tabars:
+    attributes:
+      spawn:
+        type: [scripted]
+  Satellite_Tachi:
+    attributes:
+      spawn:
+        type: [scripted]
+  Serjeant_Tombstone:
+    attributes:
+      spawn:
+        type: [scripted]
+  Statue_Prototype:
+    attributes:
+      spawn:
+        type: [scripted]
+  Tombstone_Prototype:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Dragon:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Eye:
+    attributes:
+      spawn:
+        type: [scripted]
+  Yang:
+    attributes:
+      spawn:
+        type: [scripted]
+  Ying:
+    attributes:
+      spawn:
+        type: [scripted]
+  Zagans_Wyvern:
+    attributes:
+      spawn:
+        type: [scripted]

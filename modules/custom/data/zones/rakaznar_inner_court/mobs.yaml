@@ -1,0 +1,208 @@
+# ERA Custom: Ra'Kaznar NMs; the zone's retail mobs are tagged ROV so they don't spawn.
+
+templates:
+  Apex_Bats:
+    content: rov
+  Apex_Bhoot:
+    content: rov
+  Apex_Cyhiraeth:
+    content: rov
+  Apex_Draugar_blm:
+    content: rov
+  Apex_Draugar_drg:
+    content: rov
+  Apex_Draugar_drk:
+    content: rov
+  Apex_Poxhound:
+    content: rov
+  Apex_Umbril:
+    content: rov
+  Apex_Vodoriga:
+    content: rov
+  Bilespouting_Acuex:
+    content: rov
+  Boilridden_Umbril:
+    content: rov
+  Conniving_Unseelie:
+    content: rov
+  Deserter_Draugar_blm:
+    content: rov
+  Deserter_Draugar_drg:
+    content: rov
+  Deserter_Draugar_drk:
+    content: rov
+  Dimensional_Tether:
+    content: rov
+  Disheveled_Naraka:
+    content: rov
+  Distraught_Draugar_4843:
+    content: rov
+  Distraught_Draugar_6577:
+    content: rov
+  Dolorous_Cyhiraeth:
+    type: [notorious]
+    attributes:
+      spawn:
+        respawn: 0
+        type:    [scripted]
+      stats:
+        hp: 35000
+        mp: 10000
+  Draftdance_Fluturini:
+    type: [notorious]
+    attributes:
+      spawn:
+        respawn: 0
+        type:    [scripted]
+      stats:
+        hp: 30000
+  Dullahan_generic:
+    content: rov
+  Enigmatic_Vampyr:
+    content: rov
+  Heliotrope_Barrier:
+    content: rov
+  Indomitable_Spurned_1:
+    content: rov
+  Indomitable_Spurned_2:
+    content: rov
+  Indomitable_Spurned_3:
+    content: rov
+  Indomitable_Spurned_4:
+    content: rov
+  Indomitable_Spurned_4840:
+    content: rov
+  Indomitable_Spurned_4841:
+    content: rov
+  Indomitable_Spurned_4842:
+    content: rov
+  Indomitable_Spurned_5:
+    content: rov
+  Inimical_Corse:
+    content: rov
+  Ironclad_Animus:
+    content: rov
+  Ironclad_Wrecker:
+    content: rov
+  Powercrazed_Dvergr:
+    content: rov
+  Poxhound:
+    type: [notorious]
+    attributes:
+      spawn:
+        respawn: 0
+        type:    [scripted]
+      stats:
+        hp: 100000
+  Scowling_Vodoriga:
+    content: rov
+  Slimeskin_Obdella:
+    content: rov
+  Spurned_Deeparrow:
+    content: rov
+  Spurned_Elementalist:
+    content: rov
+  Spurned_Engraver:
+    content: rov
+  Spurned_Fluteslinger:
+    content: rov
+  Spurned_Hexer:
+    content: rov
+  Spurned_Nightstalker:
+    content: rov
+  Spurned_Saboteur:
+    content: rov
+  Spurned_Valiant:
+    content: rov
+  Suspended_Sculpture:
+    content: rov
+  Unrepentant_Byrgen:
+    content: rov
+  Wayward_Bhoot:
+    type: [notorious]
+    skill_list_id: 121
+    attributes:
+      spawn:
+        respawn: 0
+        type:    [scripted]
+      stats:
+        hp: 35000
+        mp: 10000
+  Whitenoise_Bats:
+    type: [notorious]
+    species:       humes
+    skill_list_id: 394
+    attributes:
+      combat:
+        skill:    dagger
+        delay:    50
+        dmg_mult: 40
+      jobs: [thf, nin]
+      resists:
+        immune_status: [addle, gravity, bind, stun, slow, elegy]
+      render:
+        look:
+          type:  standard
+          model: 3092
+      spawn:
+        respawn: 0
+        type:    [scripted]
+      stats:
+        hp: 30000
+        mp: 10000
+  Wretched_Umbril:
+    content: rov
+
+spawns:
+  17907713:
+    level: [90, 100]
+  17907714:
+    level: [90, 100]
+  17907715:
+    level: [90, 95]
+  17907721:
+    level: [90, 100]
+  17907722:
+    level: [90, 100]
+  17907723:
+    level: [90, 95]
+  17907724:
+    level: [90, 100]
+  17907725:
+    level: [90, 100]
+  17907726:
+    level: [90, 95]
+  17907727:
+    level: [90, 100]
+  17907728:
+    level: [90, 100]
+  17907729:
+    level: [90, 95]
+  17907733:
+    level: [95, 95]
+  17907734:
+    level: [95, 95]
+  17907735:
+    level: [95, 95]
+  17907736:
+    level: [95, 95]
+  17907737:
+    level: [90, 95]
+  17907738:
+    level: [90, 95]
+  17907739:
+    level: [95, 95]
+  17907740:
+    level: [95, 95]
+  17907741:
+    level: [90, 95]
+  17907742:
+    level: [90, 95]
+  17907757:
+    level: [100, 100]
+  17907758:
+    level: [100, 100]
+  17907759:
+    level: [100, 100]
+  17907760:
+    level: [100, 100]

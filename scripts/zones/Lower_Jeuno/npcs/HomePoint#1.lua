@@ -3,8 +3,6 @@
 --  NPC: HomePoint#1
 -- !pos -98.588 0.001 -183.416 245
 -----------------------------------
-require('modules/custom/lua/homepoint_crystal_exchange')
------------------------------------
 ---@type TNpcEntity
 local entity = {}
 
@@ -13,10 +11,6 @@ local hpIndex = 35
 
 entity.onTrigger = function(player, npc)
     xi.homepoint.onTrigger(player, hpEvent, hpIndex)
-end
-
-entity.onTrade = function(player, npc, trade)
-    xi.homepointExchange.onTrade(player, npc, trade)
 end
 
 entity.onEventUpdate = function(player, csid, option, npc)

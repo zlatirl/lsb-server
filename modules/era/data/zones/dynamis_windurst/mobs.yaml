@@ -1,0 +1,255 @@
+# Era Dynamis: the wave engine spawns every mob itself, so none of the zone's own mobs may spawn.
+
+templates:
+  Arch_Tzee_Xicu_Idol:
+    attributes:
+      spawn:
+        type: [scripted]
+  Avatar_Icon:
+    attributes:
+      spawn:
+        type: [scripted]
+  Avatar_Idol:
+    attributes:
+      spawn:
+        type: [scripted]
+  Fuu_Tzapo_the_Blessed:
+    attributes:
+      spawn:
+        type: [scripted]
+  Haa_Pevi_the_Stentorian:
+    attributes:
+      spawn:
+        type: [scripted]
+  Loo_Hepe_the_Eyepiercer:
+    attributes:
+      spawn:
+        type: [scripted]
+  Maa_Febi_the_Steadfast:
+    attributes:
+      spawn:
+        type: [scripted]
+  Muu_Febi_the_Steadfast:
+    attributes:
+      spawn:
+        type: [scripted]
+  Naa_Yixo_the_Stillrage:
+    attributes:
+      spawn:
+        type: [scripted]
+  Tee_Zaksa_the_Ceaseless:
+    attributes:
+      spawn:
+        type: [scripted]
+  Tzee_Xicu_Idol:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Assassin:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Assassin_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Assassin_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Chanter:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Chanter_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Chanter_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Exemplar:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Exemplar_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Exemplar_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Inciter:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Inciter_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Inciter_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Liberator:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Liberator_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Liberator_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Ogresoother:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Ogresoother_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Ogresoother_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Oracle:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Oracle_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Oracle_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Partisan:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Partisan_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Partisan_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Persecutor:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Persecutor_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Persecutor_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Prelate:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Prelate_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Prelate_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Priest:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Priest_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Priest_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Salvager:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Salvager_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Salvager_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Sentinel:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Sentinel_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Sentinel_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Skirmisher:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Skirmisher_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Skirmisher_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Visionary:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Visionary_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Visionary_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguards_Avatar:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguards_Crow:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguards_Wyvern:
+    attributes:
+      spawn:
+        type: [scripted]
+  Wuu_Qoho_the_Razorclaw:
+    attributes:
+      spawn:
+        type: [scripted]
+  Xoo_Kaza_the_Solemn:
+    attributes:
+      spawn:
+        type: [scripted]
+  Xuu_Bhoqa_the_Enigma:
+    attributes:
+      spawn:
+        type: [scripted]
+  Xuu_Bhoqas_Avatar:
+    attributes:
+      spawn:
+        type: [scripted]

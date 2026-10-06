@@ -1,0 +1,449 @@
+# ERA Custom: era mob adjustments (was modules/custom/sql/era_mob_adjustments.sql and era_custom_drops.sql).
+# content: null removes the Abyssea/RoV content tag, so those mobs spawn on era whatever the content settings.
+# loot lists are the retail drops plus era's additions; YAML lists replace rather than append.
+
+templates:
+  Locus_Armet_Beetle:
+    content: null
+  Locus_Cutlass_Scorpion:
+    content: null
+  Locus_Dire_Bat:
+    content: null
+  Locus_Hati:
+    content: null
+  Locus_Lemures:
+    content: null
+  Locus_Spartoi_Sorcerer:
+    content: null
+  Locus_Spartoi_Warrior:
+    content: null
+  Locus_Thousand_Eyes:
+    content: null
+  Locus_Tomb_Worm:
+    content: null
+  Vrtra:
+    loot:
+      drops:
+        - chance: always
+          item: clump_of_cashmere_wool
+        - chance: always
+          item: clump_of_cashmere_wool
+        - chance: always
+          item: spool_of_cashmere_thread
+        - chance: always
+          item: spool_of_cashmere_thread
+        - chance: common
+          item: revilers_helm
+        - chance: very_common
+          one_of:
+            dragon_talon: 45
+            vial_of_dragon_blood: 45
+            slice_of_dragon_meat: 10
+        - chance: very_common
+          one_of:
+            wyrm_horn: 75
+            dragon_heart: 25
+        - chance: very_common
+          one_of:
+            - damascus_ingot
+            - divine_log
+            - square_of_damascene_cloth
+            - spool_of_malboro_fiber
+            - behemoth_hide
+            - vial_of_black_beetle_blood
+            - piece_of_oxblood
+            - lock_of_sirens_hair
+        - chance: very_common
+          item: kholomodumos_hide
+        - chance: uncommon
+          item: kholomodumos_hide
+
+spawns:
+  # Hati
+  17555757:
+    level: [77, 79]
+  17555760:
+    level: [77, 79]
+  # Locus_Armet_Beetle
+  17555948:
+    level: [80, 82]
+  17555949:
+    level: [80, 82]
+  17555950:
+    level: [80, 82]
+  17555951:
+    level: [80, 82]
+  17555952:
+    level: [80, 82]
+  17555953:
+    level: [80, 82]
+  17555954:
+    level: [80, 82]
+  17555955:
+    level: [80, 82]
+  17555956:
+    level: [80, 82]
+  17555957:
+    level: [80, 82]
+  17555958:
+    level: [80, 82]
+  17555959:
+    level: [80, 82]
+  17555960:
+    level: [80, 82]
+  17555961:
+    level: [80, 82]
+  17555962:
+    level: [80, 82]
+  17555963:
+    level: [80, 82]
+  # Locus_Cutlass_Scorpion
+  17555785:
+    level: [63, 65]
+  17555786:
+    level: [63, 65]
+  17555790:
+    level: [63, 65]
+  17555791:
+    level: [63, 65]
+  17555854:
+    level: [63, 65]
+  17555855:
+    level: [63, 65]
+  17555856:
+    level: [63, 65]
+  17555857:
+    level: [63, 65]
+  17555866:
+    level: [63, 65]
+  17555867:
+    level: [63, 65]
+  17555868:
+    level: [63, 65]
+  17555869:
+    level: [63, 65]
+  # Locus_Dire_Bat
+  17555777:
+    level: [80, 83]
+  17555778:
+    level: [80, 83]
+  17555779:
+    level: [80, 83]
+  17555780:
+    level: [80, 83]
+  17555781:
+    level: [80, 83]
+  17555782:
+    level: [80, 83]
+  17555783:
+    level: [80, 83]
+  17555784:
+    level: [80, 83]
+  17555787:
+    level: [80, 83]
+  17555788:
+    level: [80, 83]
+  17555789:
+    level: [80, 83]
+  17555792:
+    level: [80, 83]
+  17555793:
+    level: [80, 83]
+  17555794:
+    level: [80, 83]
+  17555795:
+    level: [80, 83]
+  17555796:
+    level: [80, 83]
+  17555797:
+    level: [80, 83]
+  17555798:
+    level: [80, 83]
+  17555805:
+    level: [80, 83]
+  17555806:
+    level: [80, 83]
+  17555807:
+    level: [80, 83]
+  17555808:
+    level: [80, 83]
+  17555809:
+    level: [80, 83]
+  17555810:
+    level: [80, 83]
+  17555811:
+    level: [80, 83]
+  17555812:
+    level: [80, 83]
+  17555817:
+    level: [80, 83]
+  17555818:
+    level: [80, 83]
+  17555819:
+    level: [80, 83]
+  17555820:
+    level: [80, 83]
+  17555846:
+    level: [80, 83]
+  17555847:
+    level: [80, 83]
+  17555848:
+    level: [80, 83]
+  17555849:
+    level: [80, 83]
+  17555850:
+    level: [80, 83]
+  17555851:
+    level: [80, 83]
+  17555852:
+    level: [80, 83]
+  17555853:
+    level: [80, 83]
+  17555858:
+    level: [80, 83]
+  17555859:
+    level: [80, 83]
+  17555860:
+    level: [80, 83]
+  17555861:
+    level: [80, 83]
+  17555862:
+    level: [80, 83]
+  17555863:
+    level: [80, 83]
+  17555864:
+    level: [80, 83]
+  17555865:
+    level: [80, 83]
+  17555870:
+    level: [80, 83]
+  17555871:
+    level: [80, 83]
+  17555872:
+    level: [80, 83]
+  17555873:
+    level: [80, 83]
+  17555874:
+    level: [80, 83]
+  17555875:
+    level: [80, 83]
+  17555876:
+    level: [80, 83]
+  17555877:
+    level: [80, 83]
+  17555894:
+    level: [80, 83]
+  17555895:
+    level: [80, 83]
+  17555896:
+    level: [80, 83]
+  17555897:
+    level: [80, 83]
+  17555898:
+    level: [80, 83]
+  17555899:
+    level: [80, 83]
+  17555900:
+    level: [80, 83]
+  17555901:
+    level: [80, 83]
+  17555902:
+    level: [80, 83]
+  17555903:
+    level: [80, 83]
+  17555904:
+    level: [80, 83]
+  17555905:
+    level: [80, 83]
+  17555906:
+    level: [80, 83]
+  17555907:
+    level: [80, 83]
+  17555908:
+    level: [80, 83]
+  17555909:
+    level: [80, 83]
+  17555910:
+    level: [80, 83]
+  17555911:
+    level: [80, 83]
+  17555912:
+    level: [80, 83]
+  17555913:
+    level: [80, 83]
+  17555914:
+    level: [80, 83]
+  17555915:
+    level: [80, 83]
+  17555916:
+    level: [80, 83]
+  17555917:
+    level: [80, 83]
+  17555918:
+    level: [80, 83]
+  17555919:
+    level: [80, 83]
+  17555920:
+    level: [80, 83]
+  17555921:
+    level: [80, 83]
+  17555922:
+    level: [80, 83]
+  17555923:
+    level: [80, 83]
+  17555924:
+    level: [80, 83]
+  17555925:
+    level: [80, 83]
+  17555934:
+    level: [80, 83]
+  17555935:
+    level: [80, 83]
+  17555936:
+    level: [80, 83]
+  17555937:
+    level: [80, 83]
+  # Locus_Hati
+  17555813:
+    level: [80, 82]
+  17555814:
+    level: [80, 82]
+  17555815:
+    level: [80, 82]
+  17555816:
+    level: [80, 82]
+  17555825:
+    level: [80, 82]
+  17555830:
+    level: [80, 82]
+  17555835:
+    level: [80, 82]
+  17555840:
+    level: [80, 82]
+  17555845:
+    level: [80, 82]
+  17555882:
+    level: [80, 82]
+  17555887:
+    level: [80, 82]
+  17555926:
+    level: [80, 82]
+  17555930:
+    level: [80, 82]
+  # Locus_Lemures
+  17555929:
+    level: [80, 82]
+  17555933:
+    level: [80, 82]
+  # Locus_Spartoi_Sorcerer
+  17555823:
+    level: [78, 80]
+  17555824:
+    level: [78, 80]
+  17555828:
+    level: [78, 80]
+  17555829:
+    level: [78, 80]
+  17555833:
+    level: [78, 80]
+  17555834:
+    level: [78, 80]
+  17555838:
+    level: [78, 80]
+  17555839:
+    level: [78, 80]
+  17555843:
+    level: [78, 80]
+  17555844:
+    level: [78, 80]
+  17555880:
+    level: [78, 80]
+  17555881:
+    level: [78, 80]
+  17555885:
+    level: [78, 80]
+  17555886:
+    level: [78, 80]
+  17555889:
+    level: [78, 80]
+  17555928:
+    level: [78, 80]
+  17555932:
+    level: [78, 80]
+  # Locus_Spartoi_Warrior
+  17555821:
+    level: [78, 80]
+  17555822:
+    level: [78, 80]
+  17555826:
+    level: [78, 80]
+  17555827:
+    level: [78, 80]
+  17555831:
+    level: [78, 80]
+  17555832:
+    level: [78, 80]
+  17555836:
+    level: [78, 80]
+  17555837:
+    level: [78, 80]
+  17555841:
+    level: [78, 80]
+  17555842:
+    level: [78, 80]
+  17555878:
+    level: [78, 80]
+  17555879:
+    level: [78, 80]
+  17555883:
+    level: [78, 80]
+  17555884:
+    level: [78, 80]
+  17555888:
+    level: [78, 80]
+  17555927:
+    level: [78, 80]
+  17555931:
+    level: [78, 80]
+  # Locus_Thousand_Eyes
+  17555799:
+    level: [60, 62]
+  17555800:
+    level: [60, 62]
+  17555801:
+    level: [60, 62]
+  17555802:
+    level: [60, 62]
+  17555803:
+    level: [60, 62]
+  17555804:
+    level: [60, 62]
+  17555890:
+    level: [60, 62]
+  17555891:
+    level: [60, 62]
+  17555892:
+    level: [60, 62]
+  17555893:
+    level: [60, 62]
+  # Locus_Tomb_Worm
+  17555938:
+    level: [80, 82]
+  17555939:
+    level: [80, 82]
+  17555940:
+    level: [80, 82]
+  17555941:
+    level: [80, 82]
+  17555942:
+    level: [80, 82]
+  17555943:
+    level: [80, 82]
+  17555944:
+    level: [80, 82]
+  17555945:
+    level: [80, 82]
+  17555946:
+    level: [80, 82]
+  17555947:
+    level: [80, 82]

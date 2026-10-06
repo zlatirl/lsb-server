@@ -2557,19 +2557,4 @@ UPDATE `mob_groups` SET HP = 30000 WHERE name = 'Diabolos_Diamond'  AND zoneid =
 UPDATE `mob_groups` SET HP = 30000 WHERE name = 'Diabolos_Club'     AND zoneid = 42;
 UPDATE `mob_groups` SET HP = 15000 WHERE name = 'Diaboloss_Shard'   AND zoneid = 42;
 
--- ------------------------------------------------------------------------- --
---                        Disable free-roam spawns                           --
--- Era uses the wave engine: statues spawn per wave and release their        --
--- beastmen when engaged, so no database mob may auto-spawn.                  --
--- 128 = Scripted (never spawned by the zone itself).                        --
--- ------------------------------------------------------------------------- --
-UPDATE `mob_groups` SET spawntype = 128 WHERE zoneid IN (39,40,41,42,134,135,185,186,187,188);
-
--- ------------------------------------------------------------------------- --
---                     Hide instance ??? until earned                        --
--- Every ??? in the dynamis zones starts hidden; the win ??? is revealed by  --
--- its handler when the zone boss is defeated. 2 = DISAPPEAR.                --
--- ------------------------------------------------------------------------- --
-UPDATE `npc_list` SET status = 2
-WHERE polutils_name = '???'
-  AND ((npcid >> 12) & 0xFFF) IN (39,40,41,42,134,135,185,186,187,188);
+-- Static mob spawn suppression and hidden ??? NPCs are YAML overlays in modules/era/data/zones/dynamis_*.

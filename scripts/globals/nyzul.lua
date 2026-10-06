@@ -302,6 +302,15 @@ xi.nyzul.activateRuneOfTransfer = function(instance)
     end
 end
 
+-- ERA Custom: hooks for the nyzulBonus scheduled event (modules/custom/lua/events/nyzul_bonus.lua)
+xi.nyzul.applyTokenBonus = function(player, tokens)
+    return tokens
+end
+
+xi.nyzul.getVigilDropChance = function(player, mob, chance)
+    return chance
+end
+
 xi.nyzul.vigilWeaponDrop = function(player, mob)
     if not player then
         return
@@ -328,7 +337,10 @@ xi.nyzul.vigilWeaponDrop = function(player, mob)
         player:addTreasure(xi.nyzul.baseWeapons[math.randomInt(1, #xi.nyzul.baseWeapons)], mob)
 
     -- Every NM can randomly drop a vigil weapon
-    elseif math.randomInt(1, 100) <= 20 and xi.settings.main.ENABLE_VIGIL_DROPS then
+    elseif
+        math.randomInt(1, 100) <= xi.nyzul.getVigilDropChance(player, mob, 20) and -- ERA Custom
+        xi.settings.main.ENABLE_VIGIL_DROPS
+    then
         player:addTreasure(xi.nyzul.baseWeapons[math.randomInt(1, #xi.nyzul.baseWeapons)], mob)
     end
 end

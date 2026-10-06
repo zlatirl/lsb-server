@@ -580,10 +580,15 @@ xi.znm.sanraku.handleGainingAccessToIslets = function(player, option)
     end
 end
 
+-- ERA Custom: price Sanraku shows and charges; the zeniBonus scheduled event overrides this
+xi.znm.getPlayerPopPrice = function(player, mob, znmTier)
+    return xi.znm.getPopPrice(mob, znmTier)
+end
+
 xi.znm.sanraku.handleConfirmingDesiredZNMInfo = function(player, option)
     -- Give the correct ZNM's zeni cost
     local diff      = option - 99
-    local zeniCost = xi.znm.getPopPrice(xi.znm.POP_ITEMS[diff].mob, xi.znm.POP_ITEMS[diff].tier)
+    local zeniCost = xi.znm.getPlayerPopPrice(player, xi.znm.POP_ITEMS[diff].mob, xi.znm.POP_ITEMS[diff].tier) -- ERA Custom
 
     player:updateEvent(0, 0, 0, 0, 0, 0, zeniCost)
 end
@@ -594,7 +599,7 @@ xi.znm.sanraku.handleConfirmedZNMInfo = function(player, option)
     local popItem  = xi.znm.POP_ITEMS[diff].item
     local znmTier  = xi.znm.POP_ITEMS[diff].tier
     local mob      = xi.znm.POP_ITEMS[diff].mob
-    local zeniCost = xi.znm.getPopPrice(mob, znmTier)
+    local zeniCost = xi.znm.getPlayerPopPrice(player, mob, znmTier) -- ERA Custom
 
     if player:getCurrency('zeni_point') < zeniCost then -- Not enough zeni
         player:updateEvent(2)

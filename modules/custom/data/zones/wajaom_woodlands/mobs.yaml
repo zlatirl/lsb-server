@@ -1,0 +1,46 @@
+# ERA Custom: era mob adjustments (was modules/custom/sql/era_mob_adjustments.sql and era_custom_drops.sql).
+# loot lists are the retail drops plus era's additions; YAML lists replace rather than append.
+
+templates:
+  Defoliate_Treant:
+    loot:
+      drops:
+        - chance: very_common
+          item: dryad_root
+        - chance: common
+          item: sprig_of_mistletoe
+        - chance: uncommon
+          item: puffball
+        - chance: rare
+          one_of:
+            rosewood_log: 45
+            mahogany_log: 30
+            ebony_log: 15
+            petrified_log: 10
+        - chance: always
+          item: lacquer_tree_log
+  Tinnin:
+    loot:
+      drops:
+        - chance: always
+          item: chunk_of_hydra_meat
+        - chance: always
+          item: hydra_scale
+        - chance: uncommon
+          item: hydra_scale
+        - chance: always
+          item: hydra_fang
+        - chance: always
+          item: tinnins_fang
+        - chance: always
+          one_of:
+            - enkidus_harness
+            - enkidus_cap
+            - oracles_cap
+        - chance: common
+          one_of:
+            - shusui
+            - alkalurops
+            - hachiryu_sune-ate
+        - chance: uncommon
+          item: witch_sash

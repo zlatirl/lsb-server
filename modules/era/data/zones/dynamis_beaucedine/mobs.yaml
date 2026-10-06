@@ -1,0 +1,751 @@
+# Era Dynamis: the wave engine spawns every mob itself, so none of the zone's own mobs may spawn.
+
+templates:
+  Adamantking_Effigy:
+    attributes:
+      spawn:
+        type: [scripted]
+  Adamantking_Image:
+    attributes:
+      spawn:
+        type: [scripted]
+  Angra_Mainyu:
+    attributes:
+      spawn:
+        type: [scripted]
+  Arch_Angra_Mainyu:
+    attributes:
+      spawn:
+        type: [scripted]
+  Ascetox_Ratgums:
+    attributes:
+      spawn:
+        type: [scripted]
+  Avatar_Icon:
+    attributes:
+      spawn:
+        type: [scripted]
+  Avatar_Idol:
+    attributes:
+      spawn:
+        type: [scripted]
+  BeZhe_Keeprazer:
+    attributes:
+      spawn:
+        type: [scripted]
+  Bhuu_Wjato_the_Firepool:
+    attributes:
+      spawn:
+        type: [scripted]
+  Bordox_Kittyback:
+    attributes:
+      spawn:
+        type: [scripted]
+  Brewnix_Bittypupils:
+    attributes:
+      spawn:
+        type: [scripted]
+  Caa_Xaza_the_Madpiercer:
+    attributes:
+      spawn:
+        type: [scripted]
+  Cavanneche:
+    attributes:
+      spawn:
+        type: [scripted]
+  Cobraclaw_Buchzvotch:
+    attributes:
+      spawn:
+        type: [scripted]
+  Dagourmarche:
+    attributes:
+      spawn:
+        type: [scripted]
+  Dagourmarches_Avatar:
+    attributes:
+      spawn:
+        type: [scripted]
+  Dagourmarches_Wyvern:
+    attributes:
+      spawn:
+        type: [scripted]
+  DeBho_Pyrohand:
+    attributes:
+      spawn:
+        type: [scripted]
+  Deathcaller_Bidfbid:
+    attributes:
+      spawn:
+        type: [scripted]
+  Drakefeast_Wubmfub:
+    attributes:
+      spawn:
+        type: [scripted]
+  Draklix_Scalecrust:
+    attributes:
+      spawn:
+        type: [scripted]
+  Droprix_Granitepalms:
+    attributes:
+      spawn:
+        type: [scripted]
+  Elvaanlopper_Grokdok:
+    attributes:
+      spawn:
+        type: [scripted]
+  Fire_Pukis:
+    attributes:
+      spawn:
+        type: [scripted]
+  Foo_Peku_the_Bloodcloak:
+    attributes:
+      spawn:
+        type: [scripted]
+  GaFho_Venomtouch:
+    attributes:
+      spawn:
+        type: [scripted]
+  Galkarider_Retzpratz:
+    attributes:
+      spawn:
+        type: [scripted]
+  Gibberox_Pimplebeak:
+    attributes:
+      spawn:
+        type: [scripted]
+  GoTyo_Magenapper:
+    attributes:
+      spawn:
+        type: [scripted]
+  Goblin_Replica:
+    attributes:
+      spawn:
+        type: [scripted]
+  Goblin_Statue:
+    attributes:
+      spawn:
+        type: [scripted]
+  Goublefaupe:
+    attributes:
+      spawn:
+        type: [scripted]
+  GuKhu_Dukesniper:
+    attributes:
+      spawn:
+        type: [scripted]
+  GuNha_Wallstormer:
+    attributes:
+      spawn:
+        type: [scripted]
+  Guu_Waji_the_Preacher:
+    attributes:
+      spawn:
+        type: [scripted]
+  Heavymail_Djidzbad:
+    attributes:
+      spawn:
+        type: [scripted]
+  Hee_Mida_the_Meticulous:
+    attributes:
+      spawn:
+        type: [scripted]
+  Hitaume:
+    attributes:
+      spawn:
+        type: [scripted]
+  Humegutter_Adzjbadj:
+    attributes:
+      spawn:
+        type: [scripted]
+  Hydra_Bard:
+    attributes:
+      spawn:
+        type: [scripted]
+  Hydra_Bard_HI:
+    attributes:
+      spawn:
+        type: [scripted]
+  Hydra_Beastmaster:
+    attributes:
+      spawn:
+        type: [scripted]
+  Hydra_Beastmaster_HI:
+    attributes:
+      spawn:
+        type: [scripted]
+  Hydra_Black_Mage:
+    attributes:
+      spawn:
+        type: [scripted]
+  Hydra_Black_Mage_HI:
+    attributes:
+      spawn:
+        type: [scripted]
+  Hydra_Dark_Knight:
+    attributes:
+      spawn:
+        type: [scripted]
+  Hydra_Dark_Knight_HI:
+    attributes:
+      spawn:
+        type: [scripted]
+  Hydra_Dragoon:
+    attributes:
+      spawn:
+        type: [scripted]
+  Hydra_Dragoon_HI:
+    attributes:
+      spawn:
+        type: [scripted]
+  Hydra_Monk:
+    attributes:
+      spawn:
+        type: [scripted]
+  Hydra_Monk_HI:
+    attributes:
+      spawn:
+        type: [scripted]
+  Hydra_Ninja:
+    attributes:
+      spawn:
+        type: [scripted]
+  Hydra_Ninja_HI:
+    attributes:
+      spawn:
+        type: [scripted]
+  Hydra_Paladin:
+    attributes:
+      spawn:
+        type: [scripted]
+  Hydra_Paladin_HI:
+    attributes:
+      spawn:
+        type: [scripted]
+  Hydra_Ranger:
+    attributes:
+      spawn:
+        type: [scripted]
+  Hydra_Ranger_HI:
+    attributes:
+      spawn:
+        type: [scripted]
+  Hydra_Red_Mage:
+    attributes:
+      spawn:
+        type: [scripted]
+  Hydra_Red_Mage_HI:
+    attributes:
+      spawn:
+        type: [scripted]
+  Hydra_Samurai:
+    attributes:
+      spawn:
+        type: [scripted]
+  Hydra_Samurai_HI:
+    attributes:
+      spawn:
+        type: [scripted]
+  Hydra_Summoner:
+    attributes:
+      spawn:
+        type: [scripted]
+  Hydra_Summoner_HI:
+    attributes:
+      spawn:
+        type: [scripted]
+  Hydra_Thief:
+    attributes:
+      spawn:
+        type: [scripted]
+  Hydra_Thief_HI:
+    attributes:
+      spawn:
+        type: [scripted]
+  Hydra_Warrior:
+    attributes:
+      spawn:
+        type: [scripted]
+  Hydra_Warrior_HI:
+    attributes:
+      spawn:
+        type: [scripted]
+  Hydra_White_Mage:
+    attributes:
+      spawn:
+        type: [scripted]
+  Hydra_White_Mage_HI:
+    attributes:
+      spawn:
+        type: [scripted]
+  Hydras_Avatar:
+    attributes:
+      spawn:
+        type: [scripted]
+  Hydras_Hound:
+    attributes:
+      spawn:
+        type: [scripted]
+  Hydras_Wyvern:
+    attributes:
+      spawn:
+        type: [scripted]
+  Jeunoraider_Gepkzip:
+    attributes:
+      spawn:
+        type: [scripted]
+  JiFhu_Infiltrator:
+    attributes:
+      spawn:
+        type: [scripted]
+  JiKhu_Towercleaver:
+    attributes:
+      spawn:
+        type: [scripted]
+  Knii_Hoqo_the_Bisector:
+    attributes:
+      spawn:
+        type: [scripted]
+  Koo_Saxu_the_Everfast:
+    attributes:
+      spawn:
+        type: [scripted]
+  Kuu_Xuka_the_Nimble:
+    attributes:
+      spawn:
+        type: [scripted]
+  Lockbuster_Zapdjipp:
+    attributes:
+      spawn:
+        type: [scripted]
+  Maa_Zaua_the_Wyrmkeeper:
+    attributes:
+      spawn:
+        type: [scripted]
+  MiRhe_Whisperblade:
+    attributes:
+      spawn:
+        type: [scripted]
+  Mildaunegeux:
+    attributes:
+      spawn:
+        type: [scripted]
+  Mithraslaver_Debhabob:
+    attributes:
+      spawn:
+        type: [scripted]
+  Moltenox_Stubthumbs:
+    attributes:
+      spawn:
+        type: [scripted]
+  Morblox_Chubbychin:
+    attributes:
+      spawn:
+        type: [scripted]
+  MuGha_Legionkiller:
+    attributes:
+      spawn:
+        type: [scripted]
+  NaHya_Floodmaker:
+    attributes:
+      spawn:
+        type: [scripted]
+  Nee_Huxa_the_Judgmental:
+    attributes:
+      spawn:
+        type: [scripted]
+  NuBhi_Spiraleye:
+    attributes:
+      spawn:
+        type: [scripted]
+  Petro_Pukis:
+    attributes:
+      spawn:
+        type: [scripted]
+  Pignonpausard:
+    attributes:
+      spawn:
+        type: [scripted]
+  Poison_Pukis:
+    attributes:
+      spawn:
+        type: [scripted]
+  Puu_Timu_the_Phantasmal:
+    attributes:
+      spawn:
+        type: [scripted]
+  Quiebitiel:
+    attributes:
+      spawn:
+        type: [scripted]
+  Rearguard_Eye:
+    attributes:
+      spawn:
+        type: [scripted]
+  Routsix_Rubbertendon:
+    attributes:
+      spawn:
+        type: [scripted]
+  Ruffbix_Jumbolobes:
+    attributes:
+      spawn:
+        type: [scripted]
+  Ryy_Qihi_the_Idolrobber:
+    attributes:
+      spawn:
+        type: [scripted]
+  Serjeant_Tombstone:
+    attributes:
+      spawn:
+        type: [scripted]
+  Shisox_Widebrow:
+    attributes:
+      spawn:
+        type: [scripted]
+  Skinmask_Ugghfogg:
+    attributes:
+      spawn:
+        type: [scripted]
+  Slinkix_Trufflesniff:
+    attributes:
+      spawn:
+        type: [scripted]
+  SoGho_Adderhandler:
+    attributes:
+      spawn:
+        type: [scripted]
+  SoZho_Metalbender:
+    attributes:
+      spawn:
+        type: [scripted]
+  Soo_Jopo_the_Fiendking:
+    attributes:
+      spawn:
+        type: [scripted]
+  Spinalsucker_Galflmall:
+    attributes:
+      spawn:
+        type: [scripted]
+  Swypestix_Tigershins:
+    attributes:
+      spawn:
+        type: [scripted]
+  TaHyu_Gallanthunter:
+    attributes:
+      spawn:
+        type: [scripted]
+  Taquede:
+    attributes:
+      spawn:
+        type: [scripted]
+  Taquedes_Wyvern:
+    attributes:
+      spawn:
+        type: [scripted]
+  Taruroaster_Biggsjig:
+    attributes:
+      spawn:
+        type: [scripted]
+  Tocktix_Thinlids:
+    attributes:
+      spawn:
+        type: [scripted]
+  Ultrasonic_Zeknajak:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Alchemist:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Ambusher:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Amputator:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Armorer:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Assassin:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Backstabber:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Beasttender:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Bugler:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Chanter:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Constable:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Defender:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Dollmaster:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Dragontamer:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Drakekeeper:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Enchanter:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Exemplar:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Eye:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Footsoldier:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Grappler:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Gutslasher:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Hatamoto:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Hawker:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Hitman:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Impaler:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Inciter:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Kusa:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Liberator:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Maestro:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Mason:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Mesmerizer:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Militant:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Minstrel:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Neckchopper:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Necromancer:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Ogresoother:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Oracle:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Partisan:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Pathfinder:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Persecutor:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Pillager:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Pitfighter:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Predator:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Prelate:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Priest:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Protector:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Purloiner:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Ronin:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Salvager:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Sentinel:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Shaman:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Skirmisher:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Smithy:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Thaumaturge:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Tinkerer:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Trooper:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Undertaker:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Vexer:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Vigilante:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Vindicator:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Visionary:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Welldigger:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguards_Avatar:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguards_Crow:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguards_Hecteyes:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguards_Scorpion:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguards_Slime:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguards_Wyvern:
+    attributes:
+      spawn:
+        type: [scripted]
+  Velosareon:
+    attributes:
+      spawn:
+        type: [scripted]
+  Warchief_Tombstone:
+    attributes:
+      spawn:
+        type: [scripted]
+  Whistrix_Toadthroat:
+    attributes:
+      spawn:
+        type: [scripted]
+  Wind_Pukis:
+    attributes:
+      spawn:
+        type: [scripted]
+  Wraithdancer_Gidbnod:
+    attributes:
+      spawn:
+        type: [scripted]
+  Xaa_Chau_the_Roctalon:
+    attributes:
+      spawn:
+        type: [scripted]
+  Xhoo_Fuza_the_Sublime:
+    attributes:
+      spawn:
+        type: [scripted]

@@ -1,0 +1,15 @@
+# ERA Custom: era mob adjustments (was modules/custom/sql/era_mob_adjustments.sql and era_custom_drops.sql).
+# loot lists are the retail drops plus era's additions; YAML lists replace rather than append.
+
+templates:
+  Devil_Manta:
+    loot:
+      drops:
+        - chance: common
+          item: manta_skin
+        - chance: rare
+          item: shall_shell
+        - chance: uncommon
+          item: seashell
+        - chance: 25
+          item: piece_of_angel_skin

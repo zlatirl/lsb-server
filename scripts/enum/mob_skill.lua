@@ -1198,6 +1198,12 @@ xi.mobSkill =
 
     MALEDICTION                   = 1795,
 
+    RUSHING_SLASH                 = 1797,
+    DECUSSATE                     = 1798,
+    TYRANNIC_BLARE                = 1799,
+    MIASMA                        = 1800,
+    VORPAL_WHEEL                  = 1801,
+
     BOILING_POINT                 = 1822,
     XENOGLOSSIA                   = 1823,
     AMORPHIC_SPIKES               = 1824,

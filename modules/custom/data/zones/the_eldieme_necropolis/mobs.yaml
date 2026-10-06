@@ -1,0 +1,110 @@
+# ERA Custom: era mob adjustments (was modules/custom/sql/era_mob_adjustments.sql and era_custom_drops.sql).
+# content: null removes the Abyssea/RoV content tag, so those mobs spawn on era whatever the content settings.
+
+templates:
+  Hellbound_Warlock:
+    content: null
+  Hellbound_Warrior:
+    content: null
+  Nekros_Hound:
+    content: null
+
+spawns:
+  # Hellbound_Warlock
+  17575960:
+    level: [60, 63]
+  17575962:
+    level: [60, 63]
+  17575964:
+    level: [60, 63]
+  17575966:
+    level: [60, 63]
+  17575979:
+    level: [60, 63]
+  17575981:
+    level: [60, 63]
+  17575983:
+    level: [60, 63]
+  17575985:
+    level: [60, 63]
+  17575996:
+    level: [60, 63]
+  17575998:
+    level: [60, 63]
+  17576000:
+    level: [60, 63]
+  17576002:
+    level: [60, 63]
+  # Hellbound_Warrior
+  17575959:
+    level: [60, 63]
+  17575961:
+    level: [60, 63]
+  17575963:
+    level: [60, 63]
+  17575965:
+    level: [60, 63]
+  17575978:
+    level: [60, 63]
+  17575980:
+    level: [60, 63]
+  17575982:
+    level: [60, 63]
+  17575984:
+    level: [60, 63]
+  17575995:
+    level: [60, 63]
+  17575997:
+    level: [60, 63]
+  17575999:
+    level: [60, 63]
+  17576001:
+    level: [60, 63]
+  # Namorodo
+  17576272:
+    level: [34, 34]
+  17576273:
+    level: [34, 34]
+  17576274:
+    level: [34, 34]
+  # Nekros_Hound
+  17576069:
+    level: [53, 55]
+  17576070:
+    level: [53, 55]
+  17576071:
+    level: [53, 55]
+  17576072:
+    level: [53, 55]
+  17576073:
+    level: [53, 55]
+  17576074:
+    level: [53, 55]
+  17576075:
+    level: [53, 55]
+  17576076:
+    level: [53, 55]
+  17576077:
+    level: [53, 55]
+  17576078:
+    level: [53, 55]
+  17576079:
+    level: [53, 55]
+  17576080:
+    level: [53, 55]
+  17576081:
+    level: [53, 55]
+  17576082:
+    level: [53, 55]
+  17576085:
+    level: [53, 55]
+  17576086:
+    level: [53, 55]
+  17576087:
+    level: [53, 55]
+  17576088:
+    level: [53, 55]
+  17576089:
+    level: [53, 55]
+  17576090:
+    level: [53, 55]

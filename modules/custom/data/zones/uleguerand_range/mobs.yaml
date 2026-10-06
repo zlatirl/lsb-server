@@ -1,0 +1,44 @@
+# ERA Custom: era mob adjustments (was modules/custom/sql/era_mob_adjustments.sql and era_custom_drops.sql).
+# content: null removes the Abyssea/RoV content tag, so those mobs spawn on era whatever the content settings.
+# loot lists are the retail drops plus era's additions; YAML lists replace rather than append.
+
+templates:
+  Scowlenkos:
+    content: null
+  Jormungand:
+    loot:
+      drops:
+        - chance: always
+          item: chunk_of_molybdenum_ore
+        - chance: always
+          item: chunk_of_molybdenum_ore
+        - chance: always
+          item: chunk_of_molybdenum_ore
+        - chance: always
+          item: chunk_of_molybdenum_ore
+        - chance: common
+          item: mercurial_pole
+        - chance: very_common
+          one_of:
+            dragon_talon: 45
+            vial_of_dragon_blood: 45
+            slice_of_dragon_meat: 10
+        - chance: very_common
+          one_of:
+            wyrm_horn: 75
+            dragon_heart: 25
+        - chance: very_common
+          one_of:
+            - adaman_ingot
+            - damascus_ingot
+            - divine_log
+            - square_of_damascene_cloth
+            - spool_of_malboro_fiber
+            - behemoth_hide
+            - vial_of_black_beetle_blood
+            - piece_of_oxblood
+            - lock_of_sirens_hair
+        - chance: very_common
+          item: kholomodumos_hide
+        - chance: uncommon
+          item: kholomodumos_hide

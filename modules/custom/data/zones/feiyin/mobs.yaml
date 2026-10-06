@@ -1,0 +1,111 @@
+# ERA Custom: era mob adjustments (was modules/custom/sql/era_mob_adjustments.sql and era_custom_drops.sql).
+# content: null removes the Abyssea/RoV content tag, so those mobs spawn on era whatever the content settings.
+
+templates:
+  Balayang:
+    content: null
+  Sentient_Carafe:
+    content: null
+  Wekufe:
+    content: null
+
+spawns:
+  # Balayang
+  17612918:
+    level: [51, 54]
+  17612919:
+    level: [51, 54]
+  17612920:
+    level: [51, 54]
+  17612921:
+    level: [51, 54]
+  17612922:
+    level: [51, 54]
+  17612923:
+    level: [51, 54]
+  17612924:
+    level: [51, 54]
+  17612925:
+    level: [51, 54]
+  17612926:
+    level: [51, 54]
+  17612927:
+    level: [51, 54]
+  17612928:
+    level: [51, 54]
+  17612929:
+    level: [51, 54]
+  17612930:
+    level: [51, 54]
+  17612931:
+    level: [51, 54]
+  17612932:
+    level: [51, 54]
+  17612933:
+    level: [51, 54]
+  17612934:
+    level: [51, 54]
+  17612935:
+    level: [51, 54]
+  17612936:
+    level: [51, 54]
+  17612937:
+    level: [51, 54]
+  17612938:
+    level: [51, 54]
+  17612939:
+    level: [51, 54]
+  17612940:
+    level: [51, 54]
+  17612941:
+    level: [51, 54]
+  # Sentient_Carafe
+  17612906:
+    level: [56, 58]
+  17612907:
+    level: [56, 58]
+  17612908:
+    level: [56, 58]
+  17612909:
+    level: [56, 58]
+  17612910:
+    level: [56, 58]
+  17612911:
+    level: [56, 58]
+  17612912:
+    level: [56, 58]
+  17612913:
+    level: [56, 58]
+  # Wekufe
+  17612882:
+    level: [55, 57]
+  17612883:
+    level: [55, 57]
+  17612884:
+    level: [55, 57]
+  17612885:
+    level: [55, 57]
+  17612886:
+    level: [55, 57]
+  17612887:
+    level: [55, 57]
+  17612888:
+    level: [55, 57]
+  17612889:
+    level: [55, 57]
+  17612902:
+    level: [55, 57]
+  17612903:
+    level: [55, 57]
+  17612904:
+    level: [55, 57]
+  17612905:
+    level: [55, 57]
+  17612914:
+    level: [55, 57]
+  17612915:
+    level: [55, 57]
+  17612916:
+    level: [55, 57]
+  17612917:
+    level: [55, 57]

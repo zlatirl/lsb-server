@@ -1,0 +1,195 @@
+# Era Dynamis: the wave engine spawns every mob itself, so none of the zone's own mobs may spawn.
+
+templates:
+  Arch_Overlord_Tombstone:
+    attributes:
+      spawn:
+        type: [scripted]
+  Battlechoir_Gitchfotch:
+    attributes:
+      spawn:
+        type: [scripted]
+  Bladeburner_Rokgevok:
+    attributes:
+      spawn:
+        type: [scripted]
+  Bloodfist_Voshgrosh:
+    attributes:
+      spawn:
+        type: [scripted]
+  Djokvukks_Wyvern:
+    attributes:
+      spawn:
+        type: [scripted]
+  Kratzvatzs_Hecteyes:
+    attributes:
+      spawn:
+        type: [scripted]
+  Overlords_Tombstone:
+    attributes:
+      spawn:
+        type: [scripted]
+  Reapertongue_Gadgquok:
+    attributes:
+      spawn:
+        type: [scripted]
+  Serjeant_Tombstone:
+    attributes:
+      spawn:
+        type: [scripted]
+  Soulsender_Fugbrag:
+    attributes:
+      spawn:
+        type: [scripted]
+  Spellspear_Djokvukk:
+    attributes:
+      spawn:
+        type: [scripted]
+  Steelshank_Kratzvatz:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Amputator:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Amputator_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Backstabber:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Backstabber_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Bugler:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Bugler_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Dollmaster:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Dollmaster_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Footsoldier:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Footsoldier_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Grappler:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Grappler_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Gutslasher:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Gutslasher_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Hawker:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Hawker_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Impaler:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Impaler_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Mesmerizer:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Mesmerizer_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Neckchopper:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Neckchopper_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Pillager:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Pillager_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Predator:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Predator_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Trooper:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Trooper_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Vexer:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Vexer_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguards_Avatar:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguards_Hecteyes:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguards_Wyvern:
+    attributes:
+      spawn:
+        type: [scripted]
+  Voidstreaker_Butchnotch:
+    attributes:
+      spawn:
+        type: [scripted]
+  Warchief_Tombstone:
+    attributes:
+      spawn:
+        type: [scripted]
+  Wyrmgnasher_Bjakdek:
+    attributes:
+      spawn:
+        type: [scripted]

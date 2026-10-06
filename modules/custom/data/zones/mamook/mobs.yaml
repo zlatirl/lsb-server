@@ -1,0 +1,30 @@
+# ERA Custom: era mob adjustments (was modules/custom/sql/era_mob_adjustments.sql and era_custom_drops.sql).
+# loot lists are the retail drops plus era's additions; YAML lists replace rather than append.
+
+templates:
+  Gulool_Ja_Ja:
+    loot:
+      drops:
+        - chance: very_common
+          item: ja_jas_chestplate
+        - chance: common
+          item: volunteers_ring
+        - chance: rare
+          item: zhagos_barbut
+        - chance: uncommon
+          item: barbarossas_moufles
+        - chance: very_common
+          item: reactive_shield
+        - chance: very_common
+          item: optic_fiber
+        - chance: uncommon
+          item: scroll_of_katon_san
+  Colibri:
+    loot:
+      drops:
+        - chance: very_common
+          item: colibri_feather
+        - chance: uncommon
+          item: colibri_beak
+        - chance: 40
+          item: giant_bird_feather

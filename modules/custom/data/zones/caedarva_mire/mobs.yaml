@@ -1,0 +1,60 @@
+# ERA Custom: era mob adjustments (was modules/custom/sql/era_mob_adjustments.sql and era_custom_drops.sql).
+# content: null removes the Abyssea/RoV content tag, so those mobs spawn on era whatever the content settings.
+# loot lists are the retail drops plus era's additions; YAML lists replace rather than append.
+
+templates:
+  Slough_Skua:
+    content: null
+  Vauxia_Fly:
+    content: null
+  Soulflayer:
+    loot:
+      drops:
+        - chance: common
+          item: soulflayer_tentacle
+        - chance: uncommon
+          item: soulflayer_staff
+        - chance: rare
+          item: soulflayer_robe
+        - chance: 40
+          item: chunk_of_luminium_ore
+  Mature_Treant:
+    loot:
+      drops:
+        - chance: very_common
+          item: dryad_root
+        - chance: common
+          item: sprig_of_mistletoe
+        - chance: uncommon
+          item: puffball
+        - chance: rare
+          one_of:
+            rosewood_log: 45
+            mahogany_log: 30
+            ebony_log: 15
+            petrified_log: 10
+        - chance: always
+          item: lacquer_tree_log
+  Tyger:
+    loot:
+      drops:
+        - chance: always
+          item: khimaira_tail
+        - chance: always
+          item: khimaira_horn
+        - chance: always
+          item: khimaira_mane
+        - chance: always
+          item: tygers_tail
+        - chance: always
+          one_of:
+            - aurum_armet
+            - enkidus_cap
+            - aurum_cuirass
+        - chance: common
+          one_of:
+            - hachiryu_kote
+            - enforcer
+            - antares
+        - chance: uncommon
+          item: roundel_earring

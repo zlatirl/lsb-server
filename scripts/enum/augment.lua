@@ -116,9 +116,18 @@ xi.augment =
     CLUB_SKILL_P1                      = 267,
     STAFF_SKILL_P1                     = 268,
 
+    DIVINE_MAGIC_SKILL_P1              = 288,
+    HEALING_MAGIC_SKILL_P1             = 289,
     ENHANCING_MAGIC_SKILL_P1           = 290,
-
+    ENFEEBLING_MAGIC_SKILL_P1          = 291,
+    ELEMENTAL_MAGIC_SKILL_P1           = 292,
     DARK_MAGIC_SKILL_P1                = 293,
+    SUMMONING_MAGIC_SKILL_P1           = 294,
+    NINJUTSU_SKILL_P1                  = 295,
+    SINGING_SKILL_P1                   = 296,
+    STRING_INSTRUMENT_SKILL_P1         = 297,
+    WIND_INSTRUMENT_SKILL_P1           = 298,
+    BLUE_MAGIC_SKILL_P1                = 299,
 
     CRITICAL_HIT_DAMAGE_P1             = 328, -- Percent
     CURE_POTENCY_P1                    = 329, -- Percent

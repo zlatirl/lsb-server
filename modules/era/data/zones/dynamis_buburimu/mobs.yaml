@@ -1,0 +1,967 @@
+# Era Dynamis: the wave engine spawns every mob itself, so none of the zone's own mobs may spawn.
+
+templates:
+  Adamantking_Effigy:
+    attributes:
+      spawn:
+        type: [scripted]
+  Adamantking_Image:
+    attributes:
+      spawn:
+        type: [scripted]
+  Aitvaras:
+    attributes:
+      spawn:
+        type: [scripted]
+  Alklha:
+    attributes:
+      spawn:
+        type: [scripted]
+  Apocalyptic_Beast:
+    attributes:
+      spawn:
+        type: [scripted]
+  Arch_Apocalyptic_Beast:
+    attributes:
+      spawn:
+        type: [scripted]
+  Avatar_Idol:
+    attributes:
+      spawn:
+        type: [scripted]
+  Baa_Dava_the_Bibliophage:
+    attributes:
+      spawn:
+        type: [scripted]
+  Baas_Avatar:
+    attributes:
+      spawn:
+        type: [scripted]
+  Barong:
+    attributes:
+      spawn:
+        type: [scripted]
+  Bxafraffs_Wyvern:
+    attributes:
+      spawn:
+        type: [scripted]
+  Doo_Peku_the_Fleetfoot:
+    attributes:
+      spawn:
+        type: [scripted]
+  Elvaansticker_Bxafraff:
+    attributes:
+      spawn:
+        type: [scripted]
+  Flamecaller_Zoeqdoq:
+    attributes:
+      spawn:
+        type: [scripted]
+  GiBhe_Fleshfeaster:
+    attributes:
+      spawn:
+        type: [scripted]
+  Goblin_Replica:
+    attributes:
+      spawn:
+        type: [scripted]
+  Goblin_Statue:
+    attributes:
+      spawn:
+        type: [scripted]
+  Gosspix_Blabberlips:
+    attributes:
+      spawn:
+        type: [scripted]
+  Hamfist_Gukhbuk:
+    attributes:
+      spawn:
+        type: [scripted]
+  Koo_Rahi_the_Levinblade:
+    attributes:
+      spawn:
+        type: [scripted]
+  Lost_Aitvaras:
+    attributes:
+      spawn:
+        type: [scripted]
+  Lost_Alklha:
+    attributes:
+      spawn:
+        type: [scripted]
+  Lost_Barong:
+    attributes:
+      spawn:
+        type: [scripted]
+  Lost_Stihi:
+    attributes:
+      spawn:
+        type: [scripted]
+  Lyncean_Juwgneg:
+    attributes:
+      spawn:
+        type: [scripted]
+  Manifest_Icon:
+    attributes:
+      spawn:
+        type: [scripted]
+  Nightmare_Bunny:
+    attributes:
+      spawn:
+        type: [scripted]
+  Nightmare_Bunny_HI:
+    attributes:
+      spawn:
+        type: [scripted]
+  Nightmare_Crab:
+    attributes:
+      spawn:
+        type: [scripted]
+  Nightmare_Crab_HI:
+    attributes:
+      spawn:
+        type: [scripted]
+  Nightmare_Crawler:
+    attributes:
+      spawn:
+        type: [scripted]
+  Nightmare_Crawler_HI:
+    attributes:
+      spawn:
+        type: [scripted]
+  Nightmare_Dhalmel:
+    attributes:
+      spawn:
+        type: [scripted]
+  Nightmare_Dhalmel_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Nightmare_Dhalmel_Small:
+    attributes:
+      spawn:
+        type: [scripted]
+  Nightmare_Eft:
+    attributes:
+      spawn:
+        type: [scripted]
+  Nightmare_Eft_HI:
+    attributes:
+      spawn:
+        type: [scripted]
+  Nightmare_Mandragora:
+    attributes:
+      spawn:
+        type: [scripted]
+  Nightmare_Mandragora_HI:
+    attributes:
+      spawn:
+        type: [scripted]
+  Nightmare_Raven:
+    attributes:
+      spawn:
+        type: [scripted]
+  Nightmare_Raven_HI:
+    attributes:
+      spawn:
+        type: [scripted]
+  Nightmare_Scorpion:
+    attributes:
+      spawn:
+        type: [scripted]
+  Nightmare_Scorpion_HI:
+    attributes:
+      spawn:
+        type: [scripted]
+  Nightmare_Uragnite:
+    attributes:
+      spawn:
+        type: [scripted]
+  Nightmare_Uragnite_HI:
+    attributes:
+      spawn:
+        type: [scripted]
+  QuPho_Bloodspiller:
+    attributes:
+      spawn:
+        type: [scripted]
+  Ree_Nata_the_Melomanic:
+    attributes:
+      spawn:
+        type: [scripted]
+  Serjeant_Tombstone:
+    attributes:
+      spawn:
+        type: [scripted]
+  Shamblix_Rottenheart:
+    attributes:
+      spawn:
+        type: [scripted]
+  Stihi:
+    attributes:
+      spawn:
+        type: [scripted]
+  TeZha_Ironclad:
+    attributes:
+      spawn:
+        type: [scripted]
+  VaRhu_Bodysnatcher:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Alchemist:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Alchemist_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Alchemist_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Ambusher:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Ambusher_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Ambusher_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Amputator:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Amputator_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Amputator_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Armorer:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Armorer_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Armorer_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Assassin:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Assassin_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Assassin_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Backstabber:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Backstabber_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Backstabber_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Beasttender:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Beasttender_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Beasttender_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Bugler:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Bugler_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Bugler_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Chanter:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Chanter_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Chanter_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Constable:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Constable_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Constable_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Defender:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Defender_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Defender_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Dollmaster:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Dollmaster_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Dollmaster_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Dragontamer:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Dragontamer_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Dragontamer_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Drakekeeper:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Drakekeeper_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Drakekeeper_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Enchanter:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Enchanter_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Enchanter_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Exemplar:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Exemplar_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Exemplar_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Footsoldier:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Footsoldier_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Footsoldier_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Grappler:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Grappler_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Grappler_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Gutslasher:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Gutslasher_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Gutslasher_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Hatamoto:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Hatamoto_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Hatamoto_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Hawker:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Hawker_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Hawker_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Hitman:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Hitman_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Hitman_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Impaler:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Impaler_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Impaler_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Inciter:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Inciter_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Inciter_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Kusa:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Kusa_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Kusa_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Liberator:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Liberator_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Liberator_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Maestro:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Maestro_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Maestro_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Mason:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Mason_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Mason_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Mesmerizer:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Mesmerizer_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Mesmerizer_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Militant:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Militant_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Militant_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Minstrel:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Minstrel_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Minstrel_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Neckchopper:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Neckchopper_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Neckchopper_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Necromancer:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Necromancer_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Necromancer_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Ogresoother:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Ogresoother_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Ogresoother_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Oracle:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Oracle_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Partisan:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Partisan_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Partisan_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Pathfinder:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Pathfinder_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Pathfinder_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Persecutor:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Persecutor_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Persecutor_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Pillager:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Pillager_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Pillager_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Pitfighter:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Pitfighter_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Pitfighter_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Predator:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Predator_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Predator_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Prelate:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Prelate_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Prelate_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Priest:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Priest_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Priest_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Protector:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Protector_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Protector_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Purloiner:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Purloiner_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Purloiner_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Ronin:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Ronin_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Ronin_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Salvager:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Salvager_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Salvager_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Sentinel:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Sentinel_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Sentinel_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Shaman:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Shaman_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Shaman_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Skirmisher:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Skirmisher_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Skirmisher_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Smithy:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Smithy_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Smithy_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Thaumaturge:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Thaumaturge_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Thaumaturge_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Tinkerer:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Tinkerer_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Tinkerer_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Trooper:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Trooper_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Trooper_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Undertaker:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Undertaker_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Undertaker_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Vexer:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Vexer_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Vexer_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Vigilante:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Vigilante_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Vigilante_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Vindicator:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Vindicator_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Vindicator_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Visionary:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Visionary_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Visionary_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Welldigger:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Welldigger_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Welldigger_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguards_Avatar:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguards_Avatar_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguards_Crow:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguards_Hecteyes:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguards_Scorpion:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguards_Slime:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguards_Wyvern:
+    attributes:
+      spawn:
+        type: [scripted]
+  Warchief_Tombstone:
+    attributes:
+      spawn:
+        type: [scripted]
+  Woodnix_Shrillwhistle:
+    attributes:
+      spawn:
+        type: [scripted]
+  Woodnixs_Slime:
+    attributes:
+      spawn:
+        type: [scripted]

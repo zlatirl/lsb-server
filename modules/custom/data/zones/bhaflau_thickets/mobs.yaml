@@ -1,0 +1,166 @@
+# ERA Custom: era mob adjustments (was modules/custom/sql/era_mob_adjustments.sql and era_custom_drops.sql).
+# content: null removes the Abyssea/RoV content tag, so those mobs spawn on era whatever the content settings.
+# loot lists are the retail drops plus era's additions; YAML lists replace rather than append.
+
+templates:
+  Locus_Colibri:
+    content: null
+  Locus_Wivre:
+    content: null
+  Colibri:
+    loot:
+      drops:
+        - chance: very_common
+          item: colibri_feather
+        - chance: uncommon
+          item: colibri_beak
+        - chance: 40
+          item: giant_bird_feather
+  Olden_Treant:
+    loot:
+      drops:
+        - chance: very_common
+          item: dryad_root
+        - chance: common
+          item: sprig_of_mistletoe
+        - chance: uncommon
+          item: puffball
+        - chance: rare
+          one_of:
+            rosewood_log: 45
+            mahogany_log: 30
+            ebony_log: 15
+            petrified_log: 10
+        - chance: always
+          item: lacquer_tree_log
+
+spawns:
+  # Locus_Colibri
+  16990444:
+    level: [81, 82]
+  16990445:
+    level: [81, 82]
+  16990446:
+    level: [81, 82]
+  16990447:
+    level: [81, 82]
+  16990448:
+    level: [81, 82]
+  16990451:
+    level: [81, 82]
+  16990452:
+    level: [81, 82]
+  16990453:
+    level: [81, 82]
+  16990454:
+    level: [81, 82]
+  16990455:
+    level: [81, 82]
+  16990456:
+    level: [81, 82]
+  16990457:
+    level: [81, 82]
+  16990458:
+    level: [81, 82]
+  16990459:
+    level: [81, 82]
+  16990460:
+    level: [81, 82]
+  16990461:
+    level: [81, 82]
+  16990462:
+    level: [81, 82]
+  16990463:
+    level: [81, 82]
+  16990464:
+    level: [81, 82]
+  16990465:
+    level: [81, 82]
+  16990468:
+    level: [81, 82]
+  16990469:
+    level: [81, 82]
+  16990470:
+    level: [81, 82]
+  16990471:
+    level: [81, 82]
+  16990472:
+    level: [81, 82]
+  16990475:
+    level: [81, 82]
+  16990476:
+    level: [81, 82]
+  16990477:
+    level: [81, 82]
+  16990478:
+    level: [81, 82]
+  16990479:
+    level: [81, 82]
+  16990482:
+    level: [81, 82]
+  16990483:
+    level: [81, 82]
+  16990484:
+    level: [81, 82]
+  16990485:
+    level: [81, 82]
+  16990486:
+    level: [81, 82]
+  16990487:
+    level: [81, 82]
+  16990488:
+    level: [81, 82]
+  16990489:
+    level: [81, 82]
+  16990491:
+    level: [81, 82]
+  16990492:
+    level: [81, 82]
+  16990493:
+    level: [81, 82]
+  16990495:
+    level: [81, 82]
+  16990496:
+    level: [81, 82]
+  16990497:
+    level: [81, 82]
+  16990498:
+    level: [81, 82]
+  16990499:
+    level: [81, 82]
+  16990501:
+    level: [81, 82]
+  16990502:
+    level: [81, 82]
+  16990503:
+    level: [81, 82]
+  16990504:
+    level: [81, 82]
+  16990505:
+    level: [81, 82]
+  # Locus_Wivre
+  16990449:
+    level: [78, 83]
+  16990450:
+    level: [78, 83]
+  16990466:
+    level: [78, 83]
+  16990467:
+    level: [78, 83]
+  16990473:
+    level: [78, 83]
+  16990474:
+    level: [78, 83]
+  16990480:
+    level: [78, 83]
+  16990481:
+    level: [78, 83]
+  16990490:
+    level: [78, 83]
+  16990494:
+    level: [78, 83]
+  16990500:
+    level: [78, 83]
+  # Plague_Chigoe
+  16990417:
+    level: [75, 75]

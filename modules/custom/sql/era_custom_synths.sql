@@ -16,3 +16,4 @@ REPLACE INTO `synth_recipes` VALUES (6092, 1, 0, 100, 0, 0, 0, 0, 0, 0, 0, 4096,
 REPLACE INTO `synth_recipes` VALUES (6093, 1, 0, 100, 0, 0, 0, 0, 0, 0, 0, 4096, 4238, 17546, 17548, 17550, 17552, 17554, 17556, 17558, 17560, 9878, 9878, 9878, 9878, 1, 1, 1, 1, 'Heroism Aggregate', NULL);
 REPLACE INTO `synth_recipes` VALUES (6094, 1, 0, 0, 0, 0, 0, 100, 0, 0, 31, 4245, 4245, 1497, 3446, 3446, 0, 0, 0, 0, 0, 14674, 14674, 14674, 14674, 1, 1, 1, 1, 'Toreador''s Ring', NULL);
 REPLACE INTO `synth_recipes` VALUES (6095, 1, 0, 0, 100, 0, 0, 0, 0, 0, 0, 4098, 4240, 655, 657, 664, 914, 0, 0, 0, 0, 18712, 18712, 18712, 18712, 66, 99, 99, 99, 'Koga Shuriken', NULL);
+REPLACE INTO `synth_recipes` VALUES (6096, 0, 0, 0, 0, 82, 0, 0, 0, 0, 0, 4096, 4238, 947, 2418, 0, 0, 0, 0, 0, 0, 18235, 18235, 18235, 18235, 33, 99, 99, 99, 'Corsair Bullet', NULL);

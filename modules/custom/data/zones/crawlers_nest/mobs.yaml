@@ -1,0 +1,178 @@
+# ERA Custom: era mob adjustments (was modules/custom/sql/era_mob_adjustments.sql and era_custom_drops.sql).
+# content: null removes the Abyssea/RoV content tag, so those mobs spawn on era whatever the content settings.
+
+templates:
+  Dancing_Jewel:
+    content: null
+  King_Crawler:
+    content: null
+  Olid_Funguar:
+    content: null
+  Vespo:
+    content: null
+
+spawns:
+  # Dancing_Jewel
+  17584221:
+    level: [50, 53]
+  17584222:
+    level: [50, 53]
+  17584223:
+    level: [50, 53]
+  17584232:
+    level: [50, 53]
+  17584233:
+    level: [50, 53]
+  17584257:
+    level: [50, 53]
+  17584258:
+    level: [50, 53]
+  17584259:
+    level: [50, 53]
+  17584260:
+    level: [50, 53]
+  17584261:
+    level: [50, 53]
+  17584266:
+    level: [50, 53]
+  17584267:
+    level: [50, 53]
+  17584268:
+    level: [50, 53]
+  17584269:
+    level: [50, 53]
+  17584270:
+    level: [50, 53]
+  17584277:
+    level: [50, 53]
+  17584278:
+    level: [50, 53]
+  17584286:
+    level: [50, 53]
+  17584287:
+    level: [50, 53]
+  17584288:
+    level: [50, 53]
+  # King_Crawler
+  17584214:
+    level: [47, 49]
+  17584215:
+    level: [47, 49]
+  17584216:
+    level: [47, 49]
+  17584217:
+    level: [47, 49]
+  17584218:
+    level: [47, 49]
+  17584224:
+    level: [47, 49]
+  17584225:
+    level: [47, 49]
+  17584226:
+    level: [47, 49]
+  17584227:
+    level: [47, 49]
+  17584228:
+    level: [47, 49]
+  17584234:
+    level: [47, 49]
+  17584235:
+    level: [47, 49]
+  17584236:
+    level: [47, 49]
+  17584244:
+    level: [47, 49]
+  17584245:
+    level: [47, 49]
+  17584254:
+    level: [47, 49]
+  17584255:
+    level: [47, 49]
+  17584256:
+    level: [47, 49]
+  17584264:
+    level: [47, 49]
+  17584265:
+    level: [47, 49]
+  # Olid_Funguar
+  17584242:
+    level: [50, 54]
+  17584243:
+    level: [50, 54]
+  17584251:
+    level: [50, 54]
+  17584252:
+    level: [50, 54]
+  17584253:
+    level: [50, 54]
+  17584262:
+    level: [50, 54]
+  17584263:
+    level: [50, 54]
+  17584271:
+    level: [50, 54]
+  17584272:
+    level: [50, 54]
+  17584273:
+    level: [50, 54]
+  17584279:
+    level: [50, 54]
+  17584280:
+    level: [50, 54]
+  17584281:
+    level: [50, 54]
+  17584282:
+    level: [50, 54]
+  17584283:
+    level: [50, 54]
+  17584289:
+    level: [50, 54]
+  17584290:
+    level: [50, 54]
+  17584291:
+    level: [50, 54]
+  17584292:
+    level: [50, 54]
+  17584293:
+    level: [50, 54]
+  # Vespo
+  17584219:
+    level: [55, 57]
+  17584220:
+    level: [55, 57]
+  17584229:
+    level: [55, 57]
+  17584230:
+    level: [55, 57]
+  17584231:
+    level: [55, 57]
+  17584237:
+    level: [55, 57]
+  17584238:
+    level: [55, 57]
+  17584239:
+    level: [55, 57]
+  17584240:
+    level: [55, 57]
+  17584241:
+    level: [55, 57]
+  17584246:
+    level: [55, 57]
+  17584247:
+    level: [55, 57]
+  17584248:
+    level: [55, 57]
+  17584249:
+    level: [55, 57]
+  17584250:
+    level: [55, 57]
+  17584274:
+    level: [55, 57]
+  17584275:
+    level: [55, 57]
+  17584276:
+    level: [55, 57]
+  17584284:
+    level: [55, 57]
+  17584285:
+    level: [55, 57]

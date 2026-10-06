@@ -1,0 +1,30 @@
+# ERA Custom: era mob adjustments (was modules/custom/sql/era_mob_adjustments.sql and era_custom_drops.sql).
+# content: null removes the Abyssea/RoV content tag, so those mobs spawn on era whatever the content settings.
+# loot lists are the retail drops plus era's additions; YAML lists replace rather than append.
+
+templates:
+  Apex_Archaic_Cog:
+    content: null
+  Apex_Archaic_Cogs:
+    content: null
+  Armed_Gears:
+    loot:
+      drops:
+        - chance: always
+          item: armed_gears_fragment
+        - chance: very_common
+          item: earth_grip
+        - chance: very_common
+          item: thunder_grip
+        - chance: always
+          one_of:
+            - tomoe
+            - oracles_gloves
+            - aurum_sabatons
+        - chance: uncommon
+          one_of:
+            - tomoe
+            - oracles_gloves
+            - aurum_sabatons
+        - chance: uncommon
+          item: mercurial_kris

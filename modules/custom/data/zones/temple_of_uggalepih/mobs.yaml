@@ -1,0 +1,29 @@
+# ERA Custom: era mob adjustments (was modules/custom/sql/era_mob_adjustments.sql and era_custom_drops.sql).
+# loot lists are the retail drops plus era's additions; YAML lists replace rather than append.
+
+templates:
+  Tonberry_Stabber:
+    loot:
+      drops:
+        - chance: uncommon
+          item: ninjas_testimony
+        - chance: common
+          item: tonberry_coat
+        - chance: rare
+          item: uggalepih_coffer_key
+        - chance: rare
+          item: prelate_key
+        - chance: uncommon
+          item: flask_of_venom_potion
+        - chance: rare
+          item: chunk_of_white_steel
+        - chance: very_rare
+          item: manji_shuriken
+        - chance: super_rare
+          item: scroll_of_tonko_ni
+        - chance: ultra_rare
+          item: scroll_of_kurayami_ni
+        - chance: ultra_rare
+          item: scroll_of_hojo_ni
+        - chance: 3
+          item: scroll_of_suiton_san

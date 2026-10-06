@@ -421,6 +421,11 @@ xi.assault.onInstanceFailure = function(instance)
     end
 end
 
+-- ERA Custom: hook for the assault scheduled event
+xi.assault.applyEventBonus = function(member, points, promotionBonus, isFirstCompletion)
+    return points, promotionBonus
+end
+
 local function awardCompletionPoints(player, instance)
     if not instance then
         return
@@ -456,6 +461,9 @@ local function awardCompletionPoints(player, instance)
                 promotionBonus = 5
                 points         = points * 1.5
             end
+
+            -- ERA Custom: assault scheduled event bonuses
+            points, promotionBonus = xi.assault.applyEventBonus(member, points, promotionBonus, not member:hasCompletedAssault(assaultID))
 
             if pointsArea then
                 local assaultPointsEarned = math.floor(points)
@@ -504,6 +512,43 @@ xi.assault.runeReleaseFinish = function(player, csid, option, npc, exitZone)
     elseif csid == 102 and exitZone then
         exitToZone(player, exitZone)
     end
+end
+
+-- Stamps the current mission into the area's assault log. Returns true if a log was stamped.
+xi.assault.runeReleaseTrade = function(player, npc, trade)
+    local assaultID = player:getCurrentAssault()
+    local area      = xi.assault.missionToArea[assaultID]
+    local logItemID = area and xi.assault.assaultLogs[area]
+
+    if not logItemID or not npcUtil.tradeHasExactly(trade, logItemID) then
+        return false
+    end
+
+    local flagIndex = nil
+    for index, missionID in ipairs(xi.assault.missionsByArea[area]) do
+        if missionID == assaultID then
+            flagIndex = index
+            break
+        end
+    end
+
+    if not flagIndex then
+        return false
+    end
+
+    local flags = trade:getItem(0):getExData().flags
+    flags[flagIndex] = true
+
+    player:confirmTrade()
+
+    local log = player:addItem({ id = logItemID })
+    if log then
+        log:setExData({ flags = flags })
+    end
+
+    player:messageSpecial(zones[player:getZoneID()].text.ITEM_OBTAINED, logItemID)
+
+    return true
 end
 
 xi.assault.InstanceAssault = InstanceAssault

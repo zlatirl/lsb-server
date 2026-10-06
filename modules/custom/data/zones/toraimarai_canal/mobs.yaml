@@ -1,0 +1,291 @@
+# ERA Custom: era mob adjustments (was modules/custom/sql/era_mob_adjustments.sql and era_custom_drops.sql).
+# content: null removes the Abyssea/RoV content tag, so those mobs spawn on era whatever the content settings.
+
+templates:
+  Blackwater_Pugil:
+    content: null
+  Deviling_Bats:
+    content: null
+  Drowned_Bones:
+    content: null
+  Flume_Toad:
+    content: null
+  Plunderer_Crab:
+    content: null
+  Poroggo_Excavator:
+    content: null
+  Rapier_Scorpion:
+    content: null
+  Sodden_Bones:
+    content: null
+  Starborer:
+    content: null
+
+spawns:
+  # Bigclaw_aggro / Bigclaw_fished
+  17469441:
+    level: [45, 47]
+  17469452:
+    level: [45, 47]
+  17469453:
+    level: [45, 47]
+  17469459:
+    level: [45, 47]
+  17469465:
+    level: [45, 47]
+  17469471:
+    level: [45, 47]
+  17469472:
+    level: [45, 47]
+  17469481:
+    level: [45, 47]
+  17469482:
+    level: [45, 47]
+  17469488:
+    level: [45, 47]
+  17469489:
+    level: [45, 47]
+  17469495:
+    level: [45, 47]
+  17469496:
+    level: [45, 47]
+  17469500:
+    level: [45, 47]
+  17469501:
+    level: [45, 47]
+  17469522:
+    level: [45, 47]
+  17469523:
+    level: [45, 47]
+  17469528:
+    level: [45, 47]
+  17469529:
+    level: [45, 47]
+  17469533:
+    level: [45, 47]
+  # Blackwater_Pugil
+  17469596:
+    level: [57, 59]
+  17469597:
+    level: [57, 59]
+  17469598:
+    level: [57, 59]
+  17469599:
+    level: [57, 59]
+  17469600:
+    level: [57, 59]
+  17469601:
+    level: [57, 59]
+  17469602:
+    level: [57, 59]
+  17469603:
+    level: [57, 59]
+  17469613:
+    level: [57, 59]
+  17469614:
+    level: [57, 59]
+  17469615:
+    level: [57, 59]
+  17469616:
+    level: [57, 59]
+  17469617:
+    level: [57, 59]
+  17469618:
+    level: [57, 59]
+  17469619:
+    level: [57, 59]
+  17469620:
+    level: [57, 59]
+  17469625:
+    level: [57, 59]
+  17469626:
+    level: [57, 59]
+  17469627:
+    level: [57, 59]
+  17469628:
+    level: [57, 59]
+  17469633:
+    level: [57, 59]
+  17469634:
+    level: [57, 59]
+  17469635:
+    level: [57, 59]
+  17469636:
+    level: [57, 59]
+  17469697:
+    level: [57, 59]
+  17469698:
+    level: [57, 59]
+  17469699:
+    level: [57, 59]
+  17469700:
+    level: [57, 59]
+  17469701:
+    level: [57, 59]
+  17469702:
+    level: [57, 59]
+  17469703:
+    level: [57, 59]
+  17469704:
+    level: [57, 59]
+  17469705:
+    level: [57, 59]
+  17469706:
+    level: [57, 59]
+  17469707:
+    level: [57, 59]
+  17469708:
+    level: [57, 59]
+  # Bloodsucker_TC / Bloodsucker_fished
+  17469444:
+    level: [59, 61]
+  17469509:
+    level: [59, 61]
+  17469510:
+    level: [59, 61]
+  17469536:
+    level: [59, 61]
+  17469537:
+    level: [59, 61]
+  17469592:
+    level: [59, 61]
+  17469593:
+    level: [59, 61]
+  17469594:
+    level: [59, 61]
+  17469595:
+    level: [59, 61]
+  # Deviling_Bats
+  17469637:
+    level: [58, 60]
+  17469638:
+    level: [58, 60]
+  17469650:
+    level: [58, 60]
+  17469651:
+    level: [58, 60]
+  17469670:
+    level: [58, 60]
+  17469671:
+    level: [58, 60]
+  17469681:
+    level: [58, 60]
+  17469682:
+    level: [58, 60]
+  17469683:
+    level: [58, 60]
+  17469684:
+    level: [58, 60]
+  17469685:
+    level: [58, 60]
+  # Drowned_Bones
+  17469641:
+    level: [65, 67]
+  17469642:
+    level: [65, 67]
+  17469654:
+    level: [65, 67]
+  17469655:
+    level: [65, 67]
+  17469658:
+    level: [65, 67]
+  17469659:
+    level: [65, 67]
+  17469674:
+    level: [65, 67]
+  17469675:
+    level: [65, 67]
+  17469678:
+    level: [65, 67]
+  17469679:
+    level: [65, 67]
+  17469688:
+    level: [65, 67]
+  17469689:
+    level: [65, 67]
+  # Plunderer_Crab
+  17469604:
+    level: [60, 62]
+  17469605:
+    level: [60, 62]
+  17469606:
+    level: [60, 62]
+  17469607:
+    level: [60, 62]
+  17469608:
+    level: [60, 62]
+  17469609:
+    level: [60, 62]
+  17469610:
+    level: [60, 62]
+  17469611:
+    level: [60, 62]
+  17469612:
+    level: [60, 62]
+  17469621:
+    level: [60, 62]
+  17469622:
+    level: [60, 62]
+  17469623:
+    level: [60, 62]
+  17469624:
+    level: [60, 62]
+  # Rapier_Scorpion
+  17469660:
+    level: [65, 67]
+  17469680:
+    level: [65, 67]
+  # Sodden_Bones
+  17469639:
+    level: [66, 69]
+  17469640:
+    level: [66, 69]
+  17469652:
+    level: [66, 69]
+  17469653:
+    level: [66, 69]
+  17469656:
+    level: [66, 69]
+  17469657:
+    level: [66, 69]
+  17469672:
+    level: [66, 69]
+  17469673:
+    level: [66, 69]
+  17469676:
+    level: [66, 69]
+  17469677:
+    level: [66, 69]
+  17469686:
+    level: [66, 69]
+  17469687:
+    level: [66, 69]
+  # Starborer
+  17469643:
+    level: [65, 67]
+  17469644:
+    level: [65, 67]
+  17469645:
+    level: [65, 67]
+  17469646:
+    level: [65, 67]
+  17469647:
+    level: [65, 67]
+  17469648:
+    level: [65, 67]
+  17469649:
+    level: [65, 67]
+  17469690:
+    level: [65, 67]
+  17469691:
+    level: [65, 67]
+  17469692:
+    level: [65, 67]
+  17469693:
+    level: [65, 67]
+  17469694:
+    level: [65, 67]
+  17469695:
+    level: [65, 67]
+  17469696:
+    level: [65, 67]

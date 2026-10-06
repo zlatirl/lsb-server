@@ -72,6 +72,7 @@
 #include "utils/battleutils.h"
 
 #include "utils/charutils.h"
+#include "utils/dataset_loader.h"
 #include "utils/instanceutils.h"
 #include "utils/itemutils.h"
 #include "utils/mobutils.h"
@@ -1319,7 +1320,7 @@ void PopulateIDLookups(const xi::ZoneId zoneId, const std::string& zoneName, con
                 return std::nullopt;
             }
 
-            return xi::data::loadZoneFile<xi::data::datasets::zones::mobs::Dataset>(zone);
+            return xi::data::loadMergedZoneFile<xi::data::datasets::zones::mobs::Dataset>(zone); // ERA Custom: module overlays
         }();
 
         const auto fallbackNpcs = [&]() -> std::optional<xi::data::Npcs>
@@ -1329,7 +1330,7 @@ void PopulateIDLookups(const xi::ZoneId zoneId, const std::string& zoneName, con
                 return std::nullopt;
             }
 
-            return xi::data::loadZoneFile<xi::data::datasets::zones::npcs::Dataset>(zone);
+            return xi::data::loadMergedZoneFile<xi::data::datasets::zones::npcs::Dataset>(zone); // ERA Custom: module overlays
         }();
 
         const auto* mobs = [&]() -> const xi::data::Mobs*

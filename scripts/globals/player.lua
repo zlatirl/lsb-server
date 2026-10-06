@@ -211,25 +211,6 @@ xi.player.onGameIn = function(player, firstLogin, zoning)
     -- apply mods from gearsets (scripts/globals/gear_sets.lua)
     xi.gear_sets.checkForGearSet(player)
 
-    -- ERA Custom: Remove moogle buffs on zone
-    if player:getCharVar('MoogleBuffs') == 1 then
-        player:delStatusEffect(xi.effect.PROTECT)
-        player:delStatusEffect(xi.effect.SHELL)
-        player:delStatusEffect(xi.effect.REGEN)
-        player:delStatusEffect(xi.effect.REFRESH)
-        player:delStatusEffect(xi.effect.RERAISE)
-        player:delStatusEffect(xi.effect.REGAIN)
-        player:delStatusEffect(xi.effect.MND_BOOST)
-        player:delStatusEffect(xi.effect.MAX_MP_BOOST)
-        player:delStatusEffect(xi.effect.MAX_HP_BOOST)
-        player:delStatusEffect(xi.effect.PHALANX)
-        player:delStatusEffect(xi.effect.BALLAD)
-        player:delStatusEffect(xi.effect.ACCURACY_BOOST)
-        player:delStatusEffect(xi.effect.STR_BOOST) -- Mentor Only
-        player:delStatusEffect(xi.effect.HASTE) -- Mentor Only
-        player:setCharVar('MoogleBuffs', 0)
-    end
-
     if player:getGMLevel() > 0 then
         -- god mode
         if player:getCharVar('GodMode') == 1 then
@@ -262,8 +243,6 @@ xi.player.onGameIn = function(player, firstLogin, zoning)
         if player:getCharVar('Immortal') == 1 then
             player:setUnkillable(true)
         end
-
-        player:setMod(xi.mod.MOVE_SPEED_OVERRIDE, 200)
 
         -- !hide
         if player:getCharVar('GMHidden') == 1 then

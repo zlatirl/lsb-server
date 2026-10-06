@@ -6,7 +6,6 @@ xi.server = xi.server or {}
 
 xi.server.onServerStart = function()
     xi.events.handler.checkSeasonalEvents()
-    xi.events.handler.checkScheduledEvents()
 end
 
 xi.server.onJSTMidnight = function()

@@ -1,0 +1,190 @@
+# ERA Custom: era mob adjustments (was modules/custom/sql/era_mob_adjustments.sql and era_custom_drops.sql).
+# content: null removes the Abyssea/RoV content tag, so those mobs spawn on era whatever the content settings.
+
+templates:
+  Bleeder_Leech:
+    content: null
+  Chaser_Bats:
+    content: null
+  Crypterpillar:
+    content: null
+  Warren_Bat:
+    content: null
+
+spawns:
+  # Bleeder_Leech
+  17588350:
+    level: [24, 28]
+  17588351:
+    level: [24, 28]
+  17588352:
+    level: [24, 28]
+  17588353:
+    level: [24, 28]
+  17588354:
+    level: [24, 28]
+  17588357:
+    level: [24, 28]
+  17588358:
+    level: [24, 28]
+  17588359:
+    level: [24, 28]
+  17588360:
+    level: [24, 28]
+  17588365:
+    level: [24, 28]
+  17588366:
+    level: [24, 28]
+  17588367:
+    level: [24, 28]
+  17588368:
+    level: [24, 28]
+  17588369:
+    level: [24, 28]
+  17588373:
+    level: [24, 28]
+  17588374:
+    level: [24, 28]
+  17588375:
+    level: [24, 28]
+  17588376:
+    level: [24, 28]
+  17588377:
+    level: [24, 28]
+  17588380:
+    level: [24, 28]
+  17588390:
+    level: [24, 28]
+  17588396:
+    level: [24, 28]
+  # Chaser_Bats
+  17588361:
+    level: [23, 26]
+  17588362:
+    level: [23, 26]
+  17588381:
+    level: [23, 26]
+  17588382:
+    level: [23, 26]
+  17588383:
+    level: [23, 26]
+  17588384:
+    level: [23, 26]
+  17588385:
+    level: [23, 26]
+  17588386:
+    level: [23, 26]
+  17588387:
+    level: [23, 26]
+  17588388:
+    level: [23, 26]
+  17588389:
+    level: [23, 26]
+  17588391:
+    level: [23, 26]
+  17588392:
+    level: [23, 26]
+  17588393:
+    level: [23, 26]
+  17588394:
+    level: [23, 26]
+  17588395:
+    level: [23, 26]
+  17588397:
+    level: [23, 26]
+  17588398:
+    level: [23, 26]
+  17588399:
+    level: [23, 26]
+  17588400:
+    level: [23, 26]
+  17588402:
+    level: [23, 26]
+  17588408:
+    level: [23, 26]
+  # Crypterpillar
+  17588370:
+    level: [29, 31]
+  17588401:
+    level: [29, 31]
+  17588403:
+    level: [29, 31]
+  17588404:
+    level: [29, 31]
+  17588405:
+    level: [29, 31]
+  17588406:
+    level: [29, 31]
+  17588407:
+    level: [29, 31]
+  17588409:
+    level: [29, 31]
+  17588410:
+    level: [29, 31]
+  17588411:
+    level: [29, 31]
+  17588412:
+    level: [29, 31]
+  17588413:
+    level: [29, 31]
+  17588414:
+    level: [29, 31]
+  17588415:
+    level: [29, 31]
+  17588419:
+    level: [29, 31]
+  17588420:
+    level: [29, 31]
+  17588424:
+    level: [29, 31]
+  17588425:
+    level: [29, 31]
+  17588429:
+    level: [29, 31]
+  17588430:
+    level: [29, 31]
+  17588434:
+    level: [29, 31]
+  17588439:
+    level: [29, 31]
+  # Warren_Bat
+  17588416:
+    level: [26, 29]
+  17588417:
+    level: [26, 29]
+  17588418:
+    level: [26, 29]
+  17588421:
+    level: [26, 29]
+  17588422:
+    level: [26, 29]
+  17588423:
+    level: [26, 29]
+  17588426:
+    level: [26, 29]
+  17588427:
+    level: [26, 29]
+  17588428:
+    level: [26, 29]
+  17588431:
+    level: [26, 29]
+  17588432:
+    level: [26, 29]
+  17588433:
+    level: [26, 29]
+  17588435:
+    level: [26, 29]
+  17588436:
+    level: [26, 29]
+  17588437:
+    level: [26, 29]
+  17588438:
+    level: [26, 29]
+  17588440:
+    level: [26, 29]
+  17588441:
+    level: [26, 29]
+  17588442:
+    level: [26, 29]
+  17588443:
+    level: [26, 29]

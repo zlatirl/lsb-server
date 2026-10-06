@@ -1,0 +1,48 @@
+# ERA Custom: era mob adjustments (was modules/custom/sql/era_mob_adjustments.sql and era_custom_drops.sql).
+# content: null removes the Abyssea/RoV content tag, so those mobs spawn on era whatever the content settings.
+
+templates:
+  Apex_Blazer_Elytra:
+    content: null
+  Apex_Doom_Scorpion:
+    content: null
+  Apex_Dragonfly:
+    content: null
+  Apex_Fire_Elemental:
+    content: null
+  Apex_Helm_Elytra:
+    content: null
+  Apex_Hornfly:
+    content: null
+  Apex_Knight_Lugcrawler:
+    content: null
+  Apex_Lugcrawler:
+    content: null
+  Apex_Lugcrawler_Hunter:
+    content: null
+  Apex_Mycelar:
+    content: null
+  Apex_Nest_Elytra:
+    content: null
+  Apex_Rumble_Lugcrawler:
+    content: null
+  Apex_Soldier_Lugcrawler:
+    content: null
+  Apex_Water_Elemental:
+    content: null
+  Apex_Worker_Lugcrawler:
+    content: null
+  Locus_Blazer_Elytra:
+    content: null
+  Locus_Dragonfly:
+    content: null
+  Locus_Hornfly:
+    content: null
+  Locus_Lugcrawler:
+    content: null
+  Locus_Nest_Elytra:
+    content: null
+  Locus_Soldier_Lugcrawler:
+    content: null
+  Locus_Worker_Lugcrawler:
+    content: null

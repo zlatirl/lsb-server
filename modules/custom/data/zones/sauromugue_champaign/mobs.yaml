@@ -1,0 +1,19 @@
+# ERA Custom: era mob adjustments (was modules/custom/sql/era_mob_adjustments.sql and era_custom_drops.sql).
+# loot lists are the retail drops plus era's additions; YAML lists replace rather than append.
+
+templates:
+  Roc:
+    loot:
+      drops:
+        - chance: always
+          item: reraiser
+        - chance: always
+          item: vile_elixir
+        - chance: always
+          item: crimson_blade
+        - chance: common
+          item: dryad_staff
+        - chance: rare
+          item: damascus_ingot
+        - chance: 21
+          item: thrakon_breastplate

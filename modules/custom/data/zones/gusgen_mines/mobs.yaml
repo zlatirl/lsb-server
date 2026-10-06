@@ -1,0 +1,194 @@
+# ERA Custom: era mob adjustments (was modules/custom/sql/era_mob_adjustments.sql and era_custom_drops.sql).
+# content: null removes the Abyssea/RoV content tag, so those mobs spawn on era whatever the content settings.
+
+templates:
+  Accursed_Soldier:
+    content: null
+  Accursed_Sorcerer:
+    content: null
+  Madfly:
+    content: null
+  Rockmill:
+    content: null
+
+spawns:
+  # Accursed_Soldier
+  17580139:
+    level: [26, 30]
+  17580140:
+    level: [26, 30]
+  17580143:
+    level: [26, 30]
+  17580144:
+    level: [26, 30]
+  17580147:
+    level: [26, 30]
+  17580148:
+    level: [26, 30]
+  17580151:
+    level: [26, 30]
+  17580152:
+    level: [26, 30]
+  # Accursed_Sorcerer
+  17580141:
+    level: [23, 27]
+  17580142:
+    level: [23, 27]
+  17580145:
+    level: [23, 27]
+  17580146:
+    level: [23, 27]
+  17580149:
+    level: [23, 27]
+  17580150:
+    level: [23, 27]
+  17580153:
+    level: [23, 27]
+  17580154:
+    level: [23, 27]
+  # Madfly
+  17580155:
+    level: [27, 30]
+  17580156:
+    level: [27, 30]
+  17580157:
+    level: [27, 30]
+  17580159:
+    level: [27, 30]
+  17580160:
+    level: [27, 30]
+  17580161:
+    level: [27, 30]
+  17580163:
+    level: [27, 30]
+  17580164:
+    level: [27, 30]
+  17580165:
+    level: [27, 30]
+  17580167:
+    level: [27, 30]
+  17580168:
+    level: [27, 30]
+  17580169:
+    level: [27, 30]
+  17580171:
+    level: [27, 30]
+  17580172:
+    level: [27, 30]
+  17580173:
+    level: [27, 30]
+  17580175:
+    level: [27, 30]
+  17580176:
+    level: [27, 30]
+  17580177:
+    level: [27, 30]
+  17580178:
+    level: [27, 30]
+  17580179:
+    level: [27, 30]
+  17580180:
+    level: [27, 30]
+  17580181:
+    level: [27, 30]
+  17580182:
+    level: [27, 30]
+  17580183:
+    level: [27, 30]
+  17580184:
+    level: [27, 30]
+  17580185:
+    level: [27, 30]
+  17580186:
+    level: [27, 30]
+  17580187:
+    level: [27, 30]
+  17580188:
+    level: [27, 30]
+  17580207:
+    level: [27, 30]
+  17580208:
+    level: [27, 30]
+  17580209:
+    level: [27, 30]
+  17580211:
+    level: [27, 30]
+  17580212:
+    level: [27, 30]
+  17580213:
+    level: [27, 30]
+  17580215:
+    level: [27, 30]
+  17580216:
+    level: [27, 30]
+  17580217:
+    level: [27, 30]
+  17580219:
+    level: [27, 30]
+  17580220:
+    level: [27, 30]
+  17580221:
+    level: [27, 30]
+  17580223:
+    level: [27, 30]
+  17580224:
+    level: [27, 30]
+  17580225:
+    level: [27, 30]
+  # Rockmill
+  17580158:
+    level: [23, 26]
+  17580162:
+    level: [23, 26]
+  17580166:
+    level: [23, 26]
+  17580170:
+    level: [23, 26]
+  17580174:
+    level: [23, 26]
+  17580189:
+    level: [23, 26]
+  17580190:
+    level: [23, 26]
+  17580191:
+    level: [23, 26]
+  17580192:
+    level: [23, 26]
+  17580193:
+    level: [23, 26]
+  17580194:
+    level: [23, 26]
+  17580195:
+    level: [23, 26]
+  17580196:
+    level: [23, 26]
+  17580197:
+    level: [23, 26]
+  17580198:
+    level: [23, 26]
+  17580199:
+    level: [23, 26]
+  17580200:
+    level: [23, 26]
+  17580201:
+    level: [23, 26]
+  17580202:
+    level: [23, 26]
+  17580203:
+    level: [23, 26]
+  17580204:
+    level: [23, 26]
+  17580205:
+    level: [23, 26]
+  17580206:
+    level: [23, 26]
+  17580210:
+    level: [23, 26]
+  17580214:
+    level: [23, 26]
+  17580218:
+    level: [23, 26]
+  17580222:
+    level: [23, 26]
+  17580226:
+    level: [23, 26]

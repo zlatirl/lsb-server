@@ -104,6 +104,8 @@ entity.onEventFinish = function(player, csid, option, npc)
                     tokens = tokens * 1.1
                 end
 
+                tokens = xi.nyzul.applyTokenBonus(players, tokens) -- ERA Custom
+
                 -- Adds hidden Assault Points for ranking up in Mercenary Rank
                 -- +5 for 1st time +1 for each additional
                 if players:hasCompletedAssault(players:getCurrentAssault()) then

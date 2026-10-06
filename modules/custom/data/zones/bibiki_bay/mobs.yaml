@@ -1,0 +1,272 @@
+# ERA Custom: era mob adjustments (was modules/custom/sql/era_mob_adjustments.sql and era_custom_drops.sql).
+# content: null removes the Abyssea/RoV content tag, so those mobs spawn on era whatever the content settings.
+
+templates:
+  Bight_Rarab:
+    content: null
+  Camelopard:
+    content: null
+  Hypnos_Eft:
+    content: null
+  Locus_Bight_Rarab:
+    content: null
+  Locus_Camelopard:
+    content: null
+  Locus_Fiddler_Crab:
+    content: null
+  Locus_Ghost_Crab:
+    content: null
+  Locus_Hypnos_Eft:
+    content: null
+
+spawns:
+  # Locus_Bight_Rarab
+  16793800:
+    level: [82, 83]
+  16793801:
+    level: [82, 83]
+  16793802:
+    level: [82, 83]
+  16793803:
+    level: [82, 83]
+  16793804:
+    level: [82, 83]
+  16793805:
+    level: [82, 83]
+  16793809:
+    level: [82, 83]
+  16793810:
+    level: [82, 83]
+  16793811:
+    level: [82, 83]
+  16793812:
+    level: [82, 83]
+  16793817:
+    level: [82, 83]
+  16793818:
+    level: [82, 83]
+  16793819:
+    level: [82, 83]
+  16793820:
+    level: [82, 83]
+  16793821:
+    level: [82, 83]
+  16793822:
+    level: [82, 83]
+  16793823:
+    level: [82, 83]
+  16793824:
+    level: [82, 83]
+  16793825:
+    level: [82, 83]
+  16793826:
+    level: [82, 83]
+  16793835:
+    level: [82, 83]
+  16793836:
+    level: [82, 83]
+  16793837:
+    level: [82, 83]
+  16793838:
+    level: [82, 83]
+  # Locus_Camelopard
+  16793806:
+    level: [85, 85]
+  16793807:
+    level: [85, 85]
+  16793808:
+    level: [85, 85]
+  16793813:
+    level: [85, 85]
+  16793814:
+    level: [85, 85]
+  16793815:
+    level: [85, 85]
+  16793816:
+    level: [85, 85]
+  16793827:
+    level: [85, 85]
+  16793828:
+    level: [85, 85]
+  16793829:
+    level: [85, 85]
+  16793830:
+    level: [85, 85]
+  16793831:
+    level: [85, 85]
+  16793832:
+    level: [85, 85]
+  16793833:
+    level: [85, 85]
+  16793834:
+    level: [85, 85]
+  16793839:
+    level: [85, 85]
+  16793840:
+    level: [85, 85]
+  16793841:
+    level: [85, 85]
+  16793842:
+    level: [85, 85]
+  16793843:
+    level: [85, 85]
+  16793844:
+    level: [85, 85]
+  16793845:
+    level: [85, 85]
+  16793846:
+    level: [85, 85]
+  # Locus_Ghost_Crab
+  16793859:
+    level: [81, 84]
+  16793860:
+    level: [81, 84]
+  16793861:
+    level: [81, 84]
+  16793862:
+    level: [81, 84]
+  16793863:
+    level: [81, 84]
+  16793864:
+    level: [81, 84]
+  16793865:
+    level: [81, 84]
+  16793866:
+    level: [81, 84]
+  16793867:
+    level: [81, 84]
+  16793868:
+    level: [81, 84]
+  16793869:
+    level: [81, 84]
+  16793870:
+    level: [81, 84]
+  16793871:
+    level: [81, 84]
+  16793872:
+    level: [81, 84]
+  16793873:
+    level: [81, 84]
+  16793874:
+    level: [81, 84]
+  16793875:
+    level: [81, 84]
+  16793876:
+    level: [81, 84]
+  16793877:
+    level: [81, 84]
+  16793878:
+    level: [81, 84]
+  16793879:
+    level: [81, 84]
+  16793880:
+    level: [81, 84]
+  16793881:
+    level: [81, 84]
+  16793882:
+    level: [81, 84]
+  16793883:
+    level: [81, 84]
+  16793884:
+    level: [81, 84]
+  16793885:
+    level: [81, 84]
+  16793886:
+    level: [81, 84]
+  16793887:
+    level: [81, 84]
+  16793888:
+    level: [81, 84]
+  16793889:
+    level: [81, 84]
+  16793890:
+    level: [81, 84]
+  16793891:
+    level: [81, 84]
+  16793892:
+    level: [81, 84]
+  16793895:
+    level: [81, 84]
+  16793896:
+    level: [81, 84]
+  16793897:
+    level: [81, 84]
+  16793898:
+    level: [81, 84]
+  16793899:
+    level: [81, 84]
+  16793900:
+    level: [81, 84]
+  16793901:
+    level: [81, 84]
+  16793902:
+    level: [81, 84]
+  16793903:
+    level: [81, 84]
+  16793904:
+    level: [81, 84]
+  16793905:
+    level: [81, 84]
+  16793906:
+    level: [81, 84]
+  16793907:
+    level: [81, 84]
+  16793908:
+    level: [81, 84]
+  16793909:
+    level: [81, 84]
+  16793910:
+    level: [81, 84]
+  16793911:
+    level: [81, 84]
+  16793912:
+    level: [81, 84]
+  16793913:
+    level: [81, 84]
+  16793914:
+    level: [81, 84]
+  16793915:
+    level: [81, 84]
+  16793916:
+    level: [81, 84]
+  16793917:
+    level: [81, 84]
+  16793918:
+    level: [81, 84]
+  16793919:
+    level: [81, 84]
+  16793920:
+    level: [81, 84]
+  16793921:
+    level: [81, 84]
+  16793922:
+    level: [81, 84]
+  16793923:
+    level: [81, 84]
+  16793924:
+    level: [81, 84]
+  # Locus_Hypnos_Eft
+  16793847:
+    level: [81, 84]
+  16793848:
+    level: [81, 84]
+  16793849:
+    level: [81, 84]
+  16793850:
+    level: [81, 84]
+  16793851:
+    level: [81, 84]
+  16793852:
+    level: [81, 84]
+  16793853:
+    level: [81, 84]
+  16793854:
+    level: [81, 84]
+  16793855:
+    level: [81, 84]
+  16793856:
+    level: [81, 84]
+  16793857:
+    level: [81, 84]
+  16793858:
+    level: [81, 84]

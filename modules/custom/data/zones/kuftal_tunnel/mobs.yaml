@@ -1,0 +1,82 @@
+# ERA Custom: era mob adjustments (was modules/custom/sql/era_mob_adjustments.sql and era_custom_drops.sql).
+# content: null removes the Abyssea/RoV content tag, so those mobs spawn on era whatever the content settings.
+# loot lists are the retail drops plus era's additions; YAML lists replace rather than append.
+
+templates:
+  Kuftal_Delver:
+    content: null
+  Machairodus:
+    content: null
+  Ladon:
+    loot:
+      drops:
+        - chance: rare
+          item: wyvern_wing
+        - chance: uncommon
+          item: wyvern_skin
+        - chance: rare
+          item: handful_of_wyvern_scales
+        - chance: 20
+          item: dragon_bone
+        - chance: 30
+          item: handful_of_wyvern_scales
+
+spawns:
+  # Kuftal_Delver
+  17490111:
+    level: [81, 84]
+  17490112:
+    level: [81, 84]
+  17490115:
+    level: [81, 84]
+  17490116:
+    level: [81, 84]
+  17490117:
+    level: [81, 84]
+  17490118:
+    level: [81, 84]
+  17490120:
+    level: [81, 84]
+  17490122:
+    level: [81, 84]
+  17490125:
+    level: [81, 84]
+  17490126:
+    level: [81, 84]
+  17490129:
+    level: [81, 84]
+  17490130:
+    level: [81, 84]
+  17490133:
+    level: [81, 84]
+  17490137:
+    level: [81, 84]
+  17490138:
+    level: [81, 84]
+  # Machairodus
+  17490113:
+    level: [81, 84]
+  17490114:
+    level: [81, 84]
+  17490119:
+    level: [81, 84]
+  17490121:
+    level: [81, 84]
+  17490123:
+    level: [81, 84]
+  17490124:
+    level: [81, 84]
+  17490127:
+    level: [81, 84]
+  17490128:
+    level: [81, 84]
+  17490131:
+    level: [81, 84]
+  17490132:
+    level: [81, 84]
+  17490134:
+    level: [81, 84]
+  17490135:
+    level: [81, 84]
+  17490136:
+    level: [81, 84]

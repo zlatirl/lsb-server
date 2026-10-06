@@ -1,0 +1,143 @@
+# ERA Custom: era mob adjustments (was modules/custom/sql/era_mob_adjustments.sql and era_custom_drops.sql).
+# content: null removes the Abyssea/RoV content tag, so those mobs spawn on era whatever the content settings.
+
+templates:
+  Bilesucker:
+    content: null
+  Goblin_Artificer:
+    content: null
+  Goblin_Chaser:
+    content: null
+  Goblin_Hoodoo:
+    content: null
+  Goblin_Tanner:
+    content: null
+  Goblins_Bats:
+    content: null
+  Hovering_Oculus:
+    content: null
+
+spawns:
+  # Bilesucker
+  17457249:
+    level: [25, 28]
+  17457250:
+    level: [25, 28]
+  17457251:
+    level: [25, 28]
+  17457252:
+    level: [25, 28]
+  17457253:
+    level: [25, 28]
+  17457259:
+    level: [25, 28]
+  17457260:
+    level: [25, 28]
+  17457261:
+    level: [25, 28]
+  17457267:
+    level: [25, 28]
+  17457268:
+    level: [25, 28]
+  17457269:
+    level: [25, 28]
+  17457270:
+    level: [25, 28]
+  17457271:
+    level: [25, 28]
+  17457272:
+    level: [25, 28]
+  17457276:
+    level: [25, 28]
+  17457277:
+    level: [25, 28]
+  17457278:
+    level: [25, 28]
+  17457281:
+    level: [25, 28]
+  17457282:
+    level: [25, 28]
+  17457283:
+    level: [25, 28]
+  17457285:
+    level: [25, 28]
+  17457286:
+    level: [25, 28]
+  17457292:
+    level: [25, 28]
+  17457293:
+    level: [25, 28]
+  17457294:
+    level: [25, 28]
+  17457297:
+    level: [25, 28]
+  17457298:
+    level: [25, 28]
+  17457299:
+    level: [25, 28]
+  17457300:
+    level: [25, 28]
+  17457301:
+    level: [25, 28]
+  17457304:
+    level: [25, 28]
+  17457305:
+    level: [25, 28]
+  17457306:
+    level: [25, 28]
+  17457307:
+    level: [25, 28]
+  17457308:
+    level: [25, 28]
+  # Goblin_Artificer
+  17457255:
+    level: [26, 30]
+  17457263:
+    level: [26, 30]
+  17457288:
+    level: [26, 30]
+  # Goblin_Chaser
+  17457257:
+    level: [26, 30]
+  17457265:
+    level: [26, 30]
+  17457290:
+    level: [26, 30]
+  # Goblin_Hoodoo
+  17457254:
+    level: [26, 30]
+  17457262:
+    level: [26, 30]
+  17457287:
+    level: [26, 30]
+  # Goblin_Tanner
+  17457256:
+    level: [26, 30]
+  17457264:
+    level: [26, 30]
+  17457289:
+    level: [26, 30]
+  # Goblins_Bats
+  17457258:
+    level: [25, 27]
+  17457266:
+    level: [25, 27]
+  17457291:
+    level: [25, 27]
+  # Hovering_Oculus
+  17457248:
+    level: [42, 44]
+  17457279:
+    level: [42, 44]
+  17457280:
+    level: [42, 44]
+  17457284:
+    level: [42, 44]
+  17457295:
+    level: [42, 44]
+  17457296:
+    level: [42, 44]
+  17457302:
+    level: [42, 44]
+  17457303:
+    level: [42, 44]

@@ -1,0 +1,49 @@
+# ERA Custom: era mob adjustments (was modules/custom/sql/era_mob_adjustments.sql and era_custom_drops.sql).
+# content: null removes the Abyssea/RoV content tag, so those mobs spawn on era whatever the content settings.
+# loot lists are the retail drops plus era's additions; YAML lists replace rather than append.
+
+templates:
+  Babaulas:
+    content: null
+  Boribaba:
+    content: null
+  Wyvern:
+    loot:
+      drops:
+        - chance: rare
+          item: wyvern_wing
+        - chance: uncommon
+          item: wyvern_skin
+        - chance: 20
+          item: dragon_bone
+        - chance: 30
+          item: handful_of_wyvern_scales
+
+spawns:
+  # Babaulas
+  17649847:
+    level: [81, 84]
+  17649848:
+    level: [81, 84]
+  17649849:
+    level: [81, 84]
+  17649852:
+    level: [81, 84]
+  17649853:
+    level: [81, 84]
+  17649854:
+    level: [81, 84]
+  17649855:
+    level: [81, 84]
+  # Boribaba
+  17649850:
+    level: [81, 84]
+  17649851:
+    level: [81, 84]
+  17649856:
+    level: [81, 84]
+  17649857:
+    level: [81, 84]
+  # Lord_of_Onzozo
+  17649731:
+    level: [80, 81]

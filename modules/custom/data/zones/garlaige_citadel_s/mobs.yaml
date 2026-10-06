@@ -1,0 +1,13 @@
+# ERA Custom: era mob adjustments (was modules/custom/sql/era_mob_adjustments.sql and era_custom_drops.sql).
+# loot lists are the retail drops plus era's additions; YAML lists replace rather than append.
+
+templates:
+  Yagudo_Missionary:
+    loot:
+      drops:
+        - chance: common
+          item: one_hundred_eight-knot_quipu
+        - chance: rare
+          item: yagudo_kote
+        - chance: rare
+          item: scroll_of_doton_san

@@ -1,0 +1,48 @@
+# ERA Custom: era mob adjustments (was modules/custom/sql/era_mob_adjustments.sql and era_custom_drops.sql).
+# content: null removes the Abyssea/RoV content tag, so those mobs spawn on era whatever the content settings.
+
+templates:
+  Mourning_Crawler:
+    content: null
+  Snaggletooth_Peapuk:
+    content: null
+  Viseclaw:
+    content: null
+
+spawns:
+  # Mourning_Crawler
+  17404236:
+    level: [72, 75]
+  17404237:
+    level: [72, 75]
+  17404238:
+    level: [72, 75]
+  17404241:
+    level: [72, 75]
+  17404242:
+    level: [72, 75]
+  17404243:
+    level: [72, 75]
+  17404245:
+    level: [72, 75]
+  17404246:
+    level: [72, 75]
+  17404247:
+    level: [72, 75]
+  # Viseclaw
+  17404250:
+    level: [72, 74]
+  17404251:
+    level: [72, 74]
+  17404254:
+    level: [72, 74]
+  17404255:
+    level: [72, 74]
+  17404258:
+    level: [72, 74]
+  17404259:
+    level: [72, 74]
+  17404262:
+    level: [72, 74]
+  17404263:
+    level: [72, 74]

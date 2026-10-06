@@ -1,0 +1,12 @@
+# ERA Custom: NPCs added, moved or reskinned for era (was modules/custom/sql/ffera_custom_npcs.sql)
+npcs:
+
+  17764563:
+    script:   Bro_Moogle
+    at:       [109.329, -5.000, -35.728, 94]
+    status:   normal
+    render:
+      look:
+        type:  standard
+        model: 2366
+    widescan: true

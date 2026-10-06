@@ -12,8 +12,30 @@ mixins =
 ---@type TMobEntity
 local entity = {}
 
+local function despawnBodyguards()
+    for i = ID.mob.GULOOL_JA_JA + 1, ID.mob.GULOOL_JA_JA + 4 do
+        DespawnMob(i)
+    end
+end
+
+entity.onMobInitialize = function(mob)
+    mob:addListener('MAGIC_TAKE', 'GULOOL_JA_JA_MAGIC_TAKE', function(target, caster, spell)
+        if
+            spell and
+            target:isAlive() and
+            (caster:isPC() or caster:isPet()) and
+            spell:getSpellGroup() ~= xi.magic.spellGroup.WHITE
+        then
+            target:useMobAbility(xi.mobSkill.VORPAL_WHEEL, caster)
+        end
+    end)
+end
+
 entity.onMobSpawn = function(mob)
     mob:setMod(xi.mod.DOUBLE_ATTACK, 20)
+    mob:setMod(xi.mod.DEF, 400)
+    mob:setMod(xi.mod.MEVA, 300)
+    mob:setMod(xi.mod.MDEF, 50)
 end
 
 entity.onMobEngage = function(mob, target)
@@ -42,10 +64,24 @@ entity.onMobFight = function(mob, target)
     end
 end
 
-entity.onMobDisengage = function(mob)
-    for i = ID.mob.GULOOL_JA_JA + 1, ID.mob.GULOOL_JA_JA + 4 do
-        DespawnMob(i)
+entity.onMobMobskillChoose = function(mob, target)
+    local tpMoves =
+    {
+        xi.mobSkill.RUSHING_SLASH,
+        xi.mobSkill.TYRANNIC_BLARE,
+        xi.mobSkill.MIASMA,
+        xi.mobSkill.VORPAL_WHEEL,
+    }
+
+    if mob:getHPP() <= 20 then
+        table.insert(tpMoves, xi.mobSkill.DECUSSATE)
     end
+
+    return tpMoves[math.randomInt(1, #tpMoves)]
+end
+
+entity.onMobDisengage = function(mob)
+    despawnBodyguards()
 end
 
 entity.onMobDeath = function(mob, player, optParams)
@@ -54,10 +90,12 @@ entity.onMobDeath = function(mob, player, optParams)
     end
 
     if optParams.isKiller or optParams.noKiller then
-        for i = ID.mob.GULOOL_JA_JA + 1, ID.mob.GULOOL_JA_JA + 4 do
-            DespawnMob(i)
-        end
+        despawnBodyguards()
     end
+end
+
+entity.onMobDespawn = function(mob)
+    despawnBodyguards()
 end
 
 return entity

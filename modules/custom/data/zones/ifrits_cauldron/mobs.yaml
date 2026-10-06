@@ -1,0 +1,17 @@
+# ERA Custom: era mob adjustments (was modules/custom/sql/era_mob_adjustments.sql and era_custom_drops.sql).
+# loot lists are the retail drops plus era's additions; YAML lists replace rather than append.
+
+templates:
+  Hurricane_Wyvern:
+    loot:
+      drops:
+        - chance: uncommon
+          item: wyvern_skull
+        - chance: uncommon
+          item: wyvern_skin
+        - chance: very_rare
+          item: wyvern_wing
+        - chance: 20
+          item: dragon_bone
+        - chance: 30
+          item: handful_of_wyvern_scales
