@@ -8,7 +8,10 @@
 local mobskillObject = {}
 
 mobskillObject.onMobSkillCheck = function(target, mob, skill)
-    if mob:getAnimationSub() == 0 and mob:getMainJob() == xi.job.BST then -- TODO: Set proper skill lists
+    if
+        (mob:getAnimationSub() == 0 and mob:getMainJob() == xi.job.BST) or -- TODO: Set proper skill lists
+        mob:isNM()
+    then
         return 0
     end
 
