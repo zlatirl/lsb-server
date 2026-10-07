@@ -45,20 +45,12 @@ custom/lua/test_npcs_in_gm_home.lua
 # ------------------------------------
 
 # Lua files
-custom/lua/Fail_Badge_Quest.lua
-custom/lua/nmhunt.lua
-custom/lua/era_npc.lua
-custom/lua/gobhook.lua
-custom/lua/mentor.lua
-custom/lua/gobbiebag_wardrobe_unlocks.lua
-custom/lua/homepoint_crystal_exchange.lua
-custom/lua/elemental_grip_trade.lua
-custom/lua/chatoyant_staff_trade.lua
-custom/lua/era_custom_trades.lua
-custom/lua/sanraku_zeni_trades.lua
-custom/lua/gm_speed.lua
-custom/lua/assault_tags.lua
-custom/lua/martial_mastery.lua
+custom/lua/era_mentor/
+custom/lua/era_trades/
+custom/lua/era_quests/
+custom/lua/era_npcs/
+custom/lua/era_mobs/
+custom/lua/era_misc/
 custom/lua/era_augments/
 custom/lua/era_commands/
 

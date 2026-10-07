@@ -1,16 +1,9 @@
 -----------------------------------
 -- Area: Lower Jeuno
 --  NPC: Adelflete
--- ERA Custom Crystal Trades
------------------------------------
-require('modules/custom/lua/era_custom_trades')
 -----------------------------------
 ---@type TNpcEntity
 local entity = {}
-
-entity.onTrade = function(player, npc, trade)
-    xi.customTrades.adelfete(player, npc, trade)
-end
 
 entity.onTrigger = function(player, npc)
     local stock =
