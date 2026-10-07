@@ -70,6 +70,7 @@ custom/sql/era_custom_drops.sql
 custom/sql/era_custom_equipment.sql
 custom/sql/era_s_zone_fishing.sql
 custom/sql/era_fishing_adjustments.sql
+custom/sql/era_weaponskills.sql
 
 # ------------------------------------
 # Era Events (scheduled with !event)
