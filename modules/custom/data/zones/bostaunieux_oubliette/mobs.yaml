@@ -1,0 +1,177 @@
+# ERA Custom: era mob adjustments (was modules/custom/sql/era_mob_adjustments.sql and era_custom_drops.sql).
+# content: null removes the Abyssea/RoV content tag, so those mobs spawn on era whatever the content settings.
+
+templates:
+  Blind_Bat:
+    content: null
+  Dabilla:
+    content: null
+  Nachtmahr:
+    content: null
+  Panna_Cotta:
+    content: null
+  Wurdalak:
+    content: null
+
+spawns:
+  # Blind_Bat
+  17461344:
+    level: [55, 59]
+  17461345:
+    level: [55, 59]
+  17461346:
+    level: [55, 59]
+  17461347:
+    level: [55, 59]
+  17461350:
+    level: [55, 59]
+  17461351:
+    level: [55, 59]
+  17461352:
+    level: [55, 59]
+  17461360:
+    level: [55, 59]
+  17461361:
+    level: [55, 59]
+  17461364:
+    level: [55, 59]
+  17461365:
+    level: [55, 59]
+  17461366:
+    level: [55, 59]
+  17461367:
+    level: [55, 59]
+  17461368:
+    level: [55, 59]
+  17461387:
+    level: [55, 59]
+  17461388:
+    level: [55, 59]
+  17461392:
+    level: [55, 59]
+  17461393:
+    level: [55, 59]
+  17461394:
+    level: [55, 59]
+  17461395:
+    level: [55, 59]
+  17461410:
+    level: [55, 59]
+  17461411:
+    level: [55, 59]
+  17461412:
+    level: [55, 59]
+  17461413:
+    level: [55, 59]
+  17461414:
+    level: [55, 59]
+  17461415:
+    level: [55, 59]
+  17461416:
+    level: [55, 59]
+  17461418:
+    level: [55, 59]
+  17461419:
+    level: [55, 59]
+  17461420:
+    level: [55, 59]
+  # Dabilla
+  17461371:
+    level: [64, 66]
+  17461372:
+    level: [64, 66]
+  17461373:
+    level: [64, 66]
+  17461374:
+    level: [64, 66]
+  17461375:
+    level: [64, 66]
+  17461376:
+    level: [64, 66]
+  17461377:
+    level: [64, 66]
+  17461378:
+    level: [64, 66]
+  17461398:
+    level: [64, 66]
+  17461399:
+    level: [64, 66]
+  17461400:
+    level: [64, 66]
+  17461401:
+    level: [64, 66]
+  17461403:
+    level: [64, 66]
+  17461405:
+    level: [64, 66]
+  17461406:
+    level: [64, 66]
+  17461407:
+    level: [64, 66]
+  17461408:
+    level: [64, 66]
+  # Nachtmahr
+  17461355:
+    level: [68, 70]
+  17461356:
+    level: [68, 70]
+  17461359:
+    level: [68, 70]
+  17461363:
+    level: [68, 70]
+  17461379:
+    level: [68, 70]
+  17461380:
+    level: [68, 70]
+  17461381:
+    level: [68, 70]
+  17461384:
+    level: [68, 70]
+  17461385:
+    level: [68, 70]
+  17461386:
+    level: [68, 70]
+  17461390:
+    level: [68, 70]
+  # Panna_Cotta
+  17461348:
+    level: [60, 68]
+  17461349:
+    level: [60, 68]
+  17461353:
+    level: [60, 68]
+  17461354:
+    level: [60, 68]
+  17461357:
+    level: [60, 68]
+  17461358:
+    level: [60, 68]
+  17461362:
+    level: [60, 68]
+  17461369:
+    level: [60, 68]
+  17461370:
+    level: [60, 68]
+  17461382:
+    level: [60, 68]
+  17461383:
+    level: [60, 68]
+  17461389:
+    level: [60, 68]
+  17461391:
+    level: [60, 68]
+  17461396:
+    level: [60, 68]
+  17461397:
+    level: [60, 68]
+  # Wurdalak
+  17461402:
+    level: [68, 70]
+  17461404:
+    level: [68, 70]
+  17461409:
+    level: [68, 70]
+  17461417:
+    level: [68, 70]
+  17461421:
+    level: [68, 70]

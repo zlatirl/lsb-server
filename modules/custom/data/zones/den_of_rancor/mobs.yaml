@@ -1,0 +1,50 @@
+# ERA Custom: era mob adjustments (was modules/custom/sql/era_mob_adjustments.sql and era_custom_drops.sql).
+# loot lists are the retail drops plus era's additions; YAML lists replace rather than append.
+
+templates:
+  Tonberry_Decapitator:
+    loot:
+      drops:
+        - chance: very_common
+          item: ninjas_testimony
+        - chance: always
+          item: tonberry_coat
+        - chance: very_common
+          item: tonberry_lantern
+        - chance: very_common
+          item: manji_shuriken
+        - chance: rare
+          item: fudo
+        - chance: rare
+          item: scroll_of_tonko_ni
+        - chance: rare
+          item: scroll_of_kurayami_ni
+        - chance: very_rare
+          item: scroll_of_hojo_ni
+        - chance: rare
+          item: pinch_of_dried_mugwort
+        - chance: 7
+          item: scroll_of_suiton_san
+  Tonberry_Slasher:
+    loot:
+      drops:
+        - chance: uncommon
+          item: ninjas_testimony
+        - chance: common
+          item: tonberry_coat
+        - chance: rare
+          item: rancor_den_coffer_key
+        - chance: rare
+          item: prelate_key
+        - chance: uncommon
+          item: flask_of_venom_potion
+        - chance: very_rare
+          item: manji_shuriken
+        - chance: super_rare
+          item: scroll_of_tonko_ni
+        - chance: ultra_rare
+          item: scroll_of_kurayami_ni
+        - chance: ultra_rare
+          item: scroll_of_hojo_ni
+        - chance: 3
+          item: scroll_of_suiton_san

@@ -1,0 +1,29 @@
+# ERA Custom: era mob adjustments (was modules/custom/sql/era_mob_adjustments.sql and era_custom_drops.sql).
+
+spawns:
+  # Aello
+  17309985:
+    level: [93, 95]
+  17309989:
+    level: [93, 95]
+  17309993:
+    level: [93, 95]
+  # Aellos_Handmaiden
+  17309986:
+    level: [90, 92]
+  17309987:
+    level: [90, 92]
+  17309988:
+    level: [90, 92]
+  17309990:
+    level: [90, 92]
+  17309991:
+    level: [90, 92]
+  17309992:
+    level: [90, 92]
+  17309994:
+    level: [90, 92]
+  17309995:
+    level: [90, 92]
+  17309996:
+    level: [90, 92]

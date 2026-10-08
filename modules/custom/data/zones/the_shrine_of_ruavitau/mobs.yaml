@@ -1,0 +1,88 @@
+# ERA Custom: era mob adjustments (was modules/custom/sql/era_mob_adjustments.sql and era_custom_drops.sql).
+# content: null removes the Abyssea/RoV content tag, so those mobs spawn on era whatever the content settings.
+# loot lists are the retail drops plus era's additions; YAML lists replace rather than append.
+
+templates:
+  Aura_Sculpture:
+    content: null
+  Baelfyr:
+    content: null
+  Byrgen:
+    content: null
+  Gefyrst:
+    content: null
+  Ungeweder:
+    content: null
+  Kirin:
+    loot:
+      drops:
+        - chance: common
+          item: kirins_pole
+        - chance: common
+          item: kirins_osode
+        - chance: uncommon
+          item: scroll_of_raise_iii
+        - chance: uncommon
+          item: scroll_of_quake
+        - chance: common
+          one_of:
+            square_of_shining_cloth: 40
+            damascus_ingot: 30
+            orichalcum_ingot: 30
+        - chance: common
+          one_of:
+            square_of_shining_cloth: 40
+            damascus_ingot: 30
+            orichalcum_ingot: 30
+        - chance: common
+          one_of:
+            dryadic_abjuration_body: 40
+            neptunal_abjuration_body: 30
+            wyrmal_abjuration_legs: 30
+        - chance: common
+          one_of:
+            dryadic_abjuration_body: 40
+            neptunal_abjuration_body: 30
+            wyrmal_abjuration_legs: 30
+        - chance: 90
+          item: kholomodumos_hide
+        - chance: uncommon
+          item: kholomodumos_hide
+
+spawns:
+  # Baelfyr
+  17506646:
+    level: [81, 84]
+  17506651:
+    level: [81, 84]
+  17506657:
+    level: [81, 84]
+  17506662:
+    level: [81, 84]
+  # Byrgen
+  17506649:
+    level: [81, 84]
+  17506654:
+    level: [81, 84]
+  17506660:
+    level: [81, 84]
+  17506665:
+    level: [81, 84]
+  # Gefyrst
+  17506647:
+    level: [81, 84]
+  17506652:
+    level: [81, 84]
+  17506658:
+    level: [81, 84]
+  17506663:
+    level: [81, 84]
+  # Ungeweder
+  17506648:
+    level: [81, 84]
+  17506653:
+    level: [81, 84]
+  17506659:
+    level: [81, 84]
+  17506664:
+    level: [81, 84]

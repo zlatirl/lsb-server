@@ -1,0 +1,25 @@
+# ERA Custom: era mob adjustments (was modules/custom/sql/era_mob_adjustments.sql and era_custom_drops.sql).
+# content: null removes the Abyssea/RoV content tag, so those mobs spawn on era whatever the content settings.
+# loot lists are the retail drops plus era's additions; YAML lists replace rather than append.
+
+templates:
+  Condor:
+    content: null
+  Yagudo_Knight_Templar:
+    loot:
+      drops:
+        - chance: common
+          item: dorter_key
+        - chance: uncommon
+          item: yagudo_kote
+        - chance: 3
+          item: scroll_of_huton_san
+  Yagudo_Eradicator_past:
+    loot:
+      drops:
+        - chance: common
+          item: dorter_key
+        - chance: uncommon
+          item: yagudo_kote
+        - chance: 3
+          item: scroll_of_huton_san

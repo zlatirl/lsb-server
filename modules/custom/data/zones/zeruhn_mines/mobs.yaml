@@ -1,0 +1,114 @@
+# ERA Custom: era mob adjustments (was modules/custom/sql/era_mob_adjustments.sql and era_custom_drops.sql).
+# content: null removes the Abyssea/RoV content tag, so those mobs spawn on era whatever the content settings.
+
+templates:
+  Burrower_Worm:
+    content: null
+  Colliery_Bat:
+    content: null
+  Soot_Crab:
+    content: null
+  Veindigger_Leech:
+    content: null
+
+spawns:
+  # Burrower_Worm
+  17481750:
+    level: [4, 6]
+  17481751:
+    level: [4, 6]
+  17481752:
+    level: [4, 6]
+  17481753:
+    level: [4, 6]
+  17481756:
+    level: [4, 6]
+  17481757:
+    level: [4, 6]
+  17481766:
+    level: [4, 6]
+  17481767:
+    level: [4, 6]
+  17481768:
+    level: [4, 6]
+  17481769:
+    level: [4, 6]
+  17481770:
+    level: [4, 6]
+  17481780:
+    level: [4, 6]
+  17481781:
+    level: [4, 6]
+  17481782:
+    level: [4, 6]
+  17481783:
+    level: [4, 6]
+  17481784:
+    level: [4, 6]
+  17481785:
+    level: [4, 6]
+  # Colliery_Bat
+  17481742:
+    level: [2, 4]
+  17481743:
+    level: [2, 4]
+  17481744:
+    level: [2, 4]
+  17481745:
+    level: [2, 4]
+  17481746:
+    level: [2, 4]
+  17481747:
+    level: [2, 4]
+  17481748:
+    level: [2, 4]
+  17481749:
+    level: [2, 4]
+  17481754:
+    level: [2, 4]
+  17481755:
+    level: [2, 4]
+  17481758:
+    level: [2, 4]
+  17481759:
+    level: [2, 4]
+  17481760:
+    level: [2, 4]
+  17481761:
+    level: [2, 4]
+  17481762:
+    level: [2, 4]
+  17481763:
+    level: [2, 4]
+  17481774:
+    level: [2, 4]
+  17481775:
+    level: [2, 4]
+  17481776:
+    level: [2, 4]
+  17481777:
+    level: [2, 4]
+  17481778:
+    level: [2, 4]
+  17481779:
+    level: [2, 4]
+  # Soot_Crab
+  17481764:
+    level: [3, 5]
+  17481765:
+    level: [3, 5]
+  17481771:
+    level: [3, 5]
+  17481772:
+    level: [3, 5]
+  17481773:
+    level: [3, 5]
+  # Veindigger_Leech
+  17481786:
+    level: [3, 6]
+  17481787:
+    level: [3, 6]
+  17481788:
+    level: [3, 6]
+  17481789:
+    level: [3, 6]

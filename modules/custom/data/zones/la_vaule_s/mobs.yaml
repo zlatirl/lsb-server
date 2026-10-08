@@ -1,0 +1,22 @@
+# ERA Custom: era mob adjustments (was modules/custom/sql/era_mob_adjustments.sql and era_custom_drops.sql).
+# loot lists are the retail drops plus era's additions; YAML lists replace rather than append.
+
+templates:
+  Ashmaker_Gotblut_past:
+    loot:
+      drops:
+        - chance: common
+          item: marabout_sandals
+        - chance: 75
+          item: b_egg
+        - chance: 18
+          item: star_sapphire
+  Hawkeyed_Dnatbat:
+    loot:
+      drops:
+        - chance: uncommon
+          item: grand_crossbow
+        - chance: 75
+          item: b_egg
+        - chance: 18
+          item: star_sapphire

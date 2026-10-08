@@ -1,0 +1,37 @@
+# ERA Custom: era mob adjustments (was modules/custom/sql/era_mob_adjustments.sql and era_custom_drops.sql).
+# content: null removes the Abyssea/RoV content tag, so those mobs spawn on era whatever the content settings.
+# loot lists are the retail drops plus era's additions; YAML lists replace rather than append.
+
+templates:
+  Dweomershell:
+    content: null
+  Nirgali:
+    content: null
+  Nostokulshedra:
+    content: null
+  Medusa:
+    loot:
+      drops:
+        - chance: very_common
+          item: medusas_armlet
+        - chance: common
+          item: mercenarys_dastanas
+        - chance: rare
+          item: ree_habalos_headgear
+        - chance: very_common
+          item: condenser
+        - chance: very_common
+          item: dynamo
+        - chance: very_common
+          item: economizer
+  Soulflayer:
+    loot:
+      drops:
+        - chance: common
+          item: soulflayer_tentacle
+        - chance: uncommon
+          item: soulflayer_staff
+        - chance: rare
+          item: soulflayer_robe
+        - chance: 40
+          item: chunk_of_luminium_ore

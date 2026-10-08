@@ -1,0 +1,13 @@
+# ERA Custom: era mob adjustments (was modules/custom/sql/era_mob_adjustments.sql and era_custom_drops.sql).
+# loot lists are the retail drops plus era's additions; YAML lists replace rather than append.
+
+templates:
+  Sand_Cockatrice:
+    loot:
+      drops:
+        - chance: common
+          item: slice_of_cockatrice_meat
+        - chance: uncommon
+          item: cockatrice_skin
+        - chance: common
+          item: piece_of_wisteria_lumber

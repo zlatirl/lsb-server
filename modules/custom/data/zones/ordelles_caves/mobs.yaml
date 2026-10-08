@@ -1,0 +1,176 @@
+# ERA Custom: era mob adjustments (was modules/custom/sql/era_mob_adjustments.sql and era_custom_drops.sql).
+# content: null removes the Abyssea/RoV content tag, so those mobs spawn on era whatever the content settings.
+
+templates:
+  Bilis_Leech:
+    content: null
+  Buds_Bunny:
+    content: null
+  Swagger_Spruce:
+    content: null
+  Targe_Beetle:
+    content: null
+
+spawns:
+  # Bilis_Leech
+  17567851:
+    level: [25, 27]
+  17567852:
+    level: [25, 27]
+  17567853:
+    level: [25, 27]
+  17567854:
+    level: [25, 27]
+  17567855:
+    level: [25, 27]
+  17567856:
+    level: [25, 27]
+  17567857:
+    level: [25, 27]
+  17567858:
+    level: [25, 27]
+  17567859:
+    level: [25, 27]
+  17567860:
+    level: [25, 27]
+  17567861:
+    level: [25, 27]
+  17567862:
+    level: [25, 27]
+  17567863:
+    level: [25, 27]
+  17567864:
+    level: [25, 27]
+  17567865:
+    level: [25, 27]
+  # Buds_Bunny
+  17567835:
+    level: [23, 26]
+  17567836:
+    level: [23, 26]
+  17567837:
+    level: [23, 26]
+  17567838:
+    level: [23, 26]
+  17567839:
+    level: [23, 26]
+  17567840:
+    level: [23, 26]
+  17567841:
+    level: [23, 26]
+  17567842:
+    level: [23, 26]
+  17567843:
+    level: [23, 26]
+  17567844:
+    level: [23, 26]
+  17567845:
+    level: [23, 26]
+  17567846:
+    level: [23, 26]
+  17567847:
+    level: [23, 26]
+  17567848:
+    level: [23, 26]
+  17567849:
+    level: [23, 26]
+  17567850:
+    level: [23, 26]
+  17567945:
+    level: [23, 26]
+  17567946:
+    level: [23, 26]
+  17567947:
+    level: [23, 26]
+  17567948:
+    level: [23, 26]
+  17567950:
+    level: [23, 26]
+  17567951:
+    level: [23, 26]
+  17567952:
+    level: [23, 26]
+  17567953:
+    level: [23, 26]
+  17567957:
+    level: [23, 26]
+  17567962:
+    level: [23, 26]
+  # Swagger_Spruce
+  17567906:
+    level: [27, 29]
+  17567907:
+    level: [27, 29]
+  17567908:
+    level: [27, 29]
+  17567909:
+    level: [27, 29]
+  17567910:
+    level: [27, 29]
+  17567911:
+    level: [27, 29]
+  17567912:
+    level: [27, 29]
+  17567913:
+    level: [27, 29]
+  17567914:
+    level: [27, 29]
+  17567915:
+    level: [27, 29]
+  17567916:
+    level: [27, 29]
+  17567917:
+    level: [27, 29]
+  17567918:
+    level: [27, 29]
+  17567919:
+    level: [27, 29]
+  17567920:
+    level: [27, 29]
+  17567921:
+    level: [27, 29]
+  17567949:
+    level: [27, 29]
+  17567954:
+    level: [27, 29]
+  17567955:
+    level: [27, 29]
+  17567956:
+    level: [27, 29]
+  17567958:
+    level: [27, 29]
+  17567959:
+    level: [27, 29]
+  17567960:
+    level: [27, 29]
+  17567961:
+    level: [27, 29]
+  17567963:
+    level: [27, 29]
+  17567964:
+    level: [27, 29]
+  # Targe_Beetle
+  17567922:
+    level: [29, 31]
+  17567923:
+    level: [29, 31]
+  17567924:
+    level: [29, 31]
+  17567925:
+    level: [29, 31]
+  17567926:
+    level: [29, 31]
+  17567927:
+    level: [29, 31]
+  17567928:
+    level: [29, 31]
+  17567929:
+    level: [29, 31]
+  17567930:
+    level: [29, 31]
+  17567931:
+    level: [29, 31]
+  17567932:
+    level: [29, 31]
+  17567933:
+    level: [29, 31]

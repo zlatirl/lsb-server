@@ -1,0 +1,167 @@
+# ERA Custom: era mob adjustments (was modules/custom/sql/era_mob_adjustments.sql and era_custom_drops.sql).
+# content: null removes the Abyssea/RoV content tag, so those mobs spawn on era whatever the content settings.
+
+templates:
+  Covin_Bat:
+    content: null
+  Deathwatch_Beetle:
+    content: null
+  Goblin_Flesher:
+    content: null
+  Goblin_Lurcher:
+    content: null
+  Goblin_Metallurgist:
+    content: null
+  Goblin_Trailblazer:
+    content: null
+  Skinnymajinx:
+    content: null
+  Skinnymalinks:
+    content: null
+  Troika_Bats:
+    content: null
+
+spawns:
+  # Covin_Bat
+  17563708:
+    level: [17, 20]
+  17563719:
+    level: [17, 20]
+  17563720:
+    level: [17, 20]
+  17563721:
+    level: [17, 20]
+  17563722:
+    level: [17, 20]
+  17563723:
+    level: [17, 20]
+  17563732:
+    level: [17, 20]
+  17563733:
+    level: [17, 20]
+  17563734:
+    level: [17, 20]
+  17563735:
+    level: [17, 20]
+  17563745:
+    level: [17, 20]
+  17563746:
+    level: [17, 20]
+  # Deathwatch_Beetle
+  17563682:
+    level: [11, 16]
+  17563683:
+    level: [11, 16]
+  17563695:
+    level: [11, 16]
+  17563696:
+    level: [11, 16]
+  17563697:
+    level: [11, 16]
+  17563704:
+    level: [11, 16]
+  17563705:
+    level: [11, 16]
+  17563706:
+    level: [11, 16]
+  17563707:
+    level: [11, 16]
+  17563716:
+    level: [11, 16]
+  17563717:
+    level: [11, 16]
+  17563718:
+    level: [11, 16]
+  17563724:
+    level: [11, 16]
+  17563725:
+    level: [11, 16]
+  17563726:
+    level: [11, 16]
+  17563736:
+    level: [11, 16]
+  17563737:
+    level: [11, 16]
+  17563738:
+    level: [11, 16]
+  # Goblin_Flesher
+  17563684:
+    level: [20, 23]
+  17563729:
+    level: [20, 23]
+  17563741:
+    level: [20, 23]
+  # Goblin_Lurcher
+  17563686:
+    level: [20, 23]
+  17563687:
+    level: [20, 23]
+  17563711:
+    level: [20, 23]
+  17563730:
+    level: [20, 23]
+  17563731:
+    level: [20, 23]
+  17563742:
+    level: [20, 23]
+  17563743:
+    level: [20, 23]
+  17563744:
+    level: [20, 23]
+  # Goblin_Metallurgist
+  17563685:
+    level: [20, 23]
+  17563709:
+    level: [20, 23]
+  17563727:
+    level: [20, 23]
+  17563739:
+    level: [20, 23]
+  # Goblin_Trailblazer
+  17563710:
+    level: [20, 23]
+  17563728:
+    level: [20, 23]
+  17563740:
+    level: [20, 23]
+  # Skinnymajinx
+  17563690:
+    level: [25, 28]
+  17563714:
+    level: [25, 28]
+  17563715:
+    level: [25, 28]
+  # Skinnymalinks
+  17563688:
+    level: [25, 28]
+  17563689:
+    level: [25, 28]
+  17563712:
+    level: [25, 28]
+  17563713:
+    level: [25, 28]
+  # Troika_Bats
+  17563680:
+    level: [12, 15]
+  17563681:
+    level: [12, 15]
+  17563691:
+    level: [12, 15]
+  17563692:
+    level: [12, 15]
+  17563693:
+    level: [12, 15]
+  17563694:
+    level: [12, 15]
+  17563698:
+    level: [12, 15]
+  17563699:
+    level: [12, 15]
+  17563700:
+    level: [12, 15]
+  17563701:
+    level: [12, 15]
+  17563702:
+    level: [12, 15]
+  17563703:
+    level: [12, 15]

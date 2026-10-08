@@ -1,0 +1,162 @@
+# ERA Custom: era mob adjustments (was modules/custom/sql/era_mob_adjustments.sql and era_custom_drops.sql).
+# content: null removes the Abyssea/RoV content tag, so those mobs spawn on era whatever the content settings.
+
+templates:
+  Donjon_Bat:
+    content: null
+  Fortalice_Bats:
+    content: null
+  Kaboom:
+    content: null
+  Warden_Beetle:
+    content: null
+
+spawns:
+  # Donjon_Bat
+  17596647:
+    level: [40, 43]
+  17596648:
+    level: [40, 43]
+  17596649:
+    level: [40, 43]
+  17596653:
+    level: [40, 43]
+  17596654:
+    level: [40, 43]
+  17596659:
+    level: [40, 43]
+  17596667:
+    level: [40, 43]
+  17596668:
+    level: [40, 43]
+  17596673:
+    level: [40, 43]
+  17596674:
+    level: [40, 43]
+  17596675:
+    level: [40, 43]
+  17596679:
+    level: [40, 43]
+  17596680:
+    level: [40, 43]
+  17596686:
+    level: [40, 43]
+  17596701:
+    level: [40, 43]
+  17596702:
+    level: [40, 43]
+  17596706:
+    level: [40, 43]
+  17596711:
+    level: [40, 43]
+  # Fortalice_Bats
+  17596661:
+    level: [53, 55]
+  17596662:
+    level: [53, 55]
+  17596663:
+    level: [53, 55]
+  17596664:
+    level: [53, 55]
+  17596669:
+    level: [53, 55]
+  17596670:
+    level: [53, 55]
+  17596682:
+    level: [53, 55]
+  17596683:
+    level: [53, 55]
+  17596684:
+    level: [53, 55]
+  17596685:
+    level: [53, 55]
+  17596688:
+    level: [53, 55]
+  17596689:
+    level: [53, 55]
+  17596690:
+    level: [53, 55]
+  17596693:
+    level: [53, 55]
+  17596694:
+    level: [53, 55]
+  17596695:
+    level: [53, 55]
+  17596699:
+    level: [53, 55]
+  17596700:
+    level: [53, 55]
+  17596704:
+    level: [53, 55]
+  17596705:
+    level: [53, 55]
+  17596708:
+    level: [53, 55]
+  17596709:
+    level: [53, 55]
+  17596710:
+    level: [53, 55]
+  17596713:
+    level: [53, 55]
+  17596714:
+    level: [53, 55]
+  17596715:
+    level: [53, 55]
+  # Kaboom
+  17596655:
+    level: [59, 62]
+  17596660:
+    level: [59, 62]
+  17596676:
+    level: [59, 62]
+  17596681:
+    level: [59, 62]
+  17596687:
+    level: [59, 62]
+  17596692:
+    level: [59, 62]
+  17596698:
+    level: [59, 62]
+  17596703:
+    level: [59, 62]
+  17596707:
+    level: [59, 62]
+  17596712:
+    level: [59, 62]
+  # Warden_Beetle
+  17596644:
+    level: [56, 58]
+  17596645:
+    level: [56, 58]
+  17596646:
+    level: [56, 58]
+  17596650:
+    level: [56, 58]
+  17596651:
+    level: [56, 58]
+  17596652:
+    level: [56, 58]
+  17596656:
+    level: [56, 58]
+  17596657:
+    level: [56, 58]
+  17596658:
+    level: [56, 58]
+  17596665:
+    level: [56, 58]
+  17596666:
+    level: [56, 58]
+  17596671:
+    level: [56, 58]
+  17596672:
+    level: [56, 58]
+  17596677:
+    level: [56, 58]
+  17596678:
+    level: [56, 58]
+  17596691:
+    level: [56, 58]
+  17596696:
+    level: [56, 58]
+  17596697:
+    level: [56, 58]

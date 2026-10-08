@@ -1,0 +1,58 @@
+# ERA Custom: era mob adjustments (was modules/custom/sql/era_mob_adjustments.sql and era_custom_drops.sql).
+# content: null removes the Abyssea/RoV content tag, so those mobs spawn on era whatever the content settings.
+
+templates:
+  Boulder_Eater:
+    content: null
+  Pygmytoise:
+    content: null
+
+spawns:
+  # Boulder_Eater
+  17645673:
+    level: [81, 84]
+  17645674:
+    level: [81, 84]
+  17645675:
+    level: [81, 84]
+  17645677:
+    level: [81, 84]
+  17645678:
+    level: [81, 84]
+  17645682:
+    level: [81, 84]
+  17645683:
+    level: [81, 84]
+  17645684:
+    level: [81, 84]
+  17645685:
+    level: [81, 84]
+  17645686:
+    level: [81, 84]
+  17645691:
+    level: [81, 84]
+  17645692:
+    level: [81, 84]
+  17645693:
+    level: [81, 84]
+  17645694:
+    level: [81, 84]
+  17645695:
+    level: [81, 84]
+  17645696:
+    level: [81, 84]
+  # Pygmytoise
+  17645676:
+    level: [81, 84]
+  17645679:
+    level: [81, 84]
+  17645680:
+    level: [81, 84]
+  17645681:
+    level: [81, 84]
+  17645688:
+    level: [81, 84]
+  17645689:
+    level: [81, 84]
+  17645690:
+    level: [81, 84]

@@ -1,0 +1,99 @@
+# ERA Custom: era mob adjustments (was modules/custom/sql/era_mob_adjustments.sql and era_custom_drops.sql).
+# content: null removes the Abyssea/RoV content tag, so those mobs spawn on era whatever the content settings.
+
+templates:
+  Fetor_Bats:
+    content: null
+  Fuligo:
+    content: null
+  Thorn_Bat:
+    content: null
+
+spawns:
+  # Fetor_Bats
+  17571874:
+    level: [23, 26]
+  17571875:
+    level: [23, 26]
+  17571876:
+    level: [23, 26]
+  17571877:
+    level: [23, 26]
+  17571878:
+    level: [23, 26]
+  17571879:
+    level: [23, 26]
+  17571880:
+    level: [23, 26]
+  17571881:
+    level: [23, 26]
+  17571882:
+    level: [23, 26]
+  17571886:
+    level: [23, 26]
+  17571887:
+    level: [23, 26]
+  17571888:
+    level: [23, 26]
+  17571889:
+    level: [23, 26]
+  17571890:
+    level: [23, 26]
+  17571916:
+    level: [23, 26]
+  17571917:
+    level: [23, 26]
+  17571918:
+    level: [23, 26]
+  17571919:
+    level: [23, 26]
+  17571920:
+    level: [23, 26]
+  # Fuligo
+  17571883:
+    level: [23, 25]
+  17571884:
+    level: [23, 25]
+  17571885:
+    level: [23, 25]
+  17571921:
+    level: [23, 25]
+  17571922:
+    level: [23, 25]
+  17571923:
+    level: [23, 25]
+  17571924:
+    level: [23, 25]
+  17571925:
+    level: [23, 25]
+  17571926:
+    level: [23, 25]
+  17571927:
+    level: [23, 25]
+  17571928:
+    level: [23, 25]
+  # Thorn_Bat
+  17571904:
+    level: [20, 23]
+  17571905:
+    level: [20, 23]
+  17571906:
+    level: [20, 23]
+  17571907:
+    level: [20, 23]
+  17571908:
+    level: [20, 23]
+  17571909:
+    level: [20, 23]
+  17571910:
+    level: [20, 23]
+  17571911:
+    level: [20, 23]
+  17571912:
+    level: [20, 23]
+  17571913:
+    level: [20, 23]
+  17571914:
+    level: [20, 23]
+  17571915:
+    level: [20, 23]

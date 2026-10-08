@@ -1,0 +1,6 @@
+# ERA Custom: era mob adjustments (was modules/custom/sql/era_mob_adjustments.sql and era_custom_drops.sql).
+
+spawns:
+  # Zirnitra
+  17338585:
+    level: [90, 92]

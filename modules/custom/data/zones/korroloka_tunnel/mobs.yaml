@@ -1,0 +1,66 @@
+# ERA Custom: era mob adjustments (was modules/custom/sql/era_mob_adjustments.sql and era_custom_drops.sql).
+# content: null removes the Abyssea/RoV content tag, so those mobs spawn on era whatever the content settings.
+
+templates:
+  Lacerator:
+    content: null
+  Spool_Leech:
+    content: null
+
+spawns:
+  # Lacerator
+  17486097:
+    level: [29, 32]
+  17486098:
+    level: [29, 32]
+  17486099:
+    level: [29, 32]
+  17486100:
+    level: [29, 32]
+  17486101:
+    level: [29, 32]
+  17486102:
+    level: [29, 32]
+  17486110:
+    level: [29, 32]
+  17486131:
+    level: [29, 32]
+  17486132:
+    level: [29, 32]
+  17486133:
+    level: [29, 32]
+  17486134:
+    level: [29, 32]
+  17486135:
+    level: [29, 32]
+  17486136:
+    level: [29, 32]
+  17486137:
+    level: [29, 32]
+  17486138:
+    level: [29, 32]
+  17486139:
+    level: [29, 32]
+  17486142:
+    level: [29, 32]
+  17486143:
+    level: [29, 32]
+  # Spool_Leech
+  17486103:
+    level: [23, 31]
+  17486104:
+    level: [23, 31]
+  17486105:
+    level: [23, 31]
+  17486106:
+    level: [23, 31]
+  17486107:
+    level: [23, 31]
+  17486108:
+    level: [23, 31]
+  17486109:
+    level: [23, 31]
+  17486140:
+    level: [23, 31]
+  17486141:
+    level: [23, 31]

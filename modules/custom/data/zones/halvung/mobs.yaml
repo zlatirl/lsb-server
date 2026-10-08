@@ -1,0 +1,23 @@
+# ERA Custom: era mob adjustments (was modules/custom/sql/era_mob_adjustments.sql and era_custom_drops.sql).
+# loot lists are the retail drops plus era's additions; YAML lists replace rather than append.
+
+templates:
+  Gurfurlur_the_Menacing:
+    loot:
+      drops:
+        - chance: very_common
+          item: gurfurlurs_helmet
+        - chance: common
+          item: mercenarys_ring
+        - chance: uncommon
+          item: lycopodium_sash
+        - chance: rare
+          item: gnadbhods_helm
+        - chance: uncommon
+          item: barbarossas_zerehs
+        - chance: very_common
+          item: turbo_charger
+        - chance: very_common
+          item: tranquilizer
+        - chance: very_common
+          item: schurzen
