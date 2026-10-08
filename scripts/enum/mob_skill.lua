@@ -1341,6 +1341,12 @@ xi.mobSkill =
 
     NOX_BLAST                     = 2175,
 
+    DUSTVOID                      = 2187,
+    SLAVEROUS_GALE                = 2188,
+    AEOLIAN_VOID                  = 2189,
+    EXTREME_PURGATION             = 2190,
+    DESICCATION                   = 2191,
+    DOOMVOID                      = 2192,
     ZEPHYR_ARROW                  = 2193,
     LETHE_ARROWS                  = 2194,
     SPRING_BREEZE                 = 2195,
