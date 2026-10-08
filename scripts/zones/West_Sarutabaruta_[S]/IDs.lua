@@ -20,6 +20,7 @@ zones[xi.zone.WEST_SARUTABARUTA_S] =
         FOUND_ITEM_WITH_EASE          = 7190, -- It appears your chocobo found this item with ease.
         DOOR_OFFSET                   = 7459, -- The door is sealed shut...
         CAMPAIGN_RESULTS_TALLIED      = 7801, -- Campaign results tallied.
+        SANDWORM_SWALLOWS             = 7960, -- The sandworm swallows you whole!
         VOIDWALKER_DESPAWN            = 7985, -- The monster fades before your eyes, a look of disappointment on its face.
         VOIDWALKER_NO_MOB             = 8383, -- The <keyitem> quivers ever so slightly, but emits no light. There seem to be no monsters in the area.
         VOIDWALKER_MOB_TOO_FAR        = 8384, -- The <keyitem> quivers ever so slightly and emits a faint light. There seem to be no monsters in the immediate vicinity.

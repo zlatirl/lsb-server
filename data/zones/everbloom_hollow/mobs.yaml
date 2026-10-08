@@ -683,16 +683,22 @@ templates:
   Lambton_Worm:
     id:            2322
     species:       sandworm
+    type:          [notorious]
     skill_list_id: 214
     attributes:
       combat:
-        skill: scythe
+        skill:    scythe
+        dmg_mult: 125
       render:
         look:
           type:  standard
           model: 2027
+        hitbox: 34
       behaviors:
         aggressive: true
+        flags:      [no_turn]
+      mob_mods:
+        immunity: 6788
       spawn:
         type: [scripted]
     loot:
@@ -1926,32 +1932,46 @@ spawns:
     template: Orcish_Guard
   17129519:
     template: King_Arthro
+    at:       [335.323, -0.404, -208.416, 208]
   17129520:
     template: Knight_Crab
+    at:       [341.759, 0.485, -204.729, 167]
   17129521:
     template: Knight_Crab
+    at:       [339.260, 0.750, -200.947, 119]
   17129522:
     template: Knight_Crab
+    at:       [339.252, 0.990, -200.951, 76]
   17129523:
     template: Knight_Crab
+    at:       [337.665, 0.671, -202.718, 249]
   17129524:
     template: Knight_Crab
+    at:       [339.258, 1.350, -200.947, 225]
   17129525:
     template: Knight_Crab
+    at:       [337.603, 1.152, -203.038, 104]
   17129526:
     template: Knight_Crab
+    at:       [337.782, 1.009, -201.582, 34]
   17129527:
     template: Knight_Crab
+    at:       [341.102, 1.305, -201.138, 194]
   17129528:
     template: Knight_Crab
+    at:       [341.197, 1.204, -200.652, 225]
   17129529:
     template: Knight_Crab
+    at:       [341.513, 1.389, -199.610, 113]
   17129530:
     template: Knight_Crab
+    at:       [341.476, 1.074, -199.632, 180]
   17129531:
     template: Knight_Crab
+    at:       [341.515, 1.269, -199.609, 65]
   17129532:
     template: Lambton_Worm
+    at:       [24.000, 1.000, -399.000, 129]
   17129533:
     template: Orcish_Serjeant
   17129534:

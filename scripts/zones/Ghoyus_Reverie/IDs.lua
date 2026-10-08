@@ -15,9 +15,17 @@ zones[xi.zone.GHOYUS_REVERIE] =
         LOGIN_CAMPAIGN_UNDERWAY       = 7007, -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!
         LOGIN_NUMBER                  = 7008, -- In celebration of your most recent login (login no. <number>), we have provided you with <number> points! You currently have a total of <number> points.
         MEMBERS_LEVELS_ARE_RESTRICTED = 7028, -- Your party is unable to participate because certain members' levels are restricted.
+        TEMP_ITEM                     = 7066, -- Obtained temporary item: <item>.
+        TIME_TO_COMPLETE              = 7069, -- You have <number> [minute/minutes] (Earth time) to complete your objectives.
+        TIME_REMAINING_MINUTES        = 7070, -- Time remaining: <number> [minute/minutes] (Earth time).
+        TIME_REMAINING_SECONDS        = 7071, -- Time remaining: <number> [second/seconds] (Earth time).
+        PARTY_FALLEN                  = 7072, -- All party members have fallen in battle. Exiting in <number> [minute/minutes].
+        MISSION_FAILED                = 7073, -- The operation has failed.
     },
     mob =
     {
+        SERKET       = GetFirstID('Serket'),
+        LAMBTON_WORM = GetFirstID('Lambton_Worm'),
     },
     npc =
     {

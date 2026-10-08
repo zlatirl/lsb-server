@@ -139,6 +139,11 @@ sol::table CLuaInstance::getEntryPos()
     return table;
 }
 
+void CLuaInstance::setEntryPos(float x, float y, float z, uint8 rot)
+{
+    m_PLuaInstance->SetEntryLoc(x, y, z, rot);
+}
+
 uint8 CLuaInstance::getLevelCap()
 {
     return m_PLuaInstance->GetLevelCap();
@@ -271,6 +276,7 @@ void CLuaInstance::Register()
     SOL_REGISTER("getTimeLimit", CLuaInstance::getTimeLimit);
     SOL_REGISTER("setTimeLimit", CLuaInstance::setTimeLimit);
     SOL_REGISTER("getEntryPos", CLuaInstance::getEntryPos);
+    SOL_REGISTER("setEntryPos", CLuaInstance::setEntryPos);
     SOL_REGISTER("getLevelCap", CLuaInstance::getLevelCap);
     SOL_REGISTER("getLastTimeUpdate", CLuaInstance::getLastTimeUpdate);
     SOL_REGISTER("setLastTimeUpdate", CLuaInstance::setLastTimeUpdate);

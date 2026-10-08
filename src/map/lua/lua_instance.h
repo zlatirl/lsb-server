@@ -57,6 +57,7 @@ public:
     auto   getPets() -> sol::table;
     uint32 getTimeLimit();
     auto   getEntryPos() -> sol::table;
+    void   setEntryPos(float x, float y, float z, uint8 rot);
     uint8  getLevelCap();
     uint32 getLastTimeUpdate();
     uint32 getProgress();

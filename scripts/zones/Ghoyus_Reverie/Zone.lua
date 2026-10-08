@@ -27,6 +27,9 @@ zoneObject.onEventUpdate = function(player, csid, option, npc)
 end
 
 zoneObject.onEventFinish = function(player, csid, option, npc)
+    if csid == 10000 then
+        xi.sandworm.leaveDoomvoid(player)
+    end
 end
 
 zoneObject.onInstanceLoadFailed = function()

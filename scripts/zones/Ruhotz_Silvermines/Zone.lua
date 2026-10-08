@@ -27,7 +27,7 @@ zoneObject.onEventUpdate = function(player, csid, option, npc)
 end
 
 zoneObject.onEventFinish = function(player, csid, option, npc)
-    if csid == 10000 then
+    if csid == 10000 and not xi.sandworm.leaveDoomvoid(player) then
         player:setPos(-385.602, 21.970, 456.359, 0, 90)
     end
 end

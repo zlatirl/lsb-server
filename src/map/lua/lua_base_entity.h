@@ -667,6 +667,7 @@ public:
     bool hasRecast(uint8 rType, uint16 recastID, const sol::object& arg2);
     void resetRecast(uint8 rType, uint16 recastID); // Reset one recast ID
     void resetRecasts();                            // Reset recasts for the caller
+    void maxAbilityRecasts();                       // Put every Job Ability on its full recast
 
     void addListener(const std::string& eventName, const std::string& identifier, const sol::function& func);
     void removeListener(const std::string& identifier);

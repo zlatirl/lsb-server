@@ -2809,6 +2809,10 @@ end
 function CBaseEntity:resetRecasts()
 end
 
+---@return nil
+function CBaseEntity:maxAbilityRecasts()
+end
+
 ---@param eventName string
 ---@param identifier string
 ---@param func function

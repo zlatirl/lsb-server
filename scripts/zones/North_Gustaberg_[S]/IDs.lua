@@ -21,6 +21,7 @@ zones[xi.zone.NORTH_GUSTABERG_S] =
         FOUND_ITEM_WITH_EASE          = 7469, -- It appears your chocobo found this item with ease.
         MINING_IS_POSSIBLE_HERE       = 7569, -- Mining is possible here if you have <item>.
         NO_WAY_PAST_BARRIER           = 7937, -- It seems there is no way past this imposing barrier...
+        SANDWORM_SWALLOWS             = 7971, -- The sandworm swallows you whole!
         VOIDWALKER_DESPAWN            = 8154, -- The monster fades before your eyes, a look of disappointment on its face.
         VOIDWALKER_NO_MOB             = 8201, -- The <keyitem> quivers ever so slightly, but emits no light. There seem to be no monsters in the area.
         VOIDWALKER_MOB_TOO_FAR        = 8202, -- The <keyitem> quivers ever so slightly and emits a faint light. There seem to be no monsters in the immediate vicinity.

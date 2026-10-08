@@ -930,7 +930,6 @@ INSERT INTO `mob_skill_lists` VALUES ('Lambton', 214, 2190);
 INSERT INTO `mob_skill_lists` VALUES ('Lambton', 214, 2191);
 INSERT INTO `mob_skill_lists` VALUES ('Sandworm',215,2190);
 INSERT INTO `mob_skill_lists` VALUES ('Sandworm',215,2191);
-INSERT INTO `mob_skill_lists` VALUES ('Sandworm',215,2192);
 INSERT INTO `mob_skill_lists` VALUES ('Sandworm',215,2187);
 INSERT INTO `mob_skill_lists` VALUES ('Sandworm',215,2188);
 INSERT INTO `mob_skill_lists` VALUES ('Sandworm',215,2189);

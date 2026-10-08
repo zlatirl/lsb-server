@@ -169,6 +169,10 @@ quest.sections =
             {
                 -- What Price Loyalty instance is not implemented currently.
                 [10000] = function(player, csid, option, npc)
+                    if xi.sandworm.isLeavingDoomvoid(player) then
+                        return
+                    end
+
                     quest:setVar(player, 'Prog', 5)
                     player:setPos(320.000, -10.835, 158.699, 0, xi.zone.XARCABARD_S)
                 end,

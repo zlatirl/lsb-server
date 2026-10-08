@@ -3581,6 +3581,7 @@ xi.item =
     STEEL_BULLET_POUCH                  = 5416,
     TOOLBAG_SANJAKU_TENUGUI             = 5417,
     VIAL_OF_TINCTURE                    = 5418,
+    BOTTLED_FAY                         = 5423,
     SERENE_SERINETTE                    = 5424,
     JOYOUS_SERINETTE                    = 5425,
     SCROLL_OF_INSTANT_RETRACE           = 5428,

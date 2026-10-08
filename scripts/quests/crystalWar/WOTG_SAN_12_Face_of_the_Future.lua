@@ -115,6 +115,10 @@ quest.sections =
             onEventFinish =
             {
                 [10000] = function(player, csid, option, npc)
+                    if xi.sandworm.isLeavingDoomvoid(player) then
+                        return
+                    end
+
                     quest:setVar(player, 'Prog', 5)
                     player:setPos(-184.678, -0.266, -112.093, 101, xi.zone.YUGHOTT_GROTTO)
                 end,

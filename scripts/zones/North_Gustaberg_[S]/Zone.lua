@@ -28,6 +28,7 @@ zoneObject.onEventUpdate = function(player, csid, option, npc)
 end
 
 zoneObject.onEventFinish = function(player, csid, option, npc)
+    xi.sandworm.onEventFinish(player, csid)
 end
 
 zoneObject.onZoneOut = function(player)

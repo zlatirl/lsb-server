@@ -13424,6 +13424,66 @@ void CLuaBaseEntity::resetRecasts()
 }
 
 /************************************************************************
+ *  Function: maxAbilityRecasts()
+ *  Purpose : Puts every Job Ability the player has on its full recast
+ *  Example : target:maxAbilityRecasts()
+ *  Notes   : Merit reductions apply; charge abilities lose all charges
+ ************************************************************************/
+
+void CLuaBaseEntity::maxAbilityRecasts()
+{
+    auto* PChar = dynamic_cast<CCharEntity*>(m_PBaseEntity);
+    if (!PChar)
+    {
+        return;
+    }
+
+    std::map<Recast, timer::duration> fullRecasts;
+
+    for (const auto job : { PChar->GetMJob(), PChar->GetSJob() })
+    {
+        if (job == xi::Job::NONE)
+        {
+            continue;
+        }
+
+        for (const auto* PAbility : ability::GetAbilities(job))
+        {
+            if (!PAbility || !charutils::hasAbility(PChar, PAbility->getID()))
+            {
+                continue;
+            }
+
+            auto recastReduction = 0s;
+            if (PAbility->getMeritModID() > 0 && !(PAbility->getAddType() & ADDTYPE_MERIT))
+            {
+                recastReduction = std::chrono::seconds(PChar->PMeritPoints->GetMeritValue(static_cast<xi::Merit>(PAbility->getMeritModID()), PChar));
+            }
+
+            timer::duration recast = PAbility->getRecastTime() - recastReduction;
+            if (const auto* charge = ability::GetCharge(PChar, static_cast<uint16>(PAbility->getRecastId())))
+            {
+                recast = (charge->chargeTime - std::chrono::seconds(PChar->PMeritPoints->GetMeritValue(static_cast<xi::Merit>(charge->merit), PChar))) * charge->maxCharges;
+            }
+
+            auto& longest = fullRecasts[PAbility->getRecastId()];
+            longest       = std::max(longest, recast);
+        }
+    }
+
+    for (const auto& [recastId, recast] : fullRecasts)
+    {
+        if (recast > 0s)
+        {
+            PChar->PRecastContainer->Add(RECAST_ABILITY, recastId, recast);
+        }
+    }
+
+    PChar->pushPacket<GP_SERV_COMMAND_CLISTATUS2>(PChar);
+    PChar->pushPacket<GP_SERV_COMMAND_ABIL_RECAST>(PChar);
+}
+
+/************************************************************************
  *  Function: addListener()
  *  Purpose : Instructs the Event Handler to monitor for an Event, then
  *            execute a prepared Lua function once the Event has occurred
@@ -21397,6 +21457,7 @@ void CLuaBaseEntity::Register()
     SOL_REGISTER("hasRecast", CLuaBaseEntity::hasRecast);
     SOL_REGISTER("resetRecast", CLuaBaseEntity::resetRecast);
     SOL_REGISTER("resetRecasts", CLuaBaseEntity::resetRecasts);
+    SOL_REGISTER("maxAbilityRecasts", CLuaBaseEntity::maxAbilityRecasts);
 
     SOL_REGISTER("addListener", CLuaBaseEntity::addListener);
     SOL_REGISTER("removeListener", CLuaBaseEntity::removeListener);

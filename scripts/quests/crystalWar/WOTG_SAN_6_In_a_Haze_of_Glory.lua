@@ -117,6 +117,10 @@ quest.sections =
                 -- sent once the battlefield has been cleared.  This needs to be verified upon
                 -- implementation of the instance.
                 [10000] = function(player, csid, option, npc)
+                    if xi.sandworm.isLeavingDoomvoid(player) then
+                        return
+                    end
+
                     quest:setVar(player, 'Prog', 2)
                     player:setPos(2.436, 6.235, -99.966, 127, xi.zone.GARLAIGE_CITADEL_S)
                 end,

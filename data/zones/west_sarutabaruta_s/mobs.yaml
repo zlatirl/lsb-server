@@ -2947,8 +2947,11 @@ templates:
         hitbox:        34
       behaviors:
         aggressive: true
+        flags:      [no_turn]
       spawn:
-        respawn: 86400
+        type: [scripted]
+      stats:
+        hp: 70000
 
   Savanna_Crab:
     id:            3488

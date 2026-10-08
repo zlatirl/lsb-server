@@ -3360,8 +3360,11 @@ templates:
         hitbox:        34
       behaviors:
         aggressive: true
+        flags:      [no_turn]
       spawn:
         type: [scripted]
+      stats:
+        hp: 70000
 
   Sapphirine_Quadav:
     id:            3464

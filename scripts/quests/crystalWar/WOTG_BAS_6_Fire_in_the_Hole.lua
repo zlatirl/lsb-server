@@ -118,6 +118,10 @@ quest.sections =
             onEventFinish =
             {
                 [10000] = function(player, csid, option, npc)
+                    if xi.sandworm.isLeavingDoomvoid(player) then
+                        return
+                    end
+
                     if quest:getVar(player, 'Prog') == 2 then
                         quest:setVar(player, 'Prog', 3)
                     end

@@ -1112,16 +1112,22 @@ templates:
   Lambton_Worm:
     id:            2322
     species:       sandworm
+    type:          [notorious]
     skill_list_id: 214
     attributes:
       combat:
-        skill: scythe
+        skill:    scythe
+        dmg_mult: 125
       render:
         look:
           type:  standard
           model: 2027
+        hitbox: 34
       behaviors:
         aggressive: true
+        flags:      [no_turn]
+      mob_mods:
+        immunity: 6788
       spawn:
         type: [scripted]
     loot:
@@ -2145,8 +2151,10 @@ spawns:
     level:    [60, 60]
   17158202:
     template: Guivre
+    at:       [133.047, -23.738, -146.911, 8]
   17158203:
     template: Lambton_Worm
+    at:       [408.000, 1.000, -485.000, 162]
   17158204:
     template: Brass_Quadav_past
     script:   Brass_Quadav

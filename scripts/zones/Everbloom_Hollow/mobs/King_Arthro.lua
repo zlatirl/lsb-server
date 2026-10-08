@@ -42,11 +42,29 @@ entity.onMobSpellChoose = function(mob, target, spellId)
 end
 
 entity.onMobWeaponSkill = function(mob, target, skill, action)
-    -- TODO: Spawns a Knight Crab (up to 12) on Bubble Shower
+    if skill:getID() ~= xi.mobSkill.BUBBLE_SHOWER_1 then
+        return
+    end
+
+    local instance = mob:getInstance()
+
+    for i = 1, 12 do
+        local crab = GetMobByID(mob:getID() + i, instance)
+
+        if crab and not crab:isSpawned() then
+            SpawnMob(crab:getID(), instance)
+            crab:updateEnmity(target)
+            break
+        end
+    end
 end
 
 entity.onMobDeath = function(mob, player, optParams)
-    -- TODO: Kill all Knight Crabs
+    local instance = mob:getInstance()
+
+    for i = 1, 12 do
+        DespawnMob(mob:getID() + i, instance)
+    end
 end
 
 return entity

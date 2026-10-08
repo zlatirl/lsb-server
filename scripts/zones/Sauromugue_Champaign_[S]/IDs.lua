@@ -20,6 +20,7 @@ zones[xi.zone.SAUROMUGUE_CHAMPAIGN_S] =
         CAMPAIGN_RESULTS_TALLIED      = 7530,  -- Campaign results tallied.
         FOUND_ITEM_WITH_EASE          = 7721,  -- It appears your chocobo found this item with ease.
         DOOR_FIRMLY_SEALED            = 7740,  -- The door is firmly sealed.
+        SANDWORM_SWALLOWS             = 8252,  -- The sandworm swallows you whole!
         SURRENDER_CEREMONY_HASTE      = 8488,  -- The surrender ceremony is about to commence underground. Make haste before all is lost!
         VOIDWALKER_DESPAWN            = 8500,  -- The monster fades before your eyes, a look of disappointment on its face.
         VOIDWALKER_NO_MOB             = 8687,  -- The <keyitem> quivers ever so slightly, but emits no light. There seem to be no monsters in the area.

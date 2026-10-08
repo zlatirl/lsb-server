@@ -50,6 +50,7 @@ zoneObject.onEventUpdate = function(player, csid, option, npc)
 end
 
 zoneObject.onEventFinish = function(player, csid, option)
+    xi.sandworm.onEventFinish(player, csid)
 end
 
 return zoneObject

@@ -23,6 +23,7 @@ zones[xi.zone.BATALLIA_DOWNS_S] =
         FOUND_ITEM_WITH_EASE          = 7183, -- It appears your chocobo found this item with ease.
         CAMPAIGN_RESULTS_TALLIED      = 7631, -- Campaign results tallied.
         NO_RESPONSE                   = 7716, -- There is no response...
+        SANDWORM_SWALLOWS             = 7984, -- The sandworm swallows you whole!
         VOIDWALKER_DESPAWN            = 8280, -- The monster fades before your eyes, a look of disappointment on its face.
         VOIDWALKER_NO_MOB             = 8327, -- The <keyitem> quivers ever so slightly, but emits no light. There seem to be no monsters in the area.
         VOIDWALKER_MOB_TOO_FAR        = 8328, -- The <keyitem> quivers ever so slightly and emits a faint light. There seem to be no monsters in the immediate vicinity.

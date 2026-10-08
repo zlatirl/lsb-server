@@ -59,6 +59,14 @@ end
 function CInstance:getEntryPos()
 end
 
+---@param x number
+---@param y number
+---@param z number
+---@param rot integer
+---@return nil
+function CInstance:setEntryPos(x, y, z, rot)
+end
+
 ---@nodiscard
 ---@return integer
 function CInstance:getLevelCap()

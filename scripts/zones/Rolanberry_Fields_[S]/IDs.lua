@@ -21,6 +21,7 @@ zones[xi.zone.ROLANBERRY_FIELDS_S] =
         FOUND_ITEM_WITH_EASE          = 7183, -- It appears your chocobo found this item with ease.
         I_CANNOT_HELP_YOU_NOW         = 7242, -- I cannot help you now. I have other orders to carry out.
         CAMPAIGN_RESULTS_TALLIED      = 7631, -- Campaign results tallied.
+        SANDWORM_SWALLOWS             = 7998, -- The sandworm swallows you whole!
         VOIDWALKER_DESPAWN            = 8006, -- The monster fades before your eyes, a look of disappointment on its face.
         VOIDWALKER_NO_MOB             = 8061, -- The <keyitem> quivers ever so slightly, but emits no light. There seem to be no monsters in the area.
         VOIDWALKER_MOB_TOO_FAR        = 8062, -- The <keyitem> quivers ever so slightly and emits a faint light. There seem to be no monsters in the immediate vicinity.

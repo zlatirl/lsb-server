@@ -1708,16 +1708,22 @@ templates:
   Lambton_Worm:
     id:            2322
     species:       sandworm
+    type:          [notorious]
     skill_list_id: 214
     attributes:
       combat:
-        skill: scythe
+        skill:    scythe
+        dmg_mult: 125
       render:
         look:
           type:  standard
           model: 2027
+        hitbox: 34
       behaviors:
         aggressive: true
+        flags:      [no_turn]
+      mob_mods:
+        immunity: 6788
       spawn:
         type: [scripted]
     loot:
@@ -4059,8 +4065,10 @@ spawns:
     template: Onyx_Mine
   17305666:
     template: Serket
+    at:       [-431.779, 0.243, -112.373, 35]
   17305667:
     template: Lambton_Worm
+    at:       [454.192, 0.215, 414.472, 156]
   17305668:
     template: Yagudo_Conversus
   17305669:

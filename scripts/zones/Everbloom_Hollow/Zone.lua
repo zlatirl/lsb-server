@@ -7,19 +7,17 @@ local zoneObject = {}
 zoneObject.onInitialize = function(zone)
 end
 
-zoneObject.onZoneIn = function(player, prevZone, zone, mob)
-    local cs = -1
-    if prevZone == 81 or prevZone == 84 then
-        GetMobByID(17109357):setHP(0)
-        GetMobByID(17121693):setHP(0)
+zoneObject.onInstanceZoneIn = function(player, instance)
+    if player:getInstance() == nil then
+        player:setPos(0, 0, 0, 0, 72)
+        return
     end
 
-    return cs
-end
-
--- Get back to this and get proper IDs. Maybe move it into a Global file?
-zoneObject.afterZoneIn = function(player, zone)
-    player:printToPlayer('Warning: You have 1 hour to complete this challenge.')
+    local pos = player:getPos()
+    if pos.x == 0 and pos.y == 0 and pos.z == 0 then
+        local entrypos = instance:getEntryPos()
+        player:setPos(entrypos.x, entrypos.y, entrypos.z, entrypos.rot)
+    end
 end
 
 zoneObject.onTriggerAreaEnter = function(player, triggerArea)
@@ -29,6 +27,9 @@ zoneObject.onEventUpdate = function(player, csid, option, npc)
 end
 
 zoneObject.onEventFinish = function(player, csid, option, npc)
+    if csid == 10000 then
+        xi.sandworm.leaveDoomvoid(player)
+    end
 end
 
 zoneObject.onInstanceLoadFailed = function()

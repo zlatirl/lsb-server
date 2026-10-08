@@ -2573,6 +2573,20 @@ INSERT INTO `instance_entities` VALUES (7704,17093417);
 
 INSERT INTO `instance_entities` VALUES (7704,17093430); -- Rune of Transfer
 INSERT INTO `instance_entities` VALUES (7704,17093431); -- Vending box
+INSERT INTO `instance_entities` VALUES (8602,17129519);
+INSERT INTO `instance_entities` VALUES (8602,17129520);
+INSERT INTO `instance_entities` VALUES (8602,17129521);
+INSERT INTO `instance_entities` VALUES (8602,17129522);
+INSERT INTO `instance_entities` VALUES (8602,17129523);
+INSERT INTO `instance_entities` VALUES (8602,17129524);
+INSERT INTO `instance_entities` VALUES (8602,17129525);
+INSERT INTO `instance_entities` VALUES (8602,17129526);
+INSERT INTO `instance_entities` VALUES (8602,17129527);
+INSERT INTO `instance_entities` VALUES (8602,17129528);
+INSERT INTO `instance_entities` VALUES (8602,17129529);
+INSERT INTO `instance_entities` VALUES (8602,17129530);
+INSERT INTO `instance_entities` VALUES (8602,17129531);
+INSERT INTO `instance_entities` VALUES (8602,17129532);
 
 -- ------------------------------------------------------------
 -- Ruhotz Silvermines (Zone 93)
@@ -2602,6 +2616,10 @@ INSERT INTO `instance_entities` VALUES (9300,17158395); -- csnpc
 INSERT INTO `instance_entities` VALUES (9300,17158396); -- csnpc
 INSERT INTO `instance_entities` VALUES (9300,17158397); -- csnpc
 INSERT INTO `instance_entities` VALUES (9300,17158398); -- csnpc
+INSERT INTO `instance_entities` VALUES (9302,17158202);
+INSERT INTO `instance_entities` VALUES (9302,17158203);
+INSERT INTO `instance_entities` VALUES (12900,17305666);
+INSERT INTO `instance_entities` VALUES (12900,17305667);
 
 -- ------------------------------------------------------------
 -- Rala Waterways (Zone 258)

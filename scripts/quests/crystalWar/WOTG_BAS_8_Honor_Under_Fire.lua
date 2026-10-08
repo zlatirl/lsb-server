@@ -157,6 +157,10 @@ quest.sections =
             {
                 -- Honor Under Fire instance is not implemented currently.
                 [10000] = function(player, csid, option, npc)
+                    if xi.sandworm.isLeavingDoomvoid(player) then
+                        return
+                    end
+
                     quest:setVar(player, 'Prog', 5)
                     player:setPos(241.000, -31.995, 242.999, 0, xi.zone.VUNKERL_INLET_S)
                 end,

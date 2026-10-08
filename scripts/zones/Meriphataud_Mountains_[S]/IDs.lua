@@ -19,6 +19,7 @@ zones[xi.zone.MERIPHATAUD_MOUNTAINS_S] =
         CAMPAIGN_RESULTS_TALLIED      = 7530, -- Campaign results tallied.
         ALREADY_OBTAINED_TELE         = 7615, -- You already possess the gate crystal for this telepoint.
         FOUND_ITEM_WITH_EASE          = 7721, -- It appears your chocobo found this item with ease.
+        SANDWORM_SWALLOWS             = 7860, -- The sandworm swallows you whole!
         VOIDWALKER_DESPAWN            = 7885, -- The monster fades before your eyes, a look of disappointment on its face.
         VOIDWALKER_NO_MOB             = 7932, -- The <keyitem> quivers ever so slightly, but emits no light. There seem to be no monsters in the area.
         VOIDWALKER_MOB_TOO_FAR        = 7933, -- The <keyitem> quivers ever so slightly and emits a faint light. There seem to be no monsters in the immediate vicinity.

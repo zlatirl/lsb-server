@@ -117,6 +117,10 @@ mission.sections =
             onEventFinish =
             {
                 [10000] = function(player, csid, option, npc)
+                    if xi.sandworm.isLeavingDoomvoid(player) then
+                        return
+                    end
+
                     -- TODO: The assumption for this mission script is to catch Event 10000 which is
                     -- sent once the battlefield has been cleared.  This needs to be verified upon
                     -- implementation of the instance.
