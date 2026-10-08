@@ -23,3 +23,8 @@ npcs:
         model: 701
       entity_flags: 3
       name_prefix:  32
+
+  # Goblin Mafia chest beside Priztrix; retail flags it untargetable.
+  17776887:
+    render:
+      entity_flags: 3

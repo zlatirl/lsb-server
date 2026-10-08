@@ -10,3 +10,8 @@ npcs:
         type:  standard
         model: 2366
     widescan: true
+
+  # Goblin Mafia chest; retail flags it untargetable.
+  16982641:
+    render:
+      entity_flags: 3
