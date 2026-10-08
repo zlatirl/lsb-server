@@ -19,12 +19,7 @@ zones[xi.zone.RAKAZNAR_INNER_COURT] =
     },
     mob =
     {
-        REIVE_MOB_OFFSET     = GetFirstID('Heliotrope_Barrier'),
-        DRAFTDANCE_FLUTURINI = GetFirstID('Draftdance_Fluturini'),
-        POXHOUND             = GetFirstID('Poxhound'),
-        WAYWARD_BHOOT        = GetFirstID('Wayward_Bhoot'),
-        DOLOROUS_CYHIRAETH   = GetFirstID('Dolorous_Cyhiraeth'),
-        WHITENOISE_BATS      = GetFirstID('Whitenoise_Bats'),
+        REIVE_MOB_OFFSET = GetFirstID('Heliotrope_Barrier'),
     },
     npc =
     {
