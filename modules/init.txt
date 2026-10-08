@@ -55,10 +55,8 @@ custom/lua/era_augments/
 custom/lua/era_commands/
 
 # SQL files
-custom/sql/era_mob_adjustments.sql
 custom/sql/era_custom_synths.sql
 custom/sql/AH_adjustments.sql
-custom/sql/era_custom_drops.sql
 custom/sql/era_custom_equipment.sql
 custom/sql/era_s_zone_fishing.sql
 custom/sql/era_fishing_adjustments.sql
@@ -113,4 +111,5 @@ era/lua/commands/
 era/cpp/dynamis_functions.cpp
 # Database: instance tables, droplists, spell/skill lists, mob groups
 era/sql/dynamis_instances.sql
+era/sql/dynamis_mob_data.sql
 era/sql/dynamis.sql

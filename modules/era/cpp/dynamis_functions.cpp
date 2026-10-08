@@ -21,12 +21,12 @@
 #include "map/packets/s2c/0x01f_item_list.h"
 #include "map/utils/charutils.h"
 #include "map/utils/itemutils.h"
+#include "map/utils/mobutils.h"
 #include "map/utils/moduleutils.h"
 
 #include "data/enums/mob_type.h"
 
 #include <ctime>
-#include <unordered_map>
 
 namespace
 {
@@ -176,40 +176,18 @@ class EraDynamisModule : public CPPModule
         };
 
         // mob:resolveSpeciesFamily()
-        // InstantiateDynamicMob copies the pool's species but never resolves
-        // the family, so every dynamic entity spawns with family 0. All
-        // family-keyed behavior (statue detection, child job tables, MDB,
-        // EES) depends on it. Call before spawn() so the core's stat setup
-        // sees the right family too.
+        // All family-keyed Dynamis behavior (statue detection, child job tables,
+        // MDB, EES) depends on the family. Call before spawn() so the core's stat
+        // setup sees the right family too.
         ::lua["CBaseEntity"]["resolveSpeciesFamily"] = [](CLuaBaseEntity* PLuaBaseEntity)
         {
-            static std::unordered_map<uint16, uint16> speciesFamilyCache;
-
             auto* PMob = dynamic_cast<CMobEntity*>(PLuaBaseEntity->GetBaseEntity());
             if (!PMob)
             {
                 return;
             }
 
-            auto it = speciesFamilyCache.find(PMob->m_Species);
-            if (it == speciesFamilyCache.end())
-            {
-                uint16 familyId = 0;
-
-                const auto rset = db::preparedStmt("SELECT familyID FROM mob_species_system WHERE speciesID = ?", PMob->m_Species);
-                if (rset && rset->rowsCount() && rset->next())
-                {
-                    familyId = rset->get<uint16>("familyID");
-                }
-                else
-                {
-                    ShowError("era_dynamis: no mob_species_system entry for species %u", PMob->m_Species);
-                }
-
-                it = speciesFamilyCache.emplace(PMob->m_Species, familyId).first;
-            }
-
-            PMob->m_Family = it->second;
+            PMob->m_Family = static_cast<uint16>(mobutils::GetSpeciesData(PMob->m_Species).Family);
         };
 
         // player:getDynaInstance() -> most recent instance id the player registered for

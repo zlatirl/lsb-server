@@ -1,0 +1,367 @@
+# Era Dynamis: the wave engine spawns every mob itself, so none of the zone's own mobs may spawn.
+
+templates:
+  Anvilix_Sootwrists:
+    attributes:
+      spawn:
+        type: [scripted]
+  Arch_Goblin_Golem:
+    attributes:
+      spawn:
+        type: [scripted]
+  Bandrix_Rockjaw:
+    attributes:
+      spawn:
+        type: [scripted]
+  Blazox_Boneybod:
+    attributes:
+      spawn:
+        type: [scripted]
+  Bootrix_Jaggedelbow:
+    attributes:
+      spawn:
+        type: [scripted]
+  Buffrix_Eargone:
+    attributes:
+      spawn:
+        type: [scripted]
+  Cloktix_Longnail:
+    attributes:
+      spawn:
+        type: [scripted]
+  Distilix_Stickytoes:
+    attributes:
+      spawn:
+        type: [scripted]
+  Elixmix_Hooknose:
+    attributes:
+      spawn:
+        type: [scripted]
+  Eremix_Snottynostril:
+    attributes:
+      spawn:
+        type: [scripted]
+  Feralox_Honeylips:
+    attributes:
+      spawn:
+        type: [scripted]
+  Feraloxs_Slime:
+    attributes:
+      spawn:
+        type: [scripted]
+  Gabblox_Magpietongue:
+    attributes:
+      spawn:
+        type: [scripted]
+  Goblin_Golem:
+    attributes:
+      spawn:
+        type: [scripted]
+  Goblin_Replica:
+    attributes:
+      spawn:
+        type: [scripted]
+  Goblin_Statue:
+    attributes:
+      spawn:
+        type: [scripted]
+  Hermitrix_Toothrot:
+    attributes:
+      spawn:
+        type: [scripted]
+  Humnox_Drumbelly:
+    attributes:
+      spawn:
+        type: [scripted]
+  Jabbrox_Grannyguise:
+    attributes:
+      spawn:
+        type: [scripted]
+  Jabkix_Pigeonpecs:
+    attributes:
+      spawn:
+        type: [scripted]
+  Karashix_Swollenskull:
+    attributes:
+      spawn:
+        type: [scripted]
+  Kikklix_Longlegs:
+    attributes:
+      spawn:
+        type: [scripted]
+  Lurklox_Dhalmelneck:
+    attributes:
+      spawn:
+        type: [scripted]
+  Mobpix_Mucousmouth:
+    attributes:
+      spawn:
+        type: [scripted]
+  Morgmox_Moldnoggin:
+    attributes:
+      spawn:
+        type: [scripted]
+  Mortilox_Wartpaws:
+    attributes:
+      spawn:
+        type: [scripted]
+  Prowlox_Barrelbelly:
+    attributes:
+      spawn:
+        type: [scripted]
+  Quicktrix_Hexhands:
+    attributes:
+      spawn:
+        type: [scripted]
+  Rutrix_Hamgams:
+    attributes:
+      spawn:
+        type: [scripted]
+  Scourquix_Scaleskin:
+    attributes:
+      spawn:
+        type: [scripted]
+  Scourquixs_Wyvern:
+    attributes:
+      spawn:
+        type: [scripted]
+  Scruffix_Shaggychest:
+    attributes:
+      spawn:
+        type: [scripted]
+  Slystix_Megapeepers:
+    attributes:
+      spawn:
+        type: [scripted]
+  Smeltix_Thickhide:
+    attributes:
+      spawn:
+        type: [scripted]
+  Snypestix_Eaglebeak:
+    attributes:
+      spawn:
+        type: [scripted]
+  Sparkspox_Sweatbrow:
+    attributes:
+      spawn:
+        type: [scripted]
+  Ticktox_Beadyeyes:
+    attributes:
+      spawn:
+        type: [scripted]
+  Trailblix_Goatmug:
+    attributes:
+      spawn:
+        type: [scripted]
+  Tufflix_Loglimbs:
+    attributes:
+      spawn:
+        type: [scripted]
+  Tymexox_Ninefingers:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Alchemist:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Alchemist_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Alchemist_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Ambusher:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Ambusher_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Ambusher_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Armorer:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Armorer_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Armorer_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Dragontamer:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Dragontamer_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Dragontamer_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Enchanter:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Enchanter_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Enchanter_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Hitman:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Hitman_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Hitman_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Maestro:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Maestro_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Maestro_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Necromancer:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Necromancer_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Necromancer_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Pathfinder:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Pathfinder_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Pathfinder_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Pitfighter:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Pitfighter_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Pitfighter_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Ronin:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Ronin_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Ronin_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Shaman:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Shaman_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Shaman_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Smithy:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Smithy_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Smithy_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Tinkerer:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Tinkerer_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Tinkerer_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Welldigger:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Welldigger_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Welldigger_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguards_Avatar:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguards_Slime:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguards_Wyvern:
+    attributes:
+      spawn:
+        type: [scripted]
+  Wasabix_Callusdigit:
+    attributes:
+      spawn:
+        type: [scripted]
+  Wilywox_Tenderpalm:
+    attributes:
+      spawn:
+        type: [scripted]
+  Wyrmwix_Snakespecs:
+    attributes:
+      spawn:
+        type: [scripted]

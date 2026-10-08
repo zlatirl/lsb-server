@@ -1,0 +1,255 @@
+# Era Dynamis: the wave engine spawns every mob itself, so none of the zone's own mobs may spawn.
+
+templates:
+  Adamantking_Effigy:
+    attributes:
+      spawn:
+        type: [scripted]
+  Diabolos_Club:
+    attributes:
+      spawn:
+        type: [scripted]
+  Diabolos_Diamond:
+    attributes:
+      spawn:
+        type: [scripted]
+  Diabolos_Heart:
+    attributes:
+      spawn:
+        type: [scripted]
+  Diabolos_Letum:
+    attributes:
+      spawn:
+        type: [scripted]
+  Diabolos_Nox:
+    attributes:
+      spawn:
+        type: [scripted]
+  Diabolos_Somnus:
+    attributes:
+      spawn:
+        type: [scripted]
+  Diabolos_Spade:
+    attributes:
+      spawn:
+        type: [scripted]
+  Diabolos_Umbra:
+    attributes:
+      spawn:
+        type: [scripted]
+  Diaboloss_Shard:
+    attributes:
+      spawn:
+        type: [scripted]
+  Diaboloss_Vestige:
+    attributes:
+      spawn:
+        type: [scripted]
+  Effigy_Prototype:
+    attributes:
+      spawn:
+        type: [scripted]
+  Goblin_Replica:
+    attributes:
+      spawn:
+        type: [scripted]
+  Hydra_Bard:
+    attributes:
+      spawn:
+        type: [scripted]
+  Hydra_Beastmaster:
+    attributes:
+      spawn:
+        type: [scripted]
+  Hydra_Black_Mage:
+    attributes:
+      spawn:
+        type: [scripted]
+  Hydra_Dark_Knight:
+    attributes:
+      spawn:
+        type: [scripted]
+  Hydra_Dragoon:
+    attributes:
+      spawn:
+        type: [scripted]
+  Hydra_Monk:
+    attributes:
+      spawn:
+        type: [scripted]
+  Hydra_Ninja:
+    attributes:
+      spawn:
+        type: [scripted]
+  Hydra_Paladin:
+    attributes:
+      spawn:
+        type: [scripted]
+  Hydra_Ranger:
+    attributes:
+      spawn:
+        type: [scripted]
+  Hydra_Red_Mage:
+    attributes:
+      spawn:
+        type: [scripted]
+  Hydra_Samurai:
+    attributes:
+      spawn:
+        type: [scripted]
+  Hydra_Summoner:
+    attributes:
+      spawn:
+        type: [scripted]
+  Hydra_Thief:
+    attributes:
+      spawn:
+        type: [scripted]
+  Hydra_Warrior:
+    attributes:
+      spawn:
+        type: [scripted]
+  Hydra_White_Mage:
+    attributes:
+      spawn:
+        type: [scripted]
+  Hydras_Avatar:
+    attributes:
+      spawn:
+        type: [scripted]
+  Hydras_Hound:
+    attributes:
+      spawn:
+        type: [scripted]
+  Hydras_Wyvern:
+    attributes:
+      spawn:
+        type: [scripted]
+  Icon_Prototype:
+    attributes:
+      spawn:
+        type: [scripted]
+  Kindred_Bard:
+    attributes:
+      spawn:
+        type: [scripted]
+  Kindred_Beastmaster:
+    attributes:
+      spawn:
+        type: [scripted]
+  Kindred_Black_Mage:
+    attributes:
+      spawn:
+        type: [scripted]
+  Kindred_Dark_Knight:
+    attributes:
+      spawn:
+        type: [scripted]
+  Kindred_Dragoon:
+    attributes:
+      spawn:
+        type: [scripted]
+  Kindred_Monk:
+    attributes:
+      spawn:
+        type: [scripted]
+  Kindred_Ninja:
+    attributes:
+      spawn:
+        type: [scripted]
+  Kindred_Paladin:
+    attributes:
+      spawn:
+        type: [scripted]
+  Kindred_Ranger:
+    attributes:
+      spawn:
+        type: [scripted]
+  Kindred_Red_Mage:
+    attributes:
+      spawn:
+        type: [scripted]
+  Kindred_Samurai:
+    attributes:
+      spawn:
+        type: [scripted]
+  Kindred_Summoner:
+    attributes:
+      spawn:
+        type: [scripted]
+  Kindred_Thief:
+    attributes:
+      spawn:
+        type: [scripted]
+  Kindred_Warrior:
+    attributes:
+      spawn:
+        type: [scripted]
+  Kindred_White_Mage:
+    attributes:
+      spawn:
+        type: [scripted]
+  Kindreds_Avatar:
+    attributes:
+      spawn:
+        type: [scripted]
+  Kindreds_Vouivre:
+    attributes:
+      spawn:
+        type: [scripted]
+  Kindreds_Wyvern:
+    attributes:
+      spawn:
+        type: [scripted]
+  Manifest_Icon:
+    attributes:
+      spawn:
+        type: [scripted]
+  Nightmare_Bugard:
+    attributes:
+      spawn:
+        type: [scripted]
+  Nightmare_Cluster:
+    attributes:
+      spawn:
+        type: [scripted]
+  Nightmare_Hornet:
+    attributes:
+      spawn:
+        type: [scripted]
+  Nightmare_Leech:
+    attributes:
+      spawn:
+        type: [scripted]
+  Nightmare_Makara:
+    attributes:
+      spawn:
+        type: [scripted]
+  Nightmare_Taurus:
+    attributes:
+      spawn:
+        type: [scripted]
+  Nightmare_Worm:
+    attributes:
+      spawn:
+        type: [scripted]
+  Prototype_Eye:
+    attributes:
+      spawn:
+        type: [scripted]
+  Serjeant_Tombstone:
+    attributes:
+      spawn:
+        type: [scripted]
+  Statue_Prototype:
+    attributes:
+      spawn:
+        type: [scripted]
+  Tombstone_Prototype:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Eye:
+    attributes:
+      spawn:
+        type: [scripted]

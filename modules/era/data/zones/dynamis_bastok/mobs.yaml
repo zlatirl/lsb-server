@@ -1,0 +1,247 @@
+# Era Dynamis: the wave engine spawns every mob itself, so none of the zone's own mobs may spawn.
+
+templates:
+  Adamantking_Effigy:
+    attributes:
+      spawn:
+        type: [scripted]
+  Adamantking_Image:
+    attributes:
+      spawn:
+        type: [scripted]
+  Arch_GuDha_Effigy:
+    attributes:
+      spawn:
+        type: [scripted]
+  BuBho_Truesteel:
+    attributes:
+      spawn:
+        type: [scripted]
+  GiPha_Manameister:
+    attributes:
+      spawn:
+        type: [scripted]
+  GuDha_Effigy:
+    attributes:
+      spawn:
+        type: [scripted]
+  GuNhi_Noondozer:
+    attributes:
+      spawn:
+        type: [scripted]
+  KoDho_Cannonball:
+    attributes:
+      spawn:
+        type: [scripted]
+  RaGho_Darkfount:
+    attributes:
+      spawn:
+        type: [scripted]
+  RaGhos_Avatar:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Beasttender:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Beasttender_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Beasttender_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Constable:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Constable_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Constable_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Defender:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Defender_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Defender_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Drakekeeper:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Drakekeeper_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Drakekeeper_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Hatamoto:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Hatamoto_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Hatamoto_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Kusa:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Kusa_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Kusa_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Mason:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Mason_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Mason_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Militant:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Militant_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Militant_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Minstrel:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Minstrel_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Minstrel_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Protector:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Protector_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Protector_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Purloiner:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Purloiner_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Purloiner_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Thaumaturge:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Thaumaturge_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Thaumaturge_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Undertaker:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Undertaker_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Undertaker_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Vigilante:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Vigilante_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Vigilante_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Vindicator:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Vindicator_2:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguard_Vindicator_Large:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguards_Avatar:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguards_Scorpion:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vanguards_Wyvern:
+    attributes:
+      spawn:
+        type: [scripted]
+  Vazhe_Pummelsong:
+    attributes:
+      spawn:
+        type: [scripted]
+  ZeVho_Fallsplitter:
+    attributes:
+      spawn:
+        type: [scripted]
+  ZoPha_Forgesoul:
+    attributes:
+      spawn:
+        type: [scripted]

@@ -1,0 +1,13 @@
+# Era Dynamis: every ??? starts hidden; its handler reveals the win ??? when the zone boss falls.
+
+npcs:
+  16937586:
+    status: disappear
+  16937587:
+    status: disappear
+  16937588:
+    status: disappear
+  16937589:
+    status: disappear
+  16937590:
+    status: disappear
