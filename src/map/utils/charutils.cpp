@@ -68,6 +68,7 @@
 #include "packets/s2c/0x055_scenarioitem.h"
 #include "packets/s2c/0x061_clistatus.h"
 #include "packets/s2c/0x062_clistatus2.h"
+#include "packets/s2c/0x0aa_magic_data.h"
 #include "packets/s2c/0x0ac_command_data.h"
 #include "packets/s2c/0x0ad_dungeon.h"
 #include "packets/s2c/0x0b4_config.h"
@@ -1933,6 +1934,21 @@ void UnequipItem(CCharEntity* PChar, uint8 equipSlotID, Recalculate recalculate,
         PChar->PLatentEffectContainer->DelLatentEffects(((CItemEquipment*)PItem)->getReqLvl(), equipSlotID);
         PChar->delPetModifiers(&((CItemEquipment*)PItem)->petModList);
 
+        // ERA Custom: drop the buff from a spell the item granted (ADDS_SPELL) and refresh the spell list
+        if (const auto spellId = static_cast<uint16>(((CItemEquipment*)PItem)->getModifier(xi::Mod::ADDS_SPELL)); spellId > 0)
+        {
+            if (spellId == static_cast<uint16>(SpellID::Enlight))
+            {
+                PChar->StatusEffectContainer->DelStatusEffect(xi::StatusEffect::Enlight);
+            }
+            else if (spellId == static_cast<uint16>(SpellID::Endark))
+            {
+                PChar->StatusEffectContainer->DelStatusEffect(xi::StatusEffect::Endark);
+            }
+
+            PChar->pushPacket<GP_SERV_COMMAND_MAGIC_DATA>(PChar);
+        }
+
         switch (equipSlotID)
         {
             case SLOT_HEAD:
@@ -3169,6 +3185,12 @@ void EquipItem(CCharEntity* PChar, uint8 slotID, uint8 equipSlotID, uint8 contai
     PChar->updatemask |= UPDATE_HP;
     PChar->updatemask |= UPDATE_LOOK;
 
+    // ERA Custom: show a spell the new item grants (ADDS_SPELL)
+    if (PItem && PItem->getModifier(xi::Mod::ADDS_SPELL) > 0)
+    {
+        PChar->pushPacket<GP_SERV_COMMAND_MAGIC_DATA>(PChar);
+    }
+
     // Racing silks change a personal chocobo's speed while worn; the client reads its own speed from 0x037.
     if (mountutils::isPersonalChocobo(PChar))
     {
@@ -4097,6 +4119,7 @@ int32 hasSpell(CCharEntity* PChar, uint16 SpellID)
         return 1;
     }
 
+    // ERA Custom: spells granted by equipped items (ADDS_SPELL)
     for (int i = 0; i < 16; ++i)
     {
         if (auto* PItem = static_cast<CItemEquipment*>(PChar->getEquip(static_cast<SLOTTYPE>(i))))

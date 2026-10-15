@@ -753,7 +753,7 @@ bool CanUseSpell(CBattleEntity* PCaster, CSpell* spell)
                 return true;
             }
 
-            // Check if any equipped item grants this spell via ADDS_SPELL
+            // ERA Custom: check if any equipped item grants this spell via ADDS_SPELL
             {
                 CCharEntity* PChar = static_cast<CCharEntity*>(PCaster);
                 for (int i = 0; i < 16; ++i)

@@ -34,7 +34,7 @@ GP_SERV_COMMAND_MAGIC_DATA::GP_SERV_COMMAND_MAGIC_DATA(const CCharEntity* PChar)
 
     xi::bitset<1024> spellList = PChar->m_SpellList;
 
-    // Include spells granted by equipped items (ADDS_SPELL modifier)
+    // ERA Custom: include spells granted by equipped items (ADDS_SPELL)
     for (int i = 0; i < 16; ++i)
     {
         if (auto* PItem = static_cast<CItemEquipment*>(PChar->getEquip(static_cast<SLOTTYPE>(i))))
