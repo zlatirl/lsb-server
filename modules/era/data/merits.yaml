@@ -7,8 +7,8 @@ merits:
     hp_mp:            [1, 2, 3, 4, 5, 5, 5, 5, 5, 7] # ERA Custom: 5, 7
     attributes:       [3, 6, 9, 9, 9, 12, 12, 12, 12, 15] # ERA Custom: 12, 12, 12, 12, 15
     defensive_skills: [1, 2, 3, 3, 3, 3, 3, 3] # ERA Custom: 8 upgrades per defensive skill
-    others:           [1, 2, 3, 4]
-    job_group_2:      [3, 4, 5]
+    others:           [1, 2, 3, 4, 5] # ERA Custom: 5 upgrades per merit
+    job_group_2:      [3, 4, 5, 5, 5] # ERA Custom: 5 upgrades per merit
 
   categories:
     weapon_skills: # Disable upgrades to unlock Weapon Skills
@@ -35,10 +35,10 @@ merits:
           max_upgrades: 0
 
     others:
-      max_upgrades: 8
+      max_upgrades: 10 # ERA Custom
 
     war_group_2:
-      max_upgrades: 6
+      max_upgrades: 10
       merits:
         warriors_charge:
           value: 150
@@ -53,10 +53,10 @@ merits:
           value: 10
 
     mnk_group_2:
-      max_upgrades: 6
+      max_upgrades: 10
 
     whm_group_2:
-      max_upgrades: 6
+      max_upgrades: 10
       merits: # Readd the merited spells and drop the replacement merits.
         protectra_v:
           id:           0x0884
@@ -68,17 +68,13 @@ merits:
           value:        2
           upgrade_cost: job_group_2
           spell:        shellra_v
-        animus_solace:
-          max_upgrades: 0
-        animus_misery:
-          max_upgrades: 0
         martyr:
           value: 150
         devotion:
           value: 150
 
     blm_group_2:
-      max_upgrades: 6
+      max_upgrades: 10
       merits: # Readd the merited spells and drop the replacement merits.
         flare_ii:
           id:           0x08C0
@@ -110,18 +106,6 @@ merits:
           value:        1
           upgrade_cost: job_group_2
           spell:        flood_ii
-        ancient_magic_atk_bonus:
-          max_upgrades: 0
-        ancient_magic_burst_dmg:
-          max_upgrades: 0
-        elemental_magic_accuracy:
-          max_upgrades: 0
-        elemental_debuff_duration:
-          max_upgrades: 0
-        elemental_debuff_effect:
-          max_upgrades: 0
-        aspir_absorption_amount:
-          max_upgrades: 0
 
     rdm_group_1:
       merits:
@@ -139,7 +123,7 @@ merits:
           value: 3
 
     rdm_group_2:
-      max_upgrades: 6
+      max_upgrades: 10
       merits: # Readd the merited spells and drop the replacement merits.
         dia_iii:
           id:           0x0900
@@ -171,21 +155,9 @@ merits:
           value:        1
           upgrade_cost: job_group_2
           spell:        blind_ii
-        enfeebling_magic_duration:
-          max_upgrades: 0
-        magic_accuracy:
-          max_upgrades: 0
-        enhancing_magic_duration:
-          max_upgrades: 0
-        immunobreak_chance:
-          max_upgrades: 0
-        enspell_damage:
-          max_upgrades: 0
-        accuracy:
-          max_upgrades: 0
 
     thf_group_2:
-      max_upgrades: 6
+      max_upgrades: 10
       merits:
         assassins_charge:
           value: 150
@@ -202,7 +174,7 @@ merits:
           value: 10
 
     pld_group_2:
-      max_upgrades: 6
+      max_upgrades: 10
       merits:
         fealty:
           value: 150
@@ -217,7 +189,7 @@ merits:
           value: 10
 
     drk_group_2:
-      max_upgrades: 6
+      max_upgrades: 10
       merits:
         dark_seal:
           value: 150
@@ -234,7 +206,7 @@ merits:
           value: 4
 
     bst_group_2:
-      max_upgrades: 6
+      max_upgrades: 10
       merits:
         feral_howl:
           value: 150
@@ -247,7 +219,7 @@ merits:
           value: 1
 
     brd_group_2:
-      max_upgrades: 6
+      max_upgrades: 10
       merits: # Readd the merited spells and drop the replacement merits.
         foe_sirvente:
           id:           0x0A44
@@ -259,10 +231,6 @@ merits:
           value:        3
           upgrade_cost: job_group_2
           spell:        adventurers_dirge
-        con_anima:
-          max_upgrades: 0
-        con_brio:
-          max_upgrades: 0
         nightingale:
           value: 150
         troubadour:
@@ -274,7 +242,7 @@ merits:
           value: 10
 
     rng_group_2:
-      max_upgrades: 6
+      max_upgrades: 10
       merits:
         flashy_shot:
           value: 150
@@ -285,7 +253,7 @@ merits:
           value: 20
 
     sam_group_2:
-      max_upgrades: 6
+      max_upgrades: 10
       merits:
         shikikoyo:
           value: 150
@@ -293,7 +261,7 @@ merits:
           value: 150
 
     nin_group_2:
-      max_upgrades: 6
+      max_upgrades: 10
       merits: # Readd the merited spells and drop the replacement merits.
         katon_san:
           id:           0x0B04
@@ -325,14 +293,6 @@ merits:
           value:        5
           upgrade_cost: job_group_2
           spell:        suiton_san
-        yonin_effect:
-          max_upgrades: 0
-        innin_effect:
-          max_upgrades: 0
-        nin_magic_accuracy:
-          max_upgrades: 0
-        nin_magic_bonus:
-          max_upgrades: 0
         sange:
           value: 150
 
@@ -348,7 +308,7 @@ merits:
           value: 6
 
     drg_group_2:
-      max_upgrades: 6
+      max_upgrades: 10
       merits:
         deep_breathing:
           value: 150
@@ -361,7 +321,7 @@ merits:
           value: 1
 
     smn_group_2:
-      max_upgrades: 6
+      max_upgrades: 10
 
     blu_group_1:
       merits:
@@ -369,13 +329,13 @@ merits:
           value: 1
 
     blu_group_2:
-      max_upgrades: 6
+      max_upgrades: 10
       merits:
         diffusion:
           value: 150
 
     cor_group_2:
-      max_upgrades: 6
+      max_upgrades: 10
       merits:
         snake_eye:
           value: 150
@@ -393,7 +353,7 @@ merits:
           skills: [automaton_magic]
 
     pup_group_2:
-      max_upgrades: 6
+      max_upgrades: 10
       merits:
         role_reversal:
           value: 30
@@ -401,7 +361,7 @@ merits:
           value: 15
 
     dnc_group_2:
-      max_upgrades: 6
+      max_upgrades: 10
       merits:
         saber_dance:
           value: 30
@@ -414,7 +374,7 @@ merits:
           value: 10
 
     sch_group_2:
-      max_upgrades: 6
+      max_upgrades: 10
       merits:
         enlightenment:
           value: 75
